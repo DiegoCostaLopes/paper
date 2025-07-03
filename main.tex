@@ -1,13 +1,22 @@
 \documentclass[a4paper, titlepage]{article}
-\usepackage[url = false, sorting = none]{biblatex}
-\usepackage{helvet}
+\renewcommand{\baselinestretch}{1.15}				% line spacing 
+\usepackage[url=false, 
+			sorting=none, 
+			maxcitenames=2,
+			hyperref=true]{biblatex}	% remove url visit date and sort references by appearance
+\usepackage{hyperref}
+\usepackage{helvet}									% helvetica font
 \addbibresource{library.bib}
 \DeclareNameAlias{author}{family-given}
 
+% ideas for paper
+% add carbon taxes
+% add ports as possible sinks
+% add eucalyptus
+% add electrolysis
 
 
 \begin{document}
-
 \title{Paper title}
 \author{
 	Diego Lopes\\
@@ -59,6 +68,72 @@ In this scenario, biomass is a promising feedstock replacement. Among the conver
 interest considering that the biomass syngas composition is similar to the fossil fuel syngas obtained in traditional
 processes; in that sense the conversion technologies of this syngas into alcohols, hydrocarbons and other chemicals
 can be leveraged with significant overlap.
+
+\section{Literature Review}
+
+The mathematical modeling of biomass gasification, ammonia, urea and its subprocesses has been the object of multiple
+studies. \textcite{baruahModelingBiomassGasification2014} presented a systematic review of  existing techniques to model
+biomass gasification systems, categorized by gasifier type, feedstock and parameters studied,
+concluding that equilibrium modeling is the most suitable technique for process studies on the influence of fuel and
+process parameters, since these models are independent of gasifier's design.
+\textcite{gambarottaNonstoichiometricEquilibriumModel2018} and \textcite{azzoneDevelopmentEquilibriumModel2012} developed
+equilibrium models for biomass gasification and compared the model’s results against experimental data, predicting the
+syngas composition with reasonable accuracy. Gasification models were successfully implemented in commercial process
+simulators such as Aspen Plus, in \textcite{hanModelingDowndraftBiomass2017} and
+\textcite{ramzanSimulationHybridBiomass2011}
+
+The ammonia synthesis process has also been modeled extensively. The reaction mechanisms and kinetics have been
+studied since the 1930s \cite{gillespieThermodynamicTreatmentChemical1930} and the Temkin-Pyzhev formulation is
+used to this day in ammonia reactor designs \cite{temkinKineticsAmmoniaSynthesis1940}
+\cite{singhSimulationAmmoniaSynthesis1979} \cite{nielsenAmmoniaCatalysisManufacture1995}.
+\textcite{florez-orregoProcessSynthesisOptimization2018} has modeled the full fossil fuel process and conducted
+exergy analysis and optimization while \textcite{domingosExergyEnvironmentalAnalysis2021} has applied the same model
+for ammonia production through black liquor gasification, with promising results reaching negative emissions in
+certain scenarios. Ammonia production via other biomasses have also been proposed by
+\textcite{florez-orregoComparativeExergyEconomic2019} and \textcite{tunaTechnoeconomicAssessmentNonfossil2014}, with
+both studies identifying substantial environmental benefits in using biomass as a feedstock, despite a lower energy
+efficiency in the process.
+
+The urea process is also studied since the start of the 20th century, with early works on the urea synthesis published
+by \textcite{frejacquesBasesTheoriquesSynthese1948} and \textcite{kawasumiEquilibriumCO2NH3UreaH2OSystem1953}, and
+more modern studies by \textcite{lemkowitzPhaseBehaviourAmmoniacarbon1972} and
+\textcite{islaSimulationUreaSynthesis1993}, all focusing on describing and modeling the complex thermodynamics in the
+urea reactor. Despite this, more extensive models of the full process are far rarer, as are attempts at optimizing it.
+\textcite{meessenUreaSynthesis2014} describes the main commercial processes available in the industry, and
+\textcite{aspentechASPEN88Technical2011} published a process model for the urea synthesis loop based on the
+Stamicarbon stripping process. Given the difficulties in predicting the urea $NH_3$-$CO_2$-water equilibrium, this
+model has been leveraged directly by several authors.
+
+\textcite{zhangTechnoeconomicComparison1002021} presented process models for the full gasification, ammonia and urea
+process with the traditional fossil fuel route and two renewable alternatives, using biomass gasification and water
+electrolysis. \textcite{alfianMultiobjectiveOptimizationGreen2019} also modeled the same systems and used a
+multi-objective optimization model to select the technology that minimizes production costs and environmental impact.
+\textcite{domingosExergyEnvironmentalAnalysis2021} evaluated the production of urea via black liquor gasification
+and \textcite{gyanwaliTechnoeconomicAssessmentGreen2023} assessed the renewable urea production utilizing solid waste
+and power as feedstocks.
+
+% TODO: LITERATURE REVIEW ON SUPPLY CHAIN OPTIMIZATION
+
+Despite these multiple works, there's still much room for improvement. While the influence of gasification parameters
+on the syngas composition is well-known from gasification models and previous works, it is unclear how these
+composition differences affect the performance and profitability of the urea plant as a whole, given that all studies
+consider only one combination of gasifying agent and biomass. A scenario evaluation comparing the plants’ key
+performance indicators (KPIs) with different biomasses and gasification conditions is therefore critical in
+understanding the feasibility of renewable urea production, as is the comparison of the renewable plant with
+actual process data from existing state-of-the-art urea plants.
+
+The published models could also be improved. Commercial urea is traditionally marketed in its granulated or prilled
+form with 99 wt.\%+ purity, and all published studies deliver urea in a lower concentration, closer to 77 wt.\%,
+corresponding to the concentration on the outlet of the distillation unit. The urea evaporation and condensate
+treatment are energy intensive, and the recovery of ammonia dissolved in the liquid urea can improve the yield of the
+process significantly \cite{meessenUreaSynthesis2014}, while other improvements such as hydrogen recovery from the
+necessary ammonia purge gas are absent in recent literature. The urea process also offers interesting opportunities
+in heat recovery, given that the high-pressure carbamate condenser rejects a large amount of heat at medium
+temperatures, and how to maximize this heat integration is unclear since in all studies published the heat exchanger
+network and utilities are abstracted from the final process model.
+
+
+
 
 
 
