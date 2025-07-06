@@ -6,6 +6,7 @@
 			hyperref=true]{biblatex}	% remove url visit date and sort references by appearance
 \usepackage{hyperref}
 \usepackage{helvet}									% helvetica font
+\usepackage{array}
 \addbibresource{library.bib}
 \DeclareNameAlias{author}{family-given}
 
@@ -58,7 +59,7 @@ using ammonia and carbon dioxide ($CO_2$), with this process being responsible f
 in a large scale \cite{meessenUrea2010}. The $CO_2$ is supplied by the reforming syngas, as both $CO$ and $CO_2$ must
 be removed prior to the ammonia synthesis as they are poisons to the commercial catalysts.
 
-Since both processes are energetically intensive, efforts were made throughout the 20th century to improve its energy
+Since both processes are energetically intensive, efforts were made throughout the 20\textsuperscript{th} century to improve its energy
 efficiency, involving equipment changes, process control and residual heat utilization. With these efforts, current
 ammonia production is very close to the theoretical minimum energy consumption \cite{ieaAmmoniaTechnologyRoadmap2021}.
 Considering the small efficiency improvements still possible, a natural future step is to search for sustainable
@@ -67,7 +68,11 @@ replacements for the process’ feedstocks and energy usages.
 In this scenario, biomass is a promising feedstock replacement. Among the conversion routes, gasification is of special
 interest considering that the biomass syngas composition is similar to the fossil fuel syngas obtained in traditional
 processes; in that sense the conversion technologies of this syngas into alcohols, hydrocarbons and other chemicals
-can be leveraged with significant overlap.
+can be leveraged with significant overlap. Despite that, biorefineries pose additional challenges to the conventional
+plants. Given its high volume and low energetic density compared to fossil fuels, the feasibility of all biorefineries
+depend heavily on the local availability of biomass inputs and spatial allocation of this biomass
+. This demonstrates the need for an integrated approach in biorefinery
+modeling that combines technical performance, location, capacity and configuration of the plant \cite{schroderImprovingBiorefineryPlanning2018}.
 
 \section{Literature Review}
 
@@ -94,11 +99,11 @@ certain scenarios. Ammonia production via other biomasses have also been propose
 both studies identifying substantial environmental benefits in using biomass as a feedstock, despite a lower energy
 efficiency in the process.
 
-The urea process is also studied since the start of the 20th century, with early works on the urea synthesis published
-by \textcite{frejacquesBasesTheoriquesSynthese1948} and \textcite{kawasumiEquilibriumCO2NH3UreaH2OSystem1953}, and
-more modern studies by \textcite{lemkowitzPhaseBehaviourAmmoniacarbon1972} and
-\textcite{islaSimulationUreaSynthesis1993}, all focusing on describing and modeling the complex thermodynamics in the
-urea reactor. Despite this, more extensive models of the full process are far rarer, as are attempts at optimizing it.
+The urea process is also studied since the start of the 20\textsuperscript{th} century, with early works on the
+urea synthesis published by \textcite{frejacquesBasesTheoriquesSynthese1948} and
+\textcite{kawasumiEquilibriumCO2NH3UreaH2OSystem1953}, and \textcite{islaSimulationUreaSynthesis1993}, all focusing
+on describing and modeling the complex thermodynamics in the urea reactor. Despite this, more extensive models of
+the full process are far rarer, as are attempts at optimizing it.
 \textcite{meessenUreaSynthesis2014} describes the main commercial processes available in the industry, and
 \textcite{aspentechASPEN88Technical2011} published a process model for the urea synthesis loop based on the
 Stamicarbon stripping process. Given the difficulties in predicting the urea $NH_3$-$CO_2$-water equilibrium, this
@@ -113,6 +118,18 @@ and \textcite{gyanwaliTechnoeconomicAssessmentGreen2023} assessed the renewable 
 and power as feedstocks.
 
 % TODO: LITERATURE REVIEW ON SUPPLY CHAIN OPTIMIZATION
+Parallel to the physico-chemical modeling of the process, modeling frameworks that incorporate optimization of
+supply-chain aspects and plant location have been gaining increased attention.
+\textcite{dunnettSpatiallyExplicitWholesystem2008} proposed a combined production and logistics model, formulated as a
+mixed-integer linear programming (MILP) model , for the lignocellulosic ethanol production in a hypothetical geographical
+area composed of a 5x5 grid and found out that the optimal production costs are highly sensitive to the spatial
+distribution of biomass. \textcite{kimDesignBiomassProcessing2011} developed a MILP model for the production of bio-gasoline and
+biodiesel from forestry residues that incorporates the selection of technology, capacity and biomass location into the
+decision making. \textcite{schroderImprovingBiorefineryPlanning2018} implemented a combined model for a synthesis
+gas biorefinery producing multiple products and used a non-linear approach coupled with an evolutionary algorithm to
+determine an optimal approach in terms of location and products produced. \textcite{theozzoMILPFrameworkOptimal2021}
+proposed an optimization framework for forestry products that considers not only the biomass and plant locations,
+but also the storage and market layers, with his model also leveraging forestry dynamics and seasonality.
 
 Despite these multiple works, there's still much room for improvement. While the influence of gasification parameters
 on the syngas composition is well-known from gasification models and previous works, it is unclear how these
@@ -122,7 +139,7 @@ performance indicators (KPIs) with different biomasses and gasification conditio
 understanding the feasibility of renewable urea production, as is the comparison of the renewable plant with
 actual process data from existing state-of-the-art urea plants.
 
-The published models could also be improved. Commercial urea is traditionally marketed in its granulated or prilled
+The published process models could also be improved. Commercial urea is traditionally marketed in its granulated or prilled
 form with 99 wt.\%+ purity, and all published studies deliver urea in a lower concentration, closer to 77 wt.\%,
 corresponding to the concentration on the outlet of the distillation unit. The urea evaporation and condensate
 treatment are energy intensive, and the recovery of ammonia dissolved in the liquid urea can improve the yield of the
@@ -132,11 +149,30 @@ in heat recovery, given that the high-pressure carbamate condenser rejects a lar
 temperatures, and how to maximize this heat integration is unclear since in all studies published the heat exchanger
 network and utilities are abstracted from the final process model.
 
+Finally, none of the proposed models for renewable urea production consider the biomass logistics, supply-chain and
+distribution of the final product. In the case of using agricultural wastes as the feedstock, this is even more
+important considering the evident synergy between receiving waste and providing fertilizer to the same locations.
+
+\section{Methodology}
+
+In this section a complete description of the process models, optimization model and methodology will be presented.
+The process models were developed on commercial software Aspen Plus v8.8. Aspen Energy Analyzer was used to evaluate
+the heat exchanger network and propose the utilities integration.
+
+For the optimization model, a script in Python was developed, with Pyomo was chosen as the modeling language. The
+commercial solver Gurobi was used to solve the model. Financial and environmental calculations were made in
+Microsoft Excel.
+
+\begin{table}
+
+	\begin{tabular}{||c | c | >{\centering}p{1.5cm} | >{\centering}p{1.5cm} >{\centering}p{1.5cm}  c c c||}
+		Name & Unit & Sugarcane bagasse & Sugarcane straw & Soybean straw & Corn & Rice & Coffee
+	\end{tabular}
+\end{table}
 
 
 
-
-
+\subsection{Biomass Gasification}
 
 
 \printbibliography{}
