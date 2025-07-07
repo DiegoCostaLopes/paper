@@ -1,12 +1,21 @@
 \documentclass[a4paper, titlepage]{article}
 \renewcommand{\baselinestretch}{1.15}				% line spacing 
+
+% Package list
+\usepackage{amsmath}
 \usepackage[url=false, 
 			sorting=none, 
 			maxcitenames=2,
 			hyperref=true]{biblatex}	% remove url visit date and sort references by appearance
 \usepackage{hyperref}
 \usepackage{helvet}									% helvetica font
+\usepackage{rotating}
 \usepackage{array}
+\usepackage{multirow}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\renewcommand{\thefootnote}{\alph{footnote}}
+% Biblatex configuration
 \addbibresource{library.bib}
 \DeclareNameAlias{author}{family-given}
 
@@ -59,9 +68,10 @@ using ammonia and carbon dioxide ($CO_2$), with this process being responsible f
 in a large scale \cite{meessenUrea2010}. The $CO_2$ is supplied by the reforming syngas, as both $CO$ and $CO_2$ must
 be removed prior to the ammonia synthesis as they are poisons to the commercial catalysts.
 
-Since both processes are energetically intensive, efforts were made throughout the 20\textsuperscript{th} century to improve its energy
-efficiency, involving equipment changes, process control and residual heat utilization. With these efforts, current
-ammonia production is very close to the theoretical minimum energy consumption \cite{ieaAmmoniaTechnologyRoadmap2021}.
+Since both processes are energetically intensive, efforts were made throughout the 20\textsuperscript{th} century to
+improve its energy efficiency, involving equipment changes, process control and residual heat utilization. With these
+efforts, current ammonia production is very close to the theoretical minimum energy consumption
+\cite{ieaAmmoniaTechnologyRoadmap2021}.
 Considering the small efficiency improvements still possible, a natural future step is to search for sustainable
 replacements for the process’ feedstocks and energy usages.
 
@@ -72,7 +82,8 @@ can be leveraged with significant overlap. Despite that, biorefineries pose addi
 plants. Given its high volume and low energetic density compared to fossil fuels, the feasibility of all biorefineries
 depend heavily on the local availability of biomass inputs and spatial allocation of this biomass
 . This demonstrates the need for an integrated approach in biorefinery
-modeling that combines technical performance, location, capacity and configuration of the plant \cite{schroderImprovingBiorefineryPlanning2018}.
+modeling that combines technical performance, location, capacity and configuration of the plant
+\cite{schroderImprovingBiorefineryPlanning2018}.
 
 \section{Literature Review}
 
@@ -159,20 +170,271 @@ In this section a complete description of the process models, optimization model
 The process models were developed on commercial software Aspen Plus v8.8. Aspen Energy Analyzer was used to evaluate
 the heat exchanger network and propose the utilities integration.
 
-For the optimization model, a script in Python was developed, with Pyomo was chosen as the modeling language. The
+For the optimization model, a Python application was developed, with Pyomo was chosen as the modeling language. The
 commercial solver Gurobi was used to solve the model. Financial and environmental calculations were made in
 Microsoft Excel.
 
-\begin{table}
+\subsection{Process Model}
 
-	\begin{tabular}{||c | c | >{\centering}p{1.5cm} | >{\centering}p{1.5cm} >{\centering}p{1.5cm}  c c c||}
-		Name & Unit & Sugarcane bagasse & Sugarcane straw & Soybean straw & Corn & Rice & Coffee
+\subsubsection{Biomass Gasification}
+
+A process flow diagram of the gasification process is presented in \autoref{img_aspengasification}. Biomass was modeled
+in Aspen Plus as a non-conventional component. \autoref{tab_biomass} presents the composition and heating value
+of the main biomasses studied. 
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_gasification.png}
+	\caption{Biomass gasification process flow diagram}
+	\label{img_aspengasification}
+\end{figure}
+
+\begin{sidewaystable}
+	\caption{Biomass data}
+	\label{tab_biomass}
+	\begin{tabular}{||c | c | C{2.0cm} | C{2.0cm} | C{2.0cm} | C{2.0cm} | C{2.0cm} | C{2.0cm} ||}
+		\hline
+		 & & \multicolumn{6}{c||}{Biomass} \\
+		\hline
+		Name & Unit & Sugarcane bagasse \cite{jorapurSugarcaneLeafbagasseGasifiers1997} & Sugarcane straw \cite{jorapurSugarcaneLeafbagasseGasifiers1997} & Soybean straw \cite{tahirCatalyticFastPyrolysis2021} & Corn \cite{evansDevelopmentBiomassGasification1988} & Rice \cite{gaurAtlasThermalData1995} & Coffee \cite{anggonoCharacteristicsBiomassBriquettes2023} \\
+		\hline
+		Moisture & kg/kg \footnotemark[1] & 0.4000 & 0.2000 & 0.2000 & 0.2000 & 0.2000 & 0.2000 \\
+		Ash & kg/kg \footnotemark[1]& 0.0420 & 0.0770 & 0.0530 & 0.0735 & 0.1580 & 0.0587 \\
+		\hline
+		C & kg/kg daf \footnotemark[2] & 0.4703 & 0.4312 & 0.5432 & 0.5025 & 0.4628 & 0.5221 \\
+		H & kg/kg daf \footnotemark[2] & 0.0561 & 0.0596 & 0.0544 & 0.0628 & 0.0607 & 0.0569 \\
+		O & kg/kg daf \footnotemark[2] & 0.4735 & 0.5071 & 0.3761 & 0.4287 & 0.4506 & 0.4066 \\
+		N & kg/kg daf \footnotemark[2] & 0.0000 & 0.0021 & 0.0262 & 0.0060 & 0.0258 & 0.0143 \\
+		\hline
+		HHV & kJ/kg daf \footnotemark[2] & 18557 & 17430 & 18230 & 20500 & 18610 & 18795 \\
+		\hline
 	\end{tabular}
-\end{table}
+
+	\footnotetext[1]{As received}
+	\footnotetext[2]{Dry and ash free}
+\end{sidewaystable}
+Biomass (1001) is received and dried to 15\% moisture in dryer E-101 by using low-pressure steam from the utilities
+plant. 
+Ash is separated at the solids separator and the biomass is converted from non-conventional into conventional 
+components ($C$, $H_2$, $O_2$, $N_2$, $H_2O$) in a yield reactor (RYield) by using a calculator block. 
+The decomposed biomass is mixed with the gasifying agents (pure oxygen, air, high-pressure steam and $CO_2$,
+represented by streams 1007, 1008, 1009 and 1010, respectively) and gasified in the Gibbs reactor R-101.
+Pure oxygen is supplied by the air separation unit, while $CO_2$ is supplied by the carbon capture system.
+
+The gasification occurs on an entrained-flow gasifier, modeled using a non-stoichiometric equilibrium approach, 
+due to its flexibility for comparing biomasses with different compositions 
+\cite{gambarottaNonstoichiometricEquilibriumModel2018}. A global gasification reaction can be described as:
+
+\begin{multline}
+	CH_aO_bN_c + wH_2O_{(l)} + sH_2O_{(g)} + e(O_2+\rho N_2) + dCO_2 \rightleftharpoons n_{CH_4}CH_4 \\ 
+	+ n_{CO_2}CO_2 + n_{CO}CO + n_{H_2}H_2 n_{H_2O}H_2O + n_{O_2}O_2 + n_{N_2}N_2
+\end{multline}
+
+With $a$, $b$ and $c$ being derived from the biomass composition; $w$, $s$, $e$, $\rho$ and $d$ representing the
+gasifying agent mixture, and $n_i$ being the number of moles of component $i$ in the syngas. At equilibrium, the Gibbs
+energy of the mixture ($G$) must be at minimum.
+
+\begin{equation}
+	G = \sum_{i=1}^{M}{n_iG_i^0} + \sum_{i=1}^{M}{n_iRT ln \left( \frac{n_i}{n_{tot}} \right) }
+\end{equation}
+
+The number of moles of each component, $n_i$, are constrained by the mole balance of each atom C, H, O and N on the
+biomass. Tar formation is not considered in this model. The minimization of Gibbs energy is obtained on the Gibbs 
+reactor block (RGibbs). Syngas properties were calculated using the Peng-Robinson equation of state, 
+with Boston-Mathias modifications. The gasification conditions are initially set to 30 bar of pressure and a 
+temperature of 1200°C.  The temperature is controlled by the oxygen injection on the gasifier. All other gasifying 
+agents are parameters of the model.
+
+\subsubsection{Air separation unit}
+
+A process flow diagram of the air separation unit is presented in \autoref{img_aspenasu}. 
+Air is compressed in a multistage compressor (P-501) to an intermediate pressure of 6 bar and split into 2 streams. 
+One stream (5003) is further compressed in compressor P-502 to a higher pressure of 7.5 bar and liquefied in a 
+multi-stream heat exchanger using the products from the distillation section. 
+The lower pressure air stream (5010) is cooled in the same heat exchanger and used as the vapor feed for the 
+high-pressure column operating at 6 bar.
+A rich nitrogen stream is removed as the distillate fraction from the HP column (5014), while the bottom fraction is 
+a rich oxygen mixture (5015). 
+Both streams are further cooled in a second multi-stream heat exchanger and sent to the low-pressure column operating
+at 1.8 bar for further separation. The rich nitrogen fraction is fed at the top of the column while the rich oxygen 
+fraction is fed at an intermediate stage. The columns are thermally coupled in the sense that the reboiler duty of the
+low-pressure section is the condenser duty from the high-pressure section, and the liquified air expansion is the 
+thermal drive for the separation.
+
+The system is designed to produce $N_2$ with 99.5\% mole fraction and $O_2$ with 99\% mole fraction. These purities
+are achieved by manipulating the high-pressure/low-pressure split at S-501, and the high-pressure column 
+reflux ratio in design specifications. The $O_2$ is sent directly to the gasification system, while the $N_2$ is 
+partially sent to the ammonia synthesis unit while the excess is compressed and sold as a separate product.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_asu.png}
+	\caption{Air separation unit (ASU) process flow diagram}
+	\label{img_aspenasu}
+\end{figure}
+
+\subsubsection{Gas Conditioning}
+
+A process flow diagram of the gas conditioning unit is presented in \autoref{img_aspenconditioning}
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_conditioning.png}
+	\caption{Gas conditioning unit process flow diagram}
+	\label{img_aspenconditioning}
+\end{figure}
+
+The syngas from the gasification plant is rich in both $H_2$ and $CO$. Given that $CO$ is undesired in the 
+ammonia synthesis, a gas conditioning unit is designed to maximize the $H_2$ concentration on the syngas by leveraging 
+the water-gas shift reaction. This reaction can be described as:
+
+\begin{equation}
+	CO + H_2O \rightleftharpoons CO_2 + H_2 \quad \Delta H_{ref}^0 = -41 kJ/mol
+\end{equation}
+
+The water-gas shift reaction is exothermic and driven by equilibrium, which means that low temperatures favor the
+product formation. At the same time, the reaction kinetics is favorable in high temperature, which means that there's 
+a tradeoff between $CO$ conversion and reactor size \cite{florez-orregoProcessSynthesisOptimization2018}. Therefore, 
+the chosen design uses two shift reactors operating with inlet conditions of 310°C and 210°C, and intermediate cooling.
+
+The hot syngas from the gasification section (1016) is cooled to 310°C in two utility heat exchangers
+(E-602 and E-603), generating high pressure superheated steam. The syngas is then mixed with high pressure steam 
+(1019) produced in the utility unit and sent to the high temperature shift reactor (R-102). The partially shifted 
+syngas is cooled to 210°C into 2 intermediate heat exchangers (E-603 and E-604), also connected to the utilities 
+plant, and sent to the low temperature shift reactor (R-103) for further $H_2$ generation. The syngas is cooled yet 
+again at 2 utility heat exchangers (E-605 and E-606), to maximize the heat recovery of the process.
+
+The $CO_2$ on the syngas (4025) is captured at the carbon capture and storage (CCS) unit, described in the next 
+section. After the $CO_2$ capturing, the final step in the gas conditioning is to remove any remaining $CO$ and $CO_2$
+in the syngas, considering that both molecules are poisons to the ammonia catalysts. This is done in a methanation 
+reactor (R-104). The methanation reaction is also equilibrium-driven and can be described as:
+\begin{alignat}{2}
+	&CO + 3H_2 \rightleftharpoons CH_4 + 3H_2O \quad & &\Delta H_{ref}^0 = -206 kJ/mol \\
+	&CO_2 + 4H_2 \rightleftharpoons CH_4 + 4H_2O \quad & &\Delta H_{ref}^0 = -164 kJ/mol
+\end{alignat}
 
 
+These reactions consume $H_2$ and generate $CH_4$, which is an inert on the ammonia loop. Therefore, they are undesired 
+for the process.
 
-\subsection{Biomass Gasification}
+The steam injection at the start of the process is a design specification of the model and is set to control the mole
+fraction of $CO$ at the CCS inlet (1025) to below 0.5\%. Syngas properties for this unit were calculated using 
+the Peng-Robinson equation of state, with Boston-Mathias modifications.
+
+\subsubsection{Carbon capture}
+
+A process flow diagram of the carbon capture and storage unit is presented in \autoref{img_aspenccs}.
+A physical absorption system using DEPG (dimethyl ethers of polyethylene  glycol) was chosen for this step, widely
+used for $CO_2$ capture in gasification for syngas production. The proposed system is based on the optimized design
+of \textcite{martelliMultiobjectiveOptimizationSelexol2015} and modified for the biomass gasification specific needs. 
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_ccs.png}
+	\caption{Carbon capture unit process flow diagram}
+	\label{img_aspenccs}
+\end{figure}
+
+The syngas (4001) at 30 bar is cooled to 4°C in 3 stages by using purified syngas (E-401), cooling water (E-402) and
+chiller water (E-403) and sent to the absorber column (T-401) where it gets in contact with the $CO_2$-lean 
+solvent (4009). The $CO_2$ on the rich solvent (4010) is removed in a series of flash drums (V-401 to V-403). 
+The gas from the first flash drum (4011) is rich in $H_2$ and is therefore recirculated back to the absorber column,
+while the gas phase from the other drums is compressed to be used in the urea synthesis, with the remaining fraction sold as a byproduct. After all expansions, the solvent is finally stripped with air \cite{mokhatabNaturalGasSweetening2012} 
+in column T-402 for deep removal of $CO_2$ still present on the solvent; this step ensures the $CO_2$ content of the 
+purified syngas stays at minimal levels, and therefore minimizes $H_2$ consumption on the methanation reactor. 
+The stripped solvent (4017) is cooled to -1°C and recirculated back to the absorber column.
+
+The physical properties of the DEPG-$CO_2$ equilibrium were estimated by using the PC-SAFT equation of state
+\cite{dymentAcidGasCleaning2015}.
+
+\subsubsection{Ammonia synthesis}
+
+Ammonia is synthesized on the traditional Haber-Bosch process, developed in 1909 and still used on an industrial scale.
+The ammonia synthesis reaction is:
+
+\begin{equation}
+	N_2 + 3H_2 \rightleftharpoons 2NH_3 \quad \Delta H_{ref}^0 = -92.4 kJ/mol
+\end{equation}
+
+As this is an exothermic equilibrium-driven reaction, high temperatures are unfavorable to the formation of products.
+In the customary process temperatures, conversion from syngas into ammonia is only 25-35\% per pass in the catalyst
+\cite{applAmmoniaPrinciplesIndustrial1999}. A pressure increase also dislocates the equilibrium to the product as it 
+has less gas moles \cite{sandlerChemicalBiochemicalEngineering2017} at the same time where it raises the power 
+consumption for the syngas compression and recirculation. There is a tradeoff between process yield, reactor size and 
+power consumption of the unit that must be taken into account.
+
+The ammonia synthesis kinetics implemented in this model is that proposed by 
+\textcite{singhSimulationAmmoniaSynthesis1979}, which modifies the traditional Temkin-Pyzhev equation 
+\cite{temkinKineticsAmmoniaSynthesis1940} by incorporating the gas non-ideality by replacing the partial pressure 
+with fugacity. The parameters for this kinetic formulation were regressed from real performance data for two 
+commercial catalysts (Montecatini-Edison and Haldor Topsøe). The reaction rate is represented as:
+
+\begin{align}
+	&r = k_0 \left[ k_a^2f_{N_2} \left(  \frac{f^3_{H_2}}{f^2_{NH_3}} \right)^{0.55} - \left( \frac{f^2_{NH_3}}{f^3_{H_2}} \right)^{0.45} \right] \\
+	&k_0 = \exp \left(2.303 \cdot 14.7102 - \frac{39057}{RT}\right)
+\end{align}
+
+With $k_a$ being the equilibrium constant of the reaction, obtained experimentally by 
+\textcite{gillespieThermodynamicTreatmentChemical1930} and represented as:
+
+\begin{multline}
+	\log_{10}k_a = -2.691122\log_{10}T - 5.519265\cdot10^{-5}T \\
+	 + 1.848863\cdot10^{-7}T^2 + \frac{2001.6}{T} + 2.6899
+\end{multline}
+
+\textcite{florez-orregoProcessSynthesisOptimization2018} studied a variety of configurations for the ammonia synthesis
+with an energy and exergy efficiency analysis and obtained an optimal configuration of operational parameters and 
+energy integrations, chosen as the starting point for this study. A process flow diagram of the ammonia synthesis 
+unit is presented in \autoref{img_aspennh3}.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_nh3.png}
+	\caption{Ammonia synthesis process flow diagram}
+	\label{img_aspennh3}
+\end{figure}
+
+Syngas from the gasification and gas conditioning (1031) is mixed with nitrogen from the air separation unit (1033), 
+maintaining a molar $H_2/N_2$ ratio of 2.9:1. The syngas is compressed to the process pressure of 200 bar and sent to 
+the loop, where it is mixed with the recycle gases (2022) and the rich $H_2$ gas from the purge gas treatment. 
+The gas mixture is chilled to -20°C in heat exchangers (E-202 and E-201). The liquid is separated in flash drum 
+(V-201), while the gas phase is sent to the circulation compressor (P-202), designed to withstand the pressure loss 
+of the system. 
+
+The compressed gases (2009) are sent to the reactor; they are pre-heated to 310°C utilizing the outlet gas from the 
+reactor (2018) and first reactor beds (2013), and sent to the first bed. The reactor possesses three catalytic beds, 
+R-201/202/203, operating with inlet temperatures of 310°C, 420°C and 380°C. This inlet temperature is maintained by 
+indirect intermediate cooling between each bed, to leverage the favorable equilibrium conditions at lower temperatures.
+Between the first and second bed, the gas is cooled by the reactor feed, while the heat exchangers E-607 and E-608 cool
+the gases by generating steam in the utility plant. 
+
+After all heat recoveries, the reactor outlet stream (2019) is cooled to 30°C with cooling water on E-207. Most of the 
+liquid $NH_3$ is recovered on this first cooling stage. The gas phase of separation drum V-202 (2021) is recycled back
+into the process, except for a purge fraction (2023) of 3\% of the total loop flow. This purge is designed to keep the
+total inert molar fraction in the ammonia loop close to 10\%, as the inerts reduce the reactants conversion and
+increase the circulation rate \cite{florez-orregoProcessSynthesisOptimization2018}. 
+The liquid $NH_3$ from both condensers (2024, 2025) is expanded to 80 bar to recover a rich $H_2$ stream (2030) and
+the final $NH_3$ product (2027) is sent to the urea synthesis unit.
+
+The loop purge gas (2023) contains a about 60\% mol of $H_2$, which is recovered on the cryogenic purge gas treatment 
+section. The gas is chilled to -20°C to recover any liquid ammonia not condensed in the main loop and mixed with the
+rich $H_2$ gases from the $NH_3$ flashing (2030). The remaining $NH_3$ is removed in the absorber column T-201, 
+using water to produce an aqua-ammonia stream (2036). The outlet gases from the absorber (2037) are again cooled to
+-20°C  in heat exchanger E-210, and refrigerated to -192°C in the cold box E-211, where the majority of the non-$H_2$
+components such as $CH_4$ and $N_2$ condense. The liquid fraction of the outlet mixture is separated in the flash drum V-204 and expanded to atmospheric pressure to drive the inlet gas cooling. The recovered rich $H_2$ stream (2044) is re-compressed
+and sent back to the ammonia loop, while the $CH_4$-rich stream (2043) is sent to the utilities plant.
+
+The gas properties for this unit were calculated using the Peng-Robinson equation of state with Boston-Mathias
+modifications.
+
+\subsubsection{Urea synthesis}
+The urea synthesis consists of the formation of ammonium carbamate, and its dehydration into urea, and can be
+represented by the following reactions:
+
+\begin{alignat}{2}
+	&2NH_3 + CO_2 \rightleftharpoons NH_4NH_2CO_2 \quad & &\Delta H_{ref}^0 = -117 kJ/mol  \\
+	&NH_4NH_2CO_2 \rightleftharpoons (NH_2)_2CO + H_2O \quad & &\Delta H_{ref}^0 = +15.5 kJ/mol 
+\end{alignat}
+
+Both reactions occur exclusively in the liquid phase. The carbamate formation is strongly exothermic and fast, while 
+the urea formation is slow and slightly endothermic, and is therefore the determining step of the process.
+
+
 
 
 \printbibliography{}
