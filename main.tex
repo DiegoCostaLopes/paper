@@ -434,6 +434,139 @@ represented by the following reactions:
 Both reactions occur exclusively in the liquid phase. The carbamate formation is strongly exothermic and fast, while 
 the urea formation is slow and slightly endothermic, and is therefore the determining step of the process.
 
+For this study, $CO_2$-stripping process based on the commercial Stamicarbon® technology was chosen 
+\cite{meessenUreaSynthesis2014}. A process flow diagram of the urea unit is presented in \autoref{img_aspenurea}.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_urea.png}
+	\caption{Urea synthesis process flow diagram}
+	\label{img_aspenurea}
+\end{figure}
+
+$NH_3$ (3001) is received from the ammonia synthesis unit and $CO_2$ (3010) is received from the CCS unit. They are 
+both compressed to the process pressure of 140 bar. The $CO_2$ is used as the stripping agent on the carbamate 
+stripper T-301, which is essentially a high-pressure heat exchanger. The stripper decomposes the unreacted carbamate 
+from the urea reactor back into $NH_3$ and $CO_2$, using medium pressure steam to drive the decomposition. The vapor 
+mixture from the stripper (3012) is partially re-condensed into carbamate on the high-pressure condenser, R-302, 
+operating at 167°C. As with the stripper, the condenser is also a high-pressure heat exchanger. Since carbamate 
+formation is highly exothermic, the condenser is cooled by boiler feedwater, directly generating low-pressure steam.
+The extent of condensation is controlled by changing the water level inside the condenser, as to guarantee that a 
+small amount of $NH_3$ and $CO_2$ condenses on the urea reactor to control the temperature at the reactor and 
+drive the endothermic synthesis.
+
+The reactor (R-301) is modeled as a two-phase plug-flow reactor. The liquid phase (3005) returns to the stripper, 
+while the vapor phase (3013) is absorbed in the high-pressure scrubber R-304, using recovered carbamate solution from 
+the low-pressure condenser.
+
+The urea solution from the stripper (3006) is concentrated in a reactive distillation column (T-302) operating at 
+4.5 bar and 135°C, where the remaining carbamate is decomposed, together with any volatile components. The gas phase 
+from the column (3015) is condensed back into carbamate in the low-pressure condenser, R-303, and circulated back to 
+the high-pressure scrubber. The liquid from the distillation column (3008) is urea at 75 wt\%, with the remaining 
+components being water and a small amount of liquid ammonia. The urea is concentrated to 99 wt\% in a double effect 
+evaporator (E-302/303) operating at 80 mbar and 140°C, driven by low-pressure steam. The condensate from the 
+evaporators (3026) is contaminated with $NH_3$, which is removed in a stripper (T-303), with the $NH_3$-rich vapors 
+(3031) being sent back to the low-pressure condenser. The final urea stream (3039) is sent to a granulation or 
+prilling unit.
+
+The fluid properties for this unit were calculated using the SR-POLAR equation of state 
+\cite{aspentechASPEN88Technical2011}.
+
+\subsubsection{Utilities}
+
+A process flow diagram of the utilities plant is presented in \autoref{img_aspenutilities} and
+\autoref{img_aspenrefrigeration}.
+
+The unit is designed to generate steam at 90 bar and 510°C. Makeup water is preheated in economizer E-606, mixed with
+process condensate in a deaerator, and further heated in economizers R-605 and E-604. Saturated steam is generated in 
+evaporators E-603/E-602 using syngas, and E-606/E-607 using ammonia loop gases. The steam is superheated to 510°C 
+in heat exchanger E-601 and sent to a steam turbine with 3 extraction stages. 
+
+High pressure steam (6024) is extracted at 30 bar to be used in the gas conditioning unit. Medium pressure steam at 
+15 bar is extracted to be used in the urea stripper T-301. Low-pressure steam at 4.5 bar is extracted (6030) and mixed 
+with steam generated at the urea high-pressure condenser (6031), to be used in the rest of process heating 
+applications., primarily in the biomass drying and urea concentration. The remaining steam is condensed at 0.1 bar.  
+
+A two-stage refrigeration system with intercooling \cite{stoeckerIndustrialRefrigerationHandbook2004} was modeled 
+separately from the utilities plant. Refrigerant R-717 (ammonia) is compressed to 15 bar at compressor C-801, 
+condensed at condenser E-801 using cooling water and expanded to an intermediate pressure of 3.87 bar at valve V-502. 
+The vapor-liquid mixture is collected in vessel V-501. The liquid collected at this vessel is expanded to a pressure
+of 1.1 bar and the resultant vapor-liquid mixture is completely evaporated at evaporator E-802, providing the chiller
+heat load for the plant. The vapors are recompressed to 3.87 bar at the low pressure compressor, intercooled with 
+cooling water and recycled back into the intermediate vessel. The vapors from this vessel are sent back to the 
+high pressure compressor.
+
+The resulting refrigeration system presents a COP (coefficient of performance) of 2.75. To decouple the chiller model
+from the main process model, this COP is used to obtain power consumption for all cases based on the required chilling
+load.
+
+\subsection{Economical evaluation}
+The capital costs for all subunits of the process were estimated by using the methodology proposed by
+\textcite{turtonAnalysisSynthesisDesign2018}:
+
+\begin{equation}
+	C = C_{ref} \cdot \left( \cfrac{A}{A_{ref}} \right)^n \cdot \cfrac{CEPCI}{CEPCI_{ref}}
+\end{equation}
+
+With $C$ and $C_{ref}$ being the capital cost of the actual and reference unit, $A$ and $A_{ref}$ being the equipment
+cost attribute (capacity) for the actual and reference unit, and $CEPCI$ being the Chemical Engineering Plant
+Cost Index for the current and reference year. The reference costs include auxiliaries and erection. An additional
+30\% of the total estimated capital cost is assumed for auxiliaries and other equipment not included in any scope,
+while 25\% is separated for contingencies.
+
+\autoref{tab_capex} summarizes the capital costs for all subunits of the plant, designed to produce 99 wt.\% of urea.
+
+\begin{sidewaystable}
+	\caption{Capital cost estimation}
+	\label{tab_capex}
+\begin{tabular}{|| C{2.3cm} | c | c | c | c | C{1.4cm} | C{1.2cm} | c | c | C{0.9cm} | C{1.4cm} | C{1.5cm} | C{0.9cm} ||}
+		\hline
+		CAPEX Estimation & \multicolumn{2}{c |}{Reference cost} & \multicolumn{2}{c |}{Reference capacity}
+		& Reference date & CEPCI (ref.) & \multicolumn{2}{c |}{Current capacity} & Scale factor & Includes
+		auxiliaries & Adjusted CAPEX (MMUSD) & Source \\
+		\hline
+		Ammonia unit & 18 & MMEUR & 175000 & t urea / year & 2017 & 567.5 & 300483 & t urea / year & 0.64 & Yes & 39.6
+		& \cite{antonettiWastetoChemicalsCircularEconomy2017} \\
+		Urea unit & 28 & MMEUR & 175000 & t urea / year & 2017 & 567.5 & 300483 & t urea / year & 0.64 & Yes & 61.6 &
+		\cite{antonettiWastetoChemicalsCircularEconomy2017} \\
+		Methanator & 3.3 & MMEUR & 522900 & t $NH_3$ / year & 2021 & 720.2 & 166654 & t $NH_3$ / year & 0.85 & Yes & 1.5 &
+		\cite{cloeteCosteffectiveCleanAmmonia2021} \\
+		WGS Unit & 6.6 & MMEUR & 522900 & t $NH_3$ / year & 2021 & 720.2 & 166654 & t $NH_3$ / year & 0.85 & No & 5.5 &
+		\cite{cloeteCosteffectiveCleanAmmonia2021} \\
+		CCS & 12 & MMUSD & 3000 & t solvent / h & 2015 & 556.8 & 950 & t solvent / h & 0.6 & No & 15.6 &
+		\cite{imEconomicAssessmentOptimization2015} \\
+		ASU & 46.3 & MMUSD & 6.7 & kg $O_2$ / s & 2021 & 720.2 & 5.3 & kg $O_2$ / s & 0.8 & Yes & 42.8 &
+		\cite{cloeteCosteffectiveCleanAmmonia2021} \\
+		Gasification & 67.8 & MMUSD & 2222 & t bio / day & 2011 & 550.8 & 1038 & t bio / day & 0.6 & Yes & 62.6 &
+		\cite{swansonTechnoeconomicAnalysisBiomasstoliquids2010} \\
+		Power plant & 17.9 & MMEUR & 38.7 & MW & 2021 & 720.2 & 12 & MW & 0.8 & Yes & 8.6 &
+		\cite{cloeteCosteffectiveCleanAmmonia2021} \\
+		\hline
+		Total & 237.9 & MMUSD & & & & & & & & & & \\
+		Auxiliaries & 71.4 & MMUSD & & & & & & & & & & \\
+		Contingencies & 59.5 & MMUSD & & & & & & & & & & \\
+		\hline
+		Total & 368.7 & MMUSD & & & & & & & & & & \\
+		\hline
+	\end{tabular}
+
+\end{sidewaystable}
+
+Operational, maintenance and insurance labor costs were considered as a fixed percentage of the total capital cost.
+
+
+
+
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_utilities.png}
+	\caption{Utilities plant}
+	\label{img_aspenutilities}
+\end{figure}
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_chiller.png}
+	\caption{Refrigeration plant}
+	\label{img_aspenrefrigeration}
+\end{figure}
 
 
 
