@@ -476,6 +476,18 @@ The fluid properties for this unit were calculated using the SR-POLAR equation o
 A process flow diagram of the utilities plant is presented in \autoref{img_aspenutilities} and
 \autoref{img_aspenrefrigeration}.
 
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_utilities.png}
+	\caption{Utilities plant}
+	\label{img_aspenutilities}
+\end{figure}
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/aspen_chiller.png}
+	\caption{Refrigeration plant}
+	\label{img_aspenrefrigeration}
+\end{figure}
+
+
 The unit is designed to generate steam at 90 bar and 510°C. Makeup water is preheated in economizer E-606, mixed with
 process condensate in a deaerator, and further heated in economizers R-605 and E-604. Saturated steam is generated in 
 evaporators E-603/E-602 using syngas, and E-606/E-607 using ammonia loop gases. The steam is superheated to 510°C 
@@ -553,20 +565,55 @@ while 25\% is separated for contingencies.
 
 Operational, maintenance and insurance labor costs were considered as a fixed percentage of the total capital cost.
 
+Net present value (NPV) is defined as:
+
+\begin{equation}
+	NPV = \sum_{t=1}^n \cfrac{F_t}{(1+r)^t}
+\end{equation}
+
+Urea levelized cost has been calculated as follows:
+
+\begin{equation}
+	LC = \cfrac{NPV_{costs}}{NPV_{output}} = \cfrac{\displaystyle\sum_{t=1}^n \cfrac{C_t + O_t}{(1+r)^t}}{\displaystyle\sum_{t=1}^n \cfrac{U_t}{(1+r)^t}}
+\end{equation}
+
+With $F_t$ being the net cash flow at yeat t, $C_t$ being the capital expenditures at year t, $O_t$ being the
+operational and fuel expenses at year t, $U_t$ being the total urea produced, and $r$ being the discount rate,
+by default at 10\%.
+
+Internal rate of return is defined as the discount rate where the NPV equals zero.
+
+A fixed biomass price of 4.5 USD / GJ (relative to the biomass HHV, as received, wet basis) was considered in this study.
+
+The main economical assessments use a fixed power price of 100 USD / MWh. For the optimization model, the power prices
+were considered on a city-by-city basis, using the open dataset from ANEEL (Agência Nacional de Energia Elétrica).
+\cite{ANEELPortalReports}.
+
+\subsection{Performance and environmental indicators}
+
+The specific consumption of biomass is defined as:
+
+\begin{equation}
+	\eta_{bio} = \cfrac{\dot m_{bio}}{\dot m_{urea}}
+\end{equation}
+
+With $\dot m$ being the mass flowrate of biomass and urea produced. In a similar vein, the specific energy consumption
+is defined as:
+
+\begin{equation}
+	\eta _e = \cfrac{\dot m_{bio} \cdot HHV_{bio} + E_{el} \cdot \eta _{grid}}{\dot m_{urea}}
+\end{equation}
+
+With $E_{el}$ being the power consumption of the process, and $\eta _{grid}$ being the energy efficiency of the grid,
+considered in this study as 85\%, against 90\% reported for the brazilian market in 2022
+\cite{epeBENBalancoEnergetico2023}.
+
+Environmental impact is evaluated by equivalent greenhouse gas (GHG) emissions. \textcite{jonkerEconomicPerformanceGHG2019}
 
 
 
 
-\begin{figure}
-	\includegraphics[width=\textwidth]{img/aspen_utilities.png}
-	\caption{Utilities plant}
-	\label{img_aspenutilities}
-\end{figure}
-\begin{figure}
-	\includegraphics[width=\textwidth]{img/aspen_chiller.png}
-	\caption{Refrigeration plant}
-	\label{img_aspenrefrigeration}
-\end{figure}
+
 
 
 
