@@ -511,6 +511,10 @@ The resulting refrigeration system presents a COP (coefficient of performance) o
 from the main process model, this COP is used to obtain power consumption for all cases based on the required chilling
 load.
 
+\subsection{Data processing}
+
+
+
 \subsection{Supply-chain model}
 
 To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and lo
@@ -518,31 +522,39 @@ To evaluate the local feasibility of the urea plant, a detailed assessment of bi
 The whole Brazilian territory was divided into 5569 regions, corresponding to the cities identified in the DTB - 
 Divisão Territorial Brasileira
 
-The data used to build this dataset was obtained from IBGE (Instituto Brasileiro de Geografia e Estatística):
+The open dataset PAM \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's full agricultural production.
+The dataset contains 
 
-The open dataset PAM \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's full agricultural production. 
 
 Five cultures were selected as the most representative of the Brazilian scenario. Each culture generates different
-agricultural residues
+agricultural residues and has a specific urea consumption per unit of crop produced, with the
+results presented in \autoref{tab_biomasssupply}.
 
 \begin{table}
-	\begin{tabular}{|c | c|}
+	\centering
+	\caption{Biomass supply and urea demand for selected crops}
+	\label{tab_biomasssupply}
+	\begin{tabular}{|c | c | c | c | c|}
 		\hline
-		Crop & Biomass
-
+		Crop & Biomass & Biomass supply \cite{souzaTheoreticalTechnicalAssessment2021} & Nitrogen Demand \cite{IFASTATFertilizerUse} \\
+		 & & kg / kg crop & kg N / ha \\
+		 \hline
+		Sugarcane & Bagasse & 0.2200 & 76 \\ 
+		 & Straw & 0.1848 &  \\
+		Soybean & Straw & 0.6900 & 16 \\
+		Corn & Stover & 0.6720 & 68 \\
+		Rice & Husks & 0.6200 & 83 \\
+		Coffee & Husks & 0.2950 & 161 \\
+		\hline
 	\end{tabular}
 \end{table}
 
+Sugarcane bagasse is normally used to supply the necessary thermal energy (steam) to a sugarcane mill. Therefore, 
+for this study we considered only 24.2\% of the total bagasse to be available for usage, corresponding to the surplus
+bagasse of a sugarcane plant processing sugarcane with 12\% fiber and a specific steam consumption of 
+400 kg steam / ton cane. All other residues were considered 100\% available for usage. 
 
-\begin{itemize}
-	\item Sugarcane
-	\item Soybean
-	\item Corn
-	\item Rice
-	\item Coffee
-\end{itemize}
-
-
+To evaluate the total area planted per crop and therefore, the complete biomass supply and urea demand, 
 
 
 
