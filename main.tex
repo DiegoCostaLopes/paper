@@ -517,18 +517,29 @@ load.
 
 \subsection{Supply-chain model}
 
-To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and lo
+To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and spatial
+information is required.
 
-The whole Brazilian territory was divided into 5569 regions, corresponding to the cities identified in the DTB - 
-Divisão Territorial Brasileira
+Brazilian geographical divison follows the 1990 "Divisão Regional Do Brasil" from IBGE (Instituto Brasileiro de
+Geografia e Estatística). The whole Brazilian territory is split into 5569 cities, with each city being assigned a 7 digit
+numerical code. Cities are combined into increasingly larger regions called 
+microregions, macroregions and eventually the federation states. A distance matrix between cities is provided by
+\textcite{carvalhoMatrizesDistanciasTempo2021}, evaluated as the average distance between cities. Larger regions
+(micro or macroregions) are assigned a location based on the corresponding city with the largest agricultural production,
+instead of the geographical center of the region. \autoref{img_microregions} shows an example of the subdivisions in
+the state of São Paulo.
 
-The open dataset PAM \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's full agricultural production.
-The dataset contains 
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/saopaulo_microregions.png}
+	\caption{São Paulo state - cities, microregions and macroregions}
+	\label{img_microregions}
+\end{figure}
 
-
-Five cultures were selected as the most representative of the Brazilian scenario. Each culture generates different
-agricultural residues and has a specific urea consumption per unit of crop produced, with the
-results presented in \autoref{tab_biomasssupply}.
+The open dataset PAM 2022 \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's agricultural production.
+The dataset contains information on planted area, harvested area and yearly production for all crops of commercial
+interest at all cities in the country. Based on the total production, five cultures were selected as the most
+representative of the Brazilian scenario. Each culture generates different agricultural residues and has a specific
+urea consumption per unit of crop produced, with the results presented in \autoref{tab_biomasssupply}. 
 
 \begin{table}
 	\centering
@@ -548,13 +559,16 @@ results presented in \autoref{tab_biomasssupply}.
 		\hline
 	\end{tabular}
 \end{table}
+:wqa
+The provided biomass supply factors already take into account availability factors (actual residue available for energy
+usage), save for the sugarcane bagasse, which is normally used to supply the necessary thermal energy (steam)
+to a sugarcane mill. Therefore, for this study we considered only 24.2\% of the total bagasse to be available for
+usage, corresponding to the surplus bagasse of a sugarcane plant processing sugarcane with 12\% fiber and a specific 
+steam consumption of 400 kg steam / ton cane. 
 
-Sugarcane bagasse is normally used to supply the necessary thermal energy (steam) to a sugarcane mill. Therefore, 
-for this study we considered only 24.2\% of the total bagasse to be available for usage, corresponding to the surplus
-bagasse of a sugarcane plant processing sugarcane with 12\% fiber and a specific steam consumption of 
-400 kg steam / ton cane. All other residues were considered 100\% available for usage. 
+In this way, the total biomass available per city can be evaluated by the total crop production, while the total urea
+demand can be assessed by the planted area for each crop. The full dataset is available at the supplementary material.
 
-To evaluate the total area planted per crop and therefore, the complete biomass supply and urea demand, 
 
 
 
