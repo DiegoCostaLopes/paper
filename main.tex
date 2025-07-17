@@ -511,11 +511,10 @@ The resulting refrigeration system presents a COP (coefficient of performance) o
 from the main process model, this COP is used to obtain power consumption for all cases based on the required chilling
 load.
 
+
+
+
 \subsection{Data processing}
-
-
-
-\subsection{Supply-chain model}
 
 To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and spatial
 information is required.
@@ -538,8 +537,9 @@ the state of São Paulo.
 The open dataset PAM 2022 \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's agricultural production.
 The dataset contains information on planted area, harvested area and yearly production for all crops of commercial
 interest at all cities in the country. Based on the total production, five cultures were selected as the most
-representative of the Brazilian scenario. Each culture generates different agricultural residues and has a specific
-urea consumption per unit of crop produced, with the results presented in \autoref{tab_biomasssupply}. 
+representative of the Brazilian scenario. Each culture generates different agricultural residues
+ \cite{souzaTheoreticalTechnicalAssessment2021} and has a specific urea consumption per unit of crop produced 
+ \cite{IFASTATFertilizerUse}, with the results presented in \autoref{tab_biomasssupply}. 
 
 \begin{table}
 	\centering
@@ -559,7 +559,7 @@ urea consumption per unit of crop produced, with the results presented in \autor
 		\hline
 	\end{tabular}
 \end{table}
-:wqa
+
 The provided biomass supply factors already take into account availability factors (actual residue available for energy
 usage), save for the sugarcane bagasse, which is normally used to supply the necessary thermal energy (steam)
 to a sugarcane mill. Therefore, for this study we considered only 24.2\% of the total bagasse to be available for
@@ -567,7 +567,11 @@ usage, corresponding to the surplus bagasse of a sugarcane plant processing suga
 steam consumption of 400 kg steam / ton cane. 
 
 In this way, the total biomass available per city can be evaluated by the total crop production, while the total urea
-demand can be assessed by the planted area for each crop. The full dataset is available at the supplementary material.
+demand can be assessed by the planted area for each crop. The full, processed dataset is available at the supplementary
+material.
+
+\subsection{Supply-chain model}
+
 
 
 
