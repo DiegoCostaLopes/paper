@@ -511,16 +511,13 @@ The resulting refrigeration system presents a COP (coefficient of performance) o
 from the main process model, this COP is used to obtain power consumption for all cases based on the required chilling
 load.
 
-
-
-
 \subsection{Data processing}
 
 To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and spatial
 information is required.
 
 Brazilian geographical divison follows the 1990 "Divisão Regional Do Brasil" from IBGE (Instituto Brasileiro de
-Geografia e Estatística). The whole Brazilian territory is split into 5569 cities, with each city being assigned a 7 digit
+Geografia e Estatística). The whole national territory is split into 5569 cities, with each city being assigned a 7 digit
 numerical code. Cities are combined into increasingly larger regions called 
 microregions, macroregions and eventually the federation states. A distance matrix between cities is provided by
 \textcite{carvalhoMatrizesDistanciasTempo2021}, evaluated as the average distance between cities. Larger regions
@@ -572,8 +569,41 @@ material.
 
 \subsection{Supply-chain model}
 
+A mixed-integer linear programming (MILP) optimization modeling framework was built using the Pyomo open-source
+software suite, with the objective of obtaining the ideal location and capacity of a renewable urea plant,
+based on the process model performance, local biomass supply and urea demand. The model can be divided into 4 layers,
+represented in \autoref{img_layers}.
 
+The model consists of 3 main sets:
 
+\begin{itemize}
+	\item L: set of possible locations ($l$)
+	\item B: set of possible biomasses ($b$)
+	\item R: set of technological routes for urea production (e.g.: pure oxygen gasification vs. air mixed gasification)
+\end{itemize}
+
+The user-supplied parameters of the model are:
+\begin{itemize}
+	\item $S_{bl}$: supply of biomass $b$ at location $l$
+	\item $UD_l$: urea demand at location $l$
+	\item $CV_{br}$: conversion of biomass $b$ to urea using route $r$ (in t urea / t biomass)
+	\item $PR_{br}$: utility (power) requirements of producing urea with biomass $b$ at route $r$ (in MWh / t biomass)
+	\item $BC_{bl}$: cost of biomass $b$ at location $l$
+	\item $PP_l$: power cost at location $l$
+	\item $UP_l$: price of urea at location $l$
+	\item $D_{ll^{'}}$: distance from location $l$ to location $ll^{'}$
+	
+\end{itemize}
+
+Biomass can be originated into any of the possible locations 
+
+The user chooses the subset of the data
+	
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/layers_of_decision.png}
+	\caption{Layers of decision for the supply-chain model}
+	\label{img_layers}
+\end{figure}
 
 
 \subsection{Economical evaluation}
