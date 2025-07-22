@@ -770,9 +770,25 @@ operational and fuel expenses at year t, $U_t$ being the total urea produced, an
 by default at 10\%.
 
 Internal rate of return is defined as the discount rate where the NPV equals zero.
+\autoref{tab_economicalassumptions} summarizes the reference biomass and power prices used in this study. 
+Biomass prices were taken from average values for local market. Urea market price in particular is volatile and 
+dependent on location. An average value was used on this study corresponding to the current urea price in the state of
+São Paulo, Brazil.
 
-A fixed biomass price of 4.5 USD / GJ (relative to the biomass HHV, as received, wet basis) and a fixed urea price of
-380 USD / ton was considered in this study.
+\begin{table}
+	\centering
+	\caption{Economical assumptions}
+	\label{tab_economicalassumptions}
+	\begin{tabular}{|c | c | c |}
+		\hline
+		Urea price & USD / t & 380 \\
+		Biomass price & USD / GJ & 4.5 \\
+		Transport costs & USD / km / t & 0.058 \\
+		Fixed costs & \% CAPEX & 4
+	\hline	
+	\end{tabular}
+\end{table}
+
 
 The main economical assessments use a fixed power price of 100 USD / MWh. For the optimization model, the power prices
 were considered on a city-by-city basis, using the open dataset from ANEEL (Agência Nacional de Energia Elétrica).
