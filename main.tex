@@ -174,7 +174,80 @@ For the optimization model, a Python application was developed, with Pyomo was c
 commercial solver Gurobi was used to solve the model. Financial and environmental calculations were made in
 Microsoft Excel.
 
+\subsection{Data processing}
+
+To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and spatial
+information is required.
+
+Brazilian geographical divison follows the 1990 "Divisão Regional Do Brasil" from IBGE (Instituto Brasileiro de
+Geografia e Estatística). The whole national territory is split into 5569 cities, with each city being assigned a 7 digit
+numerical code. Cities are combined into increasingly larger regions called 
+microregions, macroregions and eventually the federation states. A distance matrix between cities is provided by
+\textcite{carvalhoMatrizesDistanciasTempo2021}, evaluated as the average distance between cities. Larger regions
+(micro or macroregions) are assigned a location based on the corresponding city with the largest agricultural production,
+instead of the geographical center of the region. \autoref{img_microregions} shows an example of the subdivisions in
+the state of São Paulo.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/saopaulo_microregions.png}
+	\caption{São Paulo state - cities, microregions and macroregions}
+	\label{img_microregions}
+\end{figure}
+
+The open dataset PAM 2022 \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's agricultural production.
+The dataset contains information on planted area, harvested area and yearly production for all crops of commercial
+interest at all cities in the country. Based on the total production, five cultures were selected as the most
+representative of the Brazilian scenario. Each culture generates different agricultural residues
+ \cite{souzaTheoreticalTechnicalAssessment2021} and has a specific urea consumption per unit of crop produced 
+ \cite{IFASTATFertilizerUse}, with the results presented in \autoref{tab_biomasssupply}. 
+
+\begin{table}
+	\centering
+	\caption{Biomass supply and urea demand for selected crops}
+	\label{tab_biomasssupply}
+	\begin{tabular}{|c | c | c | c | c|}
+		\hline
+		Crop & Biomass & Biomass supply \cite{souzaTheoreticalTechnicalAssessment2021} & Nitrogen Demand \cite{IFASTATFertilizerUse} \\
+		 & & kg / kg crop & kg N / ha \\
+		 \hline
+		Sugarcane & Bagasse & 0.2200 & 76 \\ 
+		 & Straw & 0.1848 &  \\
+		Soybean & Straw & 0.6900 & 16 \\
+		Corn & Stover & 0.6720 & 68 \\
+		Rice & Husks & 0.6200 & 83 \\
+		Coffee & Husks & 0.2950 & 161 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+The provided biomass supply factors already take into account availability factors (actual residue available for energy
+usage), save for the sugarcane bagasse, which is normally used to supply the necessary thermal energy (steam)
+to a sugarcane mill. Therefore, for this study we considered only 24.2\% of the total bagasse to be available for
+usage, corresponding to the surplus bagasse of a sugarcane plant processing sugarcane with 12\% fiber and a specific 
+steam consumption of 400 kg steam / ton cane. 
+
+In this way, the total biomass available per city can be evaluated by the total crop production, while the total urea
+demand can be assessed by the planted area for each crop. The full, processed dataset is available at the supplementary
+material.
+
 \subsection{Process Model}
+
+The full process topology is presented in \autoref{img_processtopology}. The process can be divided into the main subunits:
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/process_topology.png}
+	\caption{Biomass gasification process flow diagram}
+	\label{img_processtopology}
+\end{figure}
+
+\begin{itemize}
+	\item Gasification
+	\item Gas conditioning
+	\item Carbon capture
+	\item Ammonia Synthesis
+	\item Urea Synthesis
+	\item Air separation unit (ASU)
+	\item Utilities 
+\end{itemize}
 
 \subsubsection{Biomass Gasification}
 
@@ -511,61 +584,6 @@ The resulting refrigeration system presents a COP (coefficient of performance) o
 from the main process model, this COP is used to obtain power consumption for all cases based on the required chilling
 load.
 
-\subsection{Data processing}
-
-To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and spatial
-information is required.
-
-Brazilian geographical divison follows the 1990 "Divisão Regional Do Brasil" from IBGE (Instituto Brasileiro de
-Geografia e Estatística). The whole national territory is split into 5569 cities, with each city being assigned a 7 digit
-numerical code. Cities are combined into increasingly larger regions called 
-microregions, macroregions and eventually the federation states. A distance matrix between cities is provided by
-\textcite{carvalhoMatrizesDistanciasTempo2021}, evaluated as the average distance between cities. Larger regions
-(micro or macroregions) are assigned a location based on the corresponding city with the largest agricultural production,
-instead of the geographical center of the region. \autoref{img_microregions} shows an example of the subdivisions in
-the state of São Paulo.
-
-\begin{figure}
-	\includegraphics[width=\textwidth]{img/saopaulo_microregions.png}
-	\caption{São Paulo state - cities, microregions and macroregions}
-	\label{img_microregions}
-\end{figure}
-
-The open dataset PAM 2022 \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's agricultural production.
-The dataset contains information on planted area, harvested area and yearly production for all crops of commercial
-interest at all cities in the country. Based on the total production, five cultures were selected as the most
-representative of the Brazilian scenario. Each culture generates different agricultural residues
- \cite{souzaTheoreticalTechnicalAssessment2021} and has a specific urea consumption per unit of crop produced 
- \cite{IFASTATFertilizerUse}, with the results presented in \autoref{tab_biomasssupply}. 
-
-\begin{table}
-	\centering
-	\caption{Biomass supply and urea demand for selected crops}
-	\label{tab_biomasssupply}
-	\begin{tabular}{|c | c | c | c | c|}
-		\hline
-		Crop & Biomass & Biomass supply \cite{souzaTheoreticalTechnicalAssessment2021} & Nitrogen Demand \cite{IFASTATFertilizerUse} \\
-		 & & kg / kg crop & kg N / ha \\
-		 \hline
-		Sugarcane & Bagasse & 0.2200 & 76 \\ 
-		 & Straw & 0.1848 &  \\
-		Soybean & Straw & 0.6900 & 16 \\
-		Corn & Stover & 0.6720 & 68 \\
-		Rice & Husks & 0.6200 & 83 \\
-		Coffee & Husks & 0.2950 & 161 \\
-		\hline
-	\end{tabular}
-\end{table}
-
-The provided biomass supply factors already take into account availability factors (actual residue available for energy
-usage), save for the sugarcane bagasse, which is normally used to supply the necessary thermal energy (steam)
-to a sugarcane mill. Therefore, for this study we considered only 24.2\% of the total bagasse to be available for
-usage, corresponding to the surplus bagasse of a sugarcane plant processing sugarcane with 12\% fiber and a specific 
-steam consumption of 400 kg steam / ton cane. 
-
-In this way, the total biomass available per city can be evaluated by the total crop production, while the total urea
-demand can be assessed by the planted area for each crop. The full, processed dataset is available at the supplementary
-material.
 
 \subsection{Supply-chain model}
 
@@ -573,6 +591,12 @@ A mixed-integer linear programming (MILP) optimization modeling framework was bu
 software suite, with the objective of obtaining the ideal location and capacity of a renewable urea plant,
 based on the process model performance, local biomass supply and urea demand. The model can be divided into 4 layers,
 represented in \autoref{img_layers}.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/layers_of_decision.png}
+	\caption{Layers of decision for the supply-chain model}
+	\label{img_layers}
+\end{figure}
 
 The model consists of 3 main sets:
 
@@ -582,28 +606,96 @@ The model consists of 3 main sets:
 	\item R: set of technological routes for urea production (e.g.: pure oxygen gasification vs. air mixed gasification)
 \end{itemize}
 
+Based on these sets, the decision variables of the model are:
+
+\begin{itemize}
+	\item $BS_{bll'}$: Biomass sold from location $l$ to location $l'$ (tons/year)
+	\item $BU_{brl}$: Biomass $b$ used through route $r$ at location $l$ (tons/year)
+	\item $UP_{rl}$: urea produced via route $r$ at location $l$ (tons/year)
+	\item $US_{ll'}$: urea sold from location $l$ to location $l'$ (tons/year)
+	\item $PU_{rl}$: power used through route $r$ at location $l$ (MWh/year)
+	\item $W_l$: binary variable corresponding to the installation of the plant at location $l$
+	\item $C$: capacity of the plant (tons urea / h)
+	\item $CAPEX$: capital costs of the plant (MMUSD)
+\end{itemize}
+
 The user-supplied parameters of the model are:
 \begin{itemize}
 	\item $S_{bl}$: supply of biomass $b$ at location $l$
-	\item $UD_l$: urea demand at location $l$
+	\item $DU_l$: urea demand at location $l$
 	\item $CV_{br}$: conversion of biomass $b$ to urea using route $r$ (in t urea / t biomass)
 	\item $PR_{br}$: utility (power) requirements of producing urea with biomass $b$ at route $r$ (in MWh / t biomass)
-	\item $BC_{bl}$: cost of biomass $b$ at location $l$
-	\item $PP_l$: power cost at location $l$
-	\item $UP_l$: price of urea at location $l$
-	\item $D_{ll^{'}}$: distance from location $l$ to location $ll^{'}$
+	\item $CB_{bl}$: cost of biomass $b$ at location $l$
+	\item $PP_l$: power price at location $l$
+	\item $PU_l$: urea price at location $l$
+	\item $D_{ll'}$: distance from location $l$ to location $ll'$
 	
 \end{itemize}
 
-Biomass can be originated into any of the possible locations 
+The model assumes that a single plant will be installed in a location. Biomass can be originated from any of the 
+possible locations, and sold to the plant. The plant can process the combination of biomasses into any technological
+route available, producing urea, which can then be sold back to any of the possible locations. 
 
-The user chooses the subset of the data
-	
-\begin{figure}
-	\includegraphics[width=\textwidth]{img/layers_of_decision.png}
-	\caption{Layers of decision for the supply-chain model}
-	\label{img_layers}
-\end{figure}
+The main constraints of the model are described as following. A plant can only be installed at a single location:
+
+\begin{equation}
+	\sum_{l \in L} W_l = 1
+\end{equation}
+
+If a plant is not installed at a location, then the urea produced at that location must be zero:
+
+\begin{equation}
+	\sum_{r \in R} UP_{rl} <= M \cdot 8585 \cdot W_l \quad \forall \ l \in L
+\end{equation}
+
+Total urea produced must be equal to the plant's capacity:
+
+\begin{equation}
+	\sum_{r \in R} \sum_{l \in L} UP_{rl} = C \cdot 8585
+\end{equation}
+
+The total urea produced at one site must be equal to the total urea sold from that site to all locations:
+
+\begin{equation}
+	\sum_{r \in R} UP_{rl} = \sum_{l' \in L} US_{ll'} \quad \forall \ l \in L
+\end{equation}
+
+Biomass consumed is proportional to urea produced and the corresponding conversion factors:
+
+\begin{equation}
+	UP_{rl} = \sum_{b \in B} BU_{brl} \cdot CV_{br} \quad \forall \ (r \in R, \ l \in L)
+\end{equation}
+
+Power consumed is also proportional to urea produced:
+
+\begin{equation}
+	PU_{rl} = \sum_{b \in B} BU_{brl} \cdot PR_{br} \quad \forall \ (r \in R, \ l \in L)
+\end{equation}
+
+Biomass used must be equal to the total biomass sold to the plant's location:
+
+\begin{equation}
+	\sum_{r \in R} BU_{brl} = \sum_{l' \in L} BS_{bl'l} \quad \forall \ (b \in B, \ l \in L) 
+\end{equation}
+
+Total biomass sold from a location must be lower than the biomass supply:
+
+\begin{equation}
+	\sum_{l' \in L} BS_{bll'} <= S_{bl} \quad \forall \ (b \in B, \ l \in L)
+\end{equation}
+
+Total urea sold to a location must be lower than the urea demand:
+
+\begin{equation}
+	\sum_{l' \in L} US_{l'l} <= DU_l \quad \forall \ l \in L 
+\end{equation}
+
+CAPEX is calculated based on the capacity by piecewise linearization of the estimated CAPEX at reference capacities of
+20, 35, 50 and 80 tons urea / h.
+
+The objective function of the model is to maximize the NPV of the plant.
+
+
 
 
 \subsection{Economical evaluation}
@@ -620,7 +712,8 @@ Cost Index for the current and reference year. The reference costs include auxil
 30\% of the total estimated capital cost is assumed for auxiliaries and other equipment not included in any scope,
 while 25\% is separated for contingencies.
 
-\autoref{tab_capex} summarizes the capital costs for all subunits of the plant, designed to produce 99 wt.\% of urea.
+\autoref{tab_capex} summarizes the capital costs for all subunits of the plant, designed to produce 99 wt.\% of urea. 
+A reference capacity of 35 t / h was chosen for this summary.
 
 \begin{sidewaystable}
 	\caption{Capital cost estimation}
@@ -678,7 +771,8 @@ by default at 10\%.
 
 Internal rate of return is defined as the discount rate where the NPV equals zero.
 
-A fixed biomass price of 4.5 USD / GJ (relative to the biomass HHV, as received, wet basis) was considered in this study.
+A fixed biomass price of 4.5 USD / GJ (relative to the biomass HHV, as received, wet basis) and a fixed urea price of
+380 USD / ton was considered in this study.
 
 The main economical assessments use a fixed power price of 100 USD / MWh. For the optimization model, the power prices
 were considered on a city-by-city basis, using the open dataset from ANEEL (Agência Nacional de Energia Elétrica).
