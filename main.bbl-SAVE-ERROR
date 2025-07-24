@@ -1,0 +1,2824 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{mbowIPCCSpecialReport2019}{report}{}{}
+      \name{author}{12}{}{%
+        {{hash=67dd5bcbb1aa1468fe17029a16aa23b6}{%
+           family={Mbow},
+           familyi={M\bibinitperiod},
+           given={Cheikh},
+           giveni={C\bibinitperiod}}}%
+        {{hash=23daa01739d4c86eaa0c8076f51f0e8d}{%
+           family={Rosenzweig},
+           familyi={R\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d099d6ef85b72636be6a00c99e9aee3c}{%
+           family={Tubiello},
+           familyi={T\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=be8b6aa673fb0b42befaf868e9761dfb}{%
+           family={Benton},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3464aa101b715552fdfec521075e9d8c}{%
+           family={Herrero},
+           familyi={H\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=91b4ab706cac49af66b5201ea3aa6a45}{%
+           family={Pradhan},
+           familyi={P\bibinitperiod},
+           given={Prajal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=54b173b5f684e5b2e8d49cdcbfa90e98}{%
+           family={Barioni},
+           familyi={B\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=809eb5d0a012183d82f3fde5ce8e03f4}{%
+           family={Krishnapillai},
+           familyi={K\bibinitperiod},
+           given={Murukesan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7a9170d859348143acf7327aabaa4b81}{%
+           family={Liwenga},
+           familyi={L\bibinitperiod},
+           given={Emma},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f60f858e13f35647c3495e0b607e26c6}{%
+           family={{Rivera-Ferre}},
+           familyi={R\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0696701c3be75bf8b4dce65ebbc05f48}{%
+           family={Sapkota},
+           familyi={S\bibinitperiod},
+           given={Tek},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7393b2b7d64a4096ab448276faf3f82d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yinlong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {IPCC}%
+      }
+      \strng{namehash}{bfaac4769e3b9a050020dfa15130ab5f}
+      \strng{fullhash}{c8fc465b6c46989f2691331b1a0683c0}
+      \strng{fullhashraw}{c8fc465b6c46989f2691331b1a0683c0}
+      \strng{bibnamehash}{bfaac4769e3b9a050020dfa15130ab5f}
+      \strng{authorbibnamehash}{bfaac4769e3b9a050020dfa15130ab5f}
+      \strng{authornamehash}{bfaac4769e3b9a050020dfa15130ab5f}
+      \strng{authorfullhash}{c8fc465b6c46989f2691331b1a0683c0}
+      \strng{authorfullhashraw}{c8fc465b6c46989f2691331b1a0683c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This is the food security chapter of the IPCC SRLCC. It provides a synthesis of impacts, adaptation and mitigation issues from the perspective of food systems.}
+      \field{month}{8}
+      \field{shorttitle}{{{IPCC Special Report}} on {{Land}} and {{Climate Change}}. {{Chapter}} 5}
+      \field{title}{{{IPCC Special Report}} on {{Land}} and {{Climate Change}}. {{Chapter}} 5: {{Food Security}}}
+      \field{type}{techreport}
+      \field{year}{2019}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Introdução/Mbow et al_2019_IPCC Special Report on Land and Climate Change.pdf
+      \endverb
+    \endentry
+    \entry{ifaEstimatingReportingFertilizerRelated2016}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=704e975d7d167e4ad1f137978746b180}{%
+           family={{IFA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {International Fertilizer Association}%
+      }
+      \strng{namehash}{704e975d7d167e4ad1f137978746b180}
+      \strng{fullhash}{704e975d7d167e4ad1f137978746b180}
+      \strng{fullhashraw}{704e975d7d167e4ad1f137978746b180}
+      \strng{bibnamehash}{704e975d7d167e4ad1f137978746b180}
+      \strng{authorbibnamehash}{704e975d7d167e4ad1f137978746b180}
+      \strng{authornamehash}{704e975d7d167e4ad1f137978746b180}
+      \strng{authorfullhash}{704e975d7d167e4ad1f137978746b180}
+      \strng{authorfullhashraw}{704e975d7d167e4ad1f137978746b180}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{Estimating \& {{Reporting Fertilizer-Related Greenhouse Gas Emissions}}:}
+      \field{type}{techreport}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{417\bibrangedash 438}
+      \range{pages}{22}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Introdução/2016_Estimating & Reporting Fertilizer-Related Greenhouse Gas Emissions.pdf
+      \endverb
+    \endentry
+    \entry{brentrupCarbonFootprintAnalysis2016}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=64532edcbe1eb864a942372e2c8a9178}{%
+           family={Brentrup},
+           familyi={B\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5c3e5a468005aabf2ddc5181a2d1426a}{%
+           family={Hoxha},
+           familyi={H\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2477ef47f50e52a9e44ac13ff387ee01}{%
+           family={Christensen},
+           familyi={C\bibinitperiod},
+           given={Bjarne},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{96f578e672263c53c48ead5c49b48409}
+      \strng{fullhash}{479a2fafd624d1ef0a683a1a2c6598a3}
+      \strng{fullhashraw}{479a2fafd624d1ef0a683a1a2c6598a3}
+      \strng{bibnamehash}{479a2fafd624d1ef0a683a1a2c6598a3}
+      \strng{authorbibnamehash}{479a2fafd624d1ef0a683a1a2c6598a3}
+      \strng{authornamehash}{96f578e672263c53c48ead5c49b48409}
+      \strng{authorfullhash}{479a2fafd624d1ef0a683a1a2c6598a3}
+      \strng{authorfullhashraw}{479a2fafd624d1ef0a683a1a2c6598a3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The production and use of mineral fertilizers contributes significantly to the carbon footprint of agricultural crops and crop-based food products. In arable crops such as winter wheat the share of nitrogen (N) fertilizer-related GHG emissions can be as high as 80\%. The contribution of emissions from the production of mineral fertilizers is often as important as fertilizer-induced emissions from agricultural soils. It is therefore important to use appropriate and up-to-date emission data for fertilizer production, which represent the actual technology and efficiency of manufacturing of specific fertilizer grades. Objective of this study is to provide up-to-date carbon footprint data for the main fertilizer products produced in selected world regions. The association of the European fertilizer producers " Fertilizers Europe " has developed a carbon footprint calculator (CFC) for fertilizer production. This tool has been employed to derive reference values for the main mineral fertilizers produced in Europe and other relevant fertilizer-producing regions of the world. The European data are reported by all members in a regular survey to Fertilizers Europe and are representative for the year 2011. Reported data include energy consumption in ammonia synthesis (Haber-Bosch) and N 2 O emissions from nitric acid production, as well as expert-validated data for other sources of CO 2 (e.g. energy consumption for urea synthesis and granulation). The non-European figures are based on an expert evaluation by Integer Research Ltd. of ammonia and nitric acid production in 2011, while for all other emission sources the European values were used. The Fertilizers Europe CFC follows general LCA and carbon footprint rules. It covers all main sources of GHG emissions and has been reviewed by DNV GL to verify its completeness and correct calculations. This paper explains the methodology applied in the calculation of the carbon footprint values. In addition the results will be presented per fertilizer product and production region. We suggest that these data should be used in carbon footprint studies as reference values for fertilizer production in different world regions with the technology baseline 2011.}
+      \field{booktitle}{The 10th {{International Conference}} on {{Life Cycle Assessment}} of {{Food}} ({{LCA Food}} 2016)}
+      \field{month}{10}
+      \field{title}{Carbon Footprint Analysis of Mineral Fertilizer Production in {{Europe}} and Other World Regions}
+      \field{year}{2016}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Geral/Brentrup et al_2016_Carbon footprint analysis of mineral fertilizer production in Europe and other.pdf
+      \endverb
+    \endentry
+    \entry{ouikhalfanNetZeroEmissionFertilizers2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=713f95726579601ce339374117016d9e}{%
+           family={Ouikhalfan},
+           familyi={O\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02696a303d503a543e61f813bf4bc388}{%
+           family={Lakbita},
+           familyi={L\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=e37c8655b3f379c9c85a33cfdc2f17c8}{%
+           family={Delhali},
+           familyi={D\bibinitperiod},
+           given={Achraf},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dad4af8c95d2fb586f2ed619fba6f7d1}{%
+           family={Assen},
+           familyi={A\bibinitperiod},
+           given={Ayalew\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=0926f5964da357f3fe8d62871abe3b40}{%
+           family={Belmabkhout},
+           familyi={B\bibinitperiod},
+           given={Youssef},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society}%
+      }
+      \strng{namehash}{5bc795108de9fbec94aa94f7fdc6f26b}
+      \strng{fullhash}{af2a796b14afb9f34ae70d40eec0ef8e}
+      \strng{fullhashraw}{af2a796b14afb9f34ae70d40eec0ef8e}
+      \strng{bibnamehash}{5bc795108de9fbec94aa94f7fdc6f26b}
+      \strng{authorbibnamehash}{5bc795108de9fbec94aa94f7fdc6f26b}
+      \strng{authornamehash}{5bc795108de9fbec94aa94f7fdc6f26b}
+      \strng{authorfullhash}{af2a796b14afb9f34ae70d40eec0ef8e}
+      \strng{authorfullhashraw}{af2a796b14afb9f34ae70d40eec0ef8e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The production of fertilizers has been evolving steadily in the last 300 years. It involves a high number of commodities and reagents that share a large portion of the costs and emissions of greenhouse gases (GHGs), particularly carbon dioxide (CO2). Phosphorus, nitrogen, and potassium fertilizers components represent more than 200 million tonnes of production annually. Given that most of the fertilizer production process is dependent on fossil fuels as fuel and feedstock, the amount of CO2 generated is at least 3 tonnes CO2 per tonne of fertilizer. The introduction, in the future, of less intensive carbon technological components and lower energy-consuming separation and catalytic technologies in the fertilizers industry has the potential to reduce CO2 emissions drastically. In this review, we thoroughly analyze the GHG emissions of the fertilizers industry over time and explore pathways to achieve viable and sustainable decarbonization solutions. In the review, we also aim to explore, whenever information is available, the factors (sources) and the ranges of GHG emissions in the different value chains of fertilizer plants. As a result, an overview of the literature on GHG emissions from synthetic fertilizers (N, P, K) industries will be given. More emphasis is on emissions that stem from the extraction of raw materials to final fertilizer products (energy source, efficiency, and fertilizer type) and transportation of intermediates within different sites of the plants (vehicle type, fuel type, and efficiency). A perspective analysis on possible recommendations for future net-zero carbon emissions and carbon capture technologies is also made.}
+      \field{issn}{0887-0624}
+      \field{journaltitle}{Energy \& Fuels}
+      \field{month}{4}
+      \field{number}{8}
+      \field{shorttitle}{Toward {{Net-Zero Emission Fertilizers Industry}}}
+      \field{title}{Toward {{Net-Zero Emission Fertilizers Industry}}: {{Greenhouse Gas Emission Analyses}} and {{Decarbonization Solutions}}}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{36}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{4198\bibrangedash 4223}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1021/acs.energyfuels.2c00238
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Geral/Ouikhalfan et al_2022_Toward Net-Zero Emission Fertilizers Industry.pdf
+      \endverb
+    \endentry
+    \entry{ieaAmmoniaTechnologyRoadmap2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=18fdbec513c87989c7580f31bb7f03ab}{%
+           family={{IEA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {International Energy Agency}%
+      }
+      \strng{namehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhashraw}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{bibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorbibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authornamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorfullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorfullhashraw}{18fdbec513c87989c7580f31bb7f03ab}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{shorttitle}{Ammonia {{Technology Roadmap}}}
+      \field{title}{Ammonia {{Technology Roadmap}}: {{Towards}} More Sustainable Nitrogen Fertiliser Production}
+      \field{type}{techreport}
+      \field{urlday}{31}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/IEA_2021_Ammonia Technology Roadmap.pdf
+      \endverb
+    \endentry
+    \entry{applAmmoniaPrinciplesIndustrial1999}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=03965ac8b278551510aa910dd5d4e470}{%
+           family={Appl},
+           familyi={A\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim ; New York}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{03965ac8b278551510aa910dd5d4e470}
+      \strng{fullhash}{03965ac8b278551510aa910dd5d4e470}
+      \strng{fullhashraw}{03965ac8b278551510aa910dd5d4e470}
+      \strng{bibnamehash}{03965ac8b278551510aa910dd5d4e470}
+      \strng{authorbibnamehash}{03965ac8b278551510aa910dd5d4e470}
+      \strng{authornamehash}{03965ac8b278551510aa910dd5d4e470}
+      \strng{authorfullhash}{03965ac8b278551510aa910dd5d4e470}
+      \strng{authorfullhashraw}{03965ac8b278551510aa910dd5d4e470}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-527-29593-7}
+      \field{langid}{english}
+      \field{shorttitle}{Ammonia}
+      \field{title}{Ammonia: Principles and Industrial Practice}
+      \field{year}{1999}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Appl_1999_Ammonia.pdf
+      \endverb
+      \keyw{Ammonia}
+    \endentry
+    \entry{meessenUrea2010}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=c1d558e81160885000f6d73df06619b3}{%
+           family={Meessen},
+           familyi={M\bibinitperiod},
+           given={Jozef\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd}%
+      }
+      \strng{namehash}{c1d558e81160885000f6d73df06619b3}
+      \strng{fullhash}{c1d558e81160885000f6d73df06619b3}
+      \strng{fullhashraw}{c1d558e81160885000f6d73df06619b3}
+      \strng{bibnamehash}{c1d558e81160885000f6d73df06619b3}
+      \strng{authorbibnamehash}{c1d558e81160885000f6d73df06619b3}
+      \strng{authornamehash}{c1d558e81160885000f6d73df06619b3}
+      \strng{authorfullhash}{c1d558e81160885000f6d73df06619b3}
+      \strng{authorfullhashraw}{c1d558e81160885000f6d73df06619b3}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The article contains sections titled: 1. Introduction 2. Physical Properties 3. Chemical Properties 4. Production 4.1. Principles 4.1.1. Chemical Equilibrium 4.1.2. Physical Phase Equilibria 4.2. Challenges in Urea Production Process Design 4.2.1. Recycle of Nonconverted Ammonia and Carbon Dioxide 4.2.2. Corrosion 4.2.3. Side Reactions 4.3. Description of Processes 4.3.1. Conventional Processes 4.3.2. Stripping Processes 4.3.2.1. Stamicarbon CO2-Stripping Process 4.3.2.2. The Avancore Urea Process 4.3.2.3. Snamprogetti Ammonia- and Self-Stripping Processes 4.3.2.4. ACES Process 4.3.2.5. Isobaric Double-Recycle Process 4.3.3. Other Processes 4.4. Effluents and Effluent Reduction 4.4.1. Gaseous Effluents 4.4.2. Liquid Effluents 4.5. Product-Shaping Technology 4.5.1. Prilling 4.5.2. Granulation 4.5.3. Other Shaping Technologies 4.6. Revamping Technologies 5. Forms Supplied, Storage, and Transportation 6. Quality Specifications and Analysis 7. Uses 8. Economic Aspects}
+      \field{booktitle}{Ullmann's {{Encyclopedia}} of {{Industrial Chemistry}}}
+      \field{isbn}{978-3-527-30673-2}
+      \field{issn}{1435-6007}
+      \field{langid}{english}
+      \field{title}{Urea}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1002/14356007.a27_333.pub2
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Meessen_2010_Urea.pdf;/home/diego/Software/Zotero/data/storage/7VWMJSBF/14356007.a27_333.html
+      \endverb
+    \endentry
+    \entry{schroderImprovingBiorefineryPlanning2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=4b27f0a382dd7d76243baa5baa7a1218}{%
+           family={Schröder},
+           familyi={S\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e6d5a5818b7c4980decf18c1f5482ccd}{%
+           family={Lauven},
+           familyi={L\bibinitperiod},
+           given={Lars-Peter},
+           giveni={L\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=3e0eaa53cf1a3383d96fc753ad22f5d9}{%
+           family={Geldermann},
+           familyi={G\bibinitperiod},
+           given={Jutta},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{49795109bcb750bbc7877722793de9dd}
+      \strng{fullhash}{986d6336422549ef4e9cbbf62442bf83}
+      \strng{fullhashraw}{986d6336422549ef4e9cbbf62442bf83}
+      \strng{bibnamehash}{986d6336422549ef4e9cbbf62442bf83}
+      \strng{authorbibnamehash}{986d6336422549ef4e9cbbf62442bf83}
+      \strng{authornamehash}{49795109bcb750bbc7877722793de9dd}
+      \strng{authorfullhash}{986d6336422549ef4e9cbbf62442bf83}
+      \strng{authorfullhashraw}{986d6336422549ef4e9cbbf62442bf83}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Biorefineries can provide a product portfolio from renewable biomass similar to that of crude oil refineries. To operate biorefineries of any kind, however, the availability of biomass inputs is crucial and must be considered during planning. Here, we develop a planning approach that uses Geographic Information Systems (GIS) to account for spatially scattered biomass when optimizing a biorefinery's location, capacity, and configuration. To deal with the challenges of a non-smooth objective function arising from the geographic data, higher dimensionality, and strict constraints, the planning problem is repeatedly decomposed by nesting an exact nonlinear program (NLP) inside an evolutionary strategy (ES) heuristic, which handles the spatial data from the GIS. We demonstrate the functionality of the algorithm and show how including spatial data improves the planning process by optimizing a synthesis gas biorefinery using this new planning approach.}
+      \field{issn}{0377-2217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{month}{2}
+      \field{number}{3}
+      \field{shorttitle}{Improving Biorefinery Planning}
+      \field{title}{Improving Biorefinery Planning: {{Integration}} of Spatial Data Using Exact Optimization Nested in an Evolutionary Strategy}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{264}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1005\bibrangedash 1019}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2017.01.016
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Optimization/Schröder et al_2018_Improving biorefinery planning.pdf;/home/diego/Software/Zotero/data/storage/H2FNA7IP/S0377221717300516.html
+      \endverb
+      \keyw{Biorefinery,Evolutionary computations,Evolutionary strategy,Geographic Information System,Location planning,NLP}
+    \endentry
+    \entry{baruahModelingBiomassGasification2014}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=71daa79c05ebe71e8e195f58f3d68966}{%
+           family={Baruah},
+           familyi={B\bibinitperiod},
+           given={Dipal},
+           giveni={D\bibinitperiod}}}%
+        {{hash=55cdcabe22eded429f444ac4ec3d3f1c}{%
+           family={Baruah},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{fullhash}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{fullhashraw}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{bibnamehash}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{authorbibnamehash}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{authornamehash}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{authorfullhash}{f3fdb6aec2384753da9aa671618c747a}
+      \strng{authorfullhashraw}{f3fdb6aec2384753da9aa671618c747a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Biomass is being considered seriously as a source of energy generation worldwide. Among the various routes available for biomass based energy generation, biomass gasification is one of the most important routes that are being studied extensively. Biomass gasification is a thermo-chemical conversion process of biomass materials within a reactor. Number of inter-related parameters concerning the type of fuel, the reactor design and operating parameters effect the functioning of the gasifier. Understanding of this working principle is essential for the end user. The end user may be an individual who is interested in the output of the gasifier or the reactor manufacturer who is interested to develop the most optimum design or a planner who is in requirement of a gasifier which will give the best performance for a specific fuel type. Research and development both in the experimental and computational aspect of gasification has been numerous. Computational modeling tools are advantageous in many situations due to their capability of allowing the user to find the optimum conditions for a given reactor without going in for actual experimentation which is both time consuming and expensive. The modeling works of gasification process requires a systematic logical analysis in order to efficiently disseminate the embedded information. An attempt has been made in this study to categorise the recent modeling works based on certain specific criteria such as type of gasifier, feedstock, modeling considerations and evaluated parameters. Comparative assessments are made of the modeling techniques and output for each category of the models. The information is anticipated to be useful for researchers, end users as well as planners.}
+      \field{issn}{1364-0321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shorttitle}{Modeling of Biomass Gasification}
+      \field{title}{Modeling of Biomass Gasification: {{A}} Review}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{volume}{39}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{806\bibrangedash 815}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rser.2014.07.129
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Gaseificação/Baruah_Baruah_2014_Modeling of biomass gasification.pdf;/home/diego/Software/Zotero/data/storage/WPUDH2AL/S1364032114005814.html
+      \endverb
+      \keyw{Biomass,Gasification,Modeling,Review}
+    \endentry
+    \entry{gambarottaNonstoichiometricEquilibriumModel2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8fe160db8ffffb000da05879a0b7a5fa}{%
+           family={Gambarotta},
+           familyi={G\bibinitperiod},
+           given={Agostino},
+           giveni={A\bibinitperiod}}}%
+        {{hash=28bc7bec64f467f28b88ed4d34338042}{%
+           family={Morini},
+           familyi={M\bibinitperiod},
+           given={Mirko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9d9f1bd5e15645abb184dcad1c547c69}{%
+           family={Zubani},
+           familyi={Z\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5d357f809fead7638825e161118f4c3}
+      \strng{fullhash}{b1439f02b53e616474debf62eccb3416}
+      \strng{fullhashraw}{b1439f02b53e616474debf62eccb3416}
+      \strng{bibnamehash}{b1439f02b53e616474debf62eccb3416}
+      \strng{authorbibnamehash}{b1439f02b53e616474debf62eccb3416}
+      \strng{authornamehash}{e5d357f809fead7638825e161118f4c3}
+      \strng{authorfullhash}{b1439f02b53e616474debf62eccb3416}
+      \strng{authorfullhashraw}{b1439f02b53e616474debf62eccb3416}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a non-stoichiometric equilibrium model for the simulation of the biomass gasification process in downdraft gasifiers to be used within simulation models of complex energy systems. The chemical equilibrium is determined by minimizing the Gibbs free energy. The feedstock is composed of five elements, while fifteen chemical species are considered for the syngas. The model calculates the relative quantities of gasification products and the lower heating value of the syngas. An advantage of the non-stoichiometric approach is that it can easily calculate not only the concentrations of the main gasification products, but also the concentrations of minor products, especially the pollutant chemical species containing nitrogen and sulfur.}
+      \field{issn}{03062619}
+      \field{journaltitle}{Applied Energy}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{A Non-Stoichiometric Equilibrium Model for the Simulation of the Biomass Gasification Process}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{volume}{227}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{119\bibrangedash 127}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.apenergy.2017.07.135
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Gaseificação/Gambarotta et al_2018_A non-stoichiometric equilibrium model for the simulation of the biomass.pdf
+      \endverb
+    \endentry
+    \entry{azzoneDevelopmentEquilibriumModel2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=958d7a50e7188dfcf72bf9f3dd3d2f91}{%
+           family={Azzone},
+           familyi={A\bibinitperiod},
+           given={Emanuele},
+           giveni={E\bibinitperiod}}}%
+        {{hash=28bc7bec64f467f28b88ed4d34338042}{%
+           family={Morini},
+           familyi={M\bibinitperiod},
+           given={Mirko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=98dc3780fb7504d22e04d74e5b1230cd}{%
+           family={Pinelli},
+           familyi={P\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2996147d8ec82aefc30c012e76e7900d}
+      \strng{fullhash}{9e2bad188fb8b42505ee84beca946da6}
+      \strng{fullhashraw}{9e2bad188fb8b42505ee84beca946da6}
+      \strng{bibnamehash}{9e2bad188fb8b42505ee84beca946da6}
+      \strng{authorbibnamehash}{9e2bad188fb8b42505ee84beca946da6}
+      \strng{authornamehash}{2996147d8ec82aefc30c012e76e7900d}
+      \strng{authorfullhash}{9e2bad188fb8b42505ee84beca946da6}
+      \strng{authorfullhashraw}{9e2bad188fb8b42505ee84beca946da6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The recent crisis in Italian agriculture has forced operators to find new ways of deriving income from their activities. One of the most promising of these is the use of agricultural products and residues as an energy source. In particular, the exploitation of agricultural, industrial and forestry residues and by-products can be a definite advantage in the generation of electrical and thermal energy. This is due to the fact that these materials need to be disposed of and, therefore represent cost, and can be then transformed into an opportunity for revenue. Among the various technologies available for converting biomass into biofuels, thermochemical gasification appears to be the most suitable for the conversion of crop residues (corn and sunflower stalks, rapeseed straw, etc.) as these are characterized by low humidity and a high C/N ratio. On the other hand, the operational problems encountered with current plant architectures, such as the blocking of the biomass flow in the reactor due to low-melting ash content, have limited the use of crop residues in gasification so far. In this paper, a model for the simulation of the biomass thermochemical gasification process is presented. The model is based on a chemical equilibrium hypothesis, i.e. it is assumed that the chemical transformations inside the gasifier can be described by a series of equilibrium reactions independent of each other and, therefore, a precise relationship between products and reactants can be determined. The model is validated by a comparison with data from literature and a sensitivity analysis on process parameters is presented. Finally, the model is applied to the study of the reliability of the gasification of crop residues currently popular in Italy, both in terms of produced gas quality and quantity.}
+      \field{issn}{0960-1481}
+      \field{journaltitle}{Renewable Energy}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{Development of an Equilibrium Model for the Simulation of Thermochemical Gasification and Application to Agricultural Residues}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{46}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{248\bibrangedash 254}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.renene.2012.03.017
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Gaseificação/Azzone et al_2012_Development of an equilibrium model for the simulation of thermochemical.pdf;/home/diego/Software/Zotero/data/storage/JLSIA4M5/S0960148112002042.html
+      \endverb
+      \keyw{Biomass,Gasification,Residues,Syngas}
+    \endentry
+    \entry{hanModelingDowndraftBiomass2017}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=8efb16654df241d885e2e492a3eda10a}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a83eea5ff82c82f18c23ee7469186536}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0f369a112db7d29f87bcd8ad25abe02e}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f76d6c1c7deba39c3391a58ab10b67bd}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Linbo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2fddd3989196b800ac35070afc7dd355}{%
+           family={Street},
+           familyi={S\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8359d24550937fa3d5869521f6be24a0}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yongwu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c8d7a90faba9f1e1a020cace5ff0339c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{4127475747d12b04944a3a941ef98ac2}
+      \strng{fullhash}{4f82d2084bcf48999e6ffb1df32390ff}
+      \strng{fullhashraw}{4f82d2084bcf48999e6ffb1df32390ff}
+      \strng{bibnamehash}{4127475747d12b04944a3a941ef98ac2}
+      \strng{authorbibnamehash}{4127475747d12b04944a3a941ef98ac2}
+      \strng{authornamehash}{4127475747d12b04944a3a941ef98ac2}
+      \strng{authorfullhash}{4f82d2084bcf48999e6ffb1df32390ff}
+      \strng{authorfullhashraw}{4f82d2084bcf48999e6ffb1df32390ff}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Thermo-chemical conversion of biomass has been regarded as one of attractive routes of producing the clean and environmental friendly bio-fuels. Downdraft biomass gasification process has been served as a key technology to provide the bio-syngas with high quality, which can be used to produce the renewable liquid transportation fuels through Fischer Tropsch Synthesis in Mississippi State University. In order to provide the performance data of the integrated Biomass to Liquid system and future process optimization, a comprehensive model of the downdraft biomass gasification process based on Aspen Plus by minimizing Gibbs free energy with restricting chemical reaction equilibrium in the gasification reduction zone has been developed. The model was successfully validated with the experimental data from the hardwood chips gasification. Sensitivity analysis was also performed to investigate the effects of gasification temperature, equivalence ratio, and biomass moisture content on the quality of bio-syngas. All the investigated factors have been found with a significant effect.}
+      \field{issn}{0196-8904}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{Modeling Downdraft Biomass Gasification Process by Restricting Chemical Reaction Equilibrium with {{Aspen Plus}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{153}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{641\bibrangedash 648}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.enconman.2017.10.030
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Gaseificação/Han et al_2017_Modeling downdraft biomass gasification process by restricting chemical.pdf;/home/diego/Software/Zotero/data/storage/PZ9ETNIF/S0196890417309500.html
+      \endverb
+      \keyw{Aspen plus,Biomass gasification,Biomass-derived syngas,Modeling,Simulation}
+    \endentry
+    \entry{ramzanSimulationHybridBiomass2011}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ea336b87ed7d61428fbd0be7e0794c71}{%
+           family={Ramzan},
+           familyi={R\bibinitperiod},
+           given={Naveed},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9d3182e1234decf4b8d8048efd52f33e}{%
+           family={Ashraf},
+           familyi={A\bibinitperiod},
+           given={Asma},
+           giveni={A\bibinitperiod}}}%
+        {{hash=faf5b6145eb98f377da73dafde621511}{%
+           family={Naveed},
+           familyi={N\bibinitperiod},
+           given={Shahid},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b894f3840cca60eb5fcbfee4faebe807}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={Abdullah},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c3d60d894eff6332821eeebe4accaa38}
+      \strng{fullhash}{2616774f6cb5eb4c59b0c797af77abfc}
+      \strng{fullhashraw}{2616774f6cb5eb4c59b0c797af77abfc}
+      \strng{bibnamehash}{c3d60d894eff6332821eeebe4accaa38}
+      \strng{authorbibnamehash}{c3d60d894eff6332821eeebe4accaa38}
+      \strng{authornamehash}{c3d60d894eff6332821eeebe4accaa38}
+      \strng{authorfullhash}{2616774f6cb5eb4c59b0c797af77abfc}
+      \strng{authorfullhashraw}{2616774f6cb5eb4c59b0c797af77abfc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Steady state simulation model for gasification has been developed using Aspen Plus. The model can be used as a predictive tool for optimization of the gasifier performance.The Gasifier has been modeled in three stages. In first stage moisture content of biomass feed is reduced. In second stage biomass is decomposed into its elements by specifying yield distribution. In third stage gasification reactions have been modeled using Gibbs free energy minimization approach. The simulation results are compared with the experimental results obtained through hybrid biomass gasifier. In the simulation study, the operating parameters like Temperature, Equivalence Ratio (ER), Biomass Moisture Content and Steam Injection have been varied over wide range and the effect of these parameters on syngas composition, High Heating Value (HHV) and Cold Gas Efficiency (CGE) has been investigated. Temperature increases the production of CO and H2. Increasing ER decreases the production of CO and H2 which decreases the CGE. Biomass moisture content is an important parameter affecting the heating value of the gas. Steam injection favors hydrogen production. The performance of the simulated gasifier has been compared using experimental data for Municipal Solid Waste (MSW), Food Waste (FW) and Poultry Waste~(PW).}
+      \field{issn}{0961-9534}
+      \field{journaltitle}{Biomass and Bioenergy}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{9}
+      \field{shorttitle}{Simulation of Hybrid Biomass Gasification Using {{Aspen}} Plus}
+      \field{title}{Simulation of Hybrid Biomass Gasification Using {{Aspen}} plus: {{A}} Comparative Performance Analysis for Food, Municipal Solid and Poultry Waste}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{volume}{35}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{3962\bibrangedash 3969}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.biombioe.2011.06.005
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Gaseificação/Ramzan et al_2011_Simulation of hybrid biomass gasification using Aspen plus.pdf;/home/diego/Software/Zotero/data/storage/QXCCIVUX/S0961953411003291.html
+      \endverb
+      \keyw{Cold gas efficiency,Gasifier performance,Gibbs free energy,Hybrid biomass Gasifier,Steady state simulation}
+    \endentry
+    \entry{gillespieThermodynamicTreatmentChemical1930}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=16c1a485401afa3c181e3a5ffb19a4c5}{%
+           family={Gillespie},
+           familyi={G\bibinitperiod},
+           given={Louis\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3ec0f4bd12bf95d6fbc431f54cbfc24f}{%
+           family={Beattie},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{fullhash}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{fullhashraw}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{bibnamehash}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{authorbibnamehash}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{authornamehash}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{authorfullhash}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \strng{authorfullhashraw}{c3e14e50a2d5fc8e1e966fc39bfc500b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{All of the equilibrium data on the ammonia synthesis reaction, which cover an extreme temperature range of from 325{$^\circ$} to 952{$^\circ$}C and an extreme pressure range (at some temperatures) of from 10 to 1000 atmospheres, are correlated with the compressibility and heat capacity data on the pure reacting gases by means of a rational and relatively simple equation for the mass action function Kp. In this equation the effect of temperature and of pressure on Kp are separated, the relation for the temperature effect being exact, but certain approximations being introduced for the sake of simplicity into the relation for the pressure effect.}
+      \field{journaltitle}{Physical Review}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{The {{Thermodynamic Treatment}} of {{Chemical Equilibria}} in {{Systems Composed}} of {{Real Gases}}. {{I}}. {{An Approximate Equation}} for the {{Mass Action Function Applied}} to the {{Existing Data}} on the {{Haber Equilibrium}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{36}
+      \field{year}{1930}
+      \field{urldateera}{ce}
+      \field{pages}{743\bibrangedash 753}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1103/PhysRev.36.743
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Gillespie_Beattie_1930_The Thermodynamic Treatment of Chemical Equilibria in Systems Composed of Real.pdf;/home/diego/Software/Zotero/data/storage/Q3SKRYSN/PhysRev.36.html
+      \endverb
+    \endentry
+    \entry{temkinKineticsAmmoniaSynthesis1940}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1f4bc2058258fc036e2cd5ad43118b7}{%
+           family={Temkin},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8380f40dcc3994414470a56b28ce17a1}{%
+           family={Pyzhev},
+           familyi={P\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb6d3e2cae401bfb643062c841967445}
+      \strng{fullhash}{eb6d3e2cae401bfb643062c841967445}
+      \strng{fullhashraw}{eb6d3e2cae401bfb643062c841967445}
+      \strng{bibnamehash}{eb6d3e2cae401bfb643062c841967445}
+      \strng{authorbibnamehash}{eb6d3e2cae401bfb643062c841967445}
+      \strng{authornamehash}{eb6d3e2cae401bfb643062c841967445}
+      \strng{authorfullhash}{eb6d3e2cae401bfb643062c841967445}
+      \strng{authorfullhashraw}{eb6d3e2cae401bfb643062c841967445}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Physicochimica}
+      \field{title}{Kinetics of {{Ammonia Synthesis}} on {{Promoted Iron Catalysts}}}
+      \field{year}{1940}
+      \field{pages}{327\bibrangedash 356}
+      \range{pages}{30}
+    \endentry
+    \entry{singhSimulationAmmoniaSynthesis1979}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=69479b1a4441246d5b5f9163884a37f8}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Chandra\bibnamedelimb P.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d92b77187123fbdb2d4d7e2dc6f3a039}{%
+           family={Saraf},
+           familyi={S\bibinitperiod},
+           given={Deokl\bibnamedelima N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{fullhash}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{fullhashraw}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{bibnamehash}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{authorbibnamehash}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{authornamehash}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{authorfullhash}{33926059dcbce2df54a032e5caf8b61e}
+      \strng{authorfullhashraw}{33926059dcbce2df54a032e5caf8b61e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0196-4305, 1541-5716}
+      \field{journaltitle}{Industrial \& Engineering Chemistry Process Design and Development}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Simulation of {{Ammonia Synthesis Reactors}}}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{18}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{364\bibrangedash 370}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1021/i260071a002
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Singh_Saraf_1979_Simulation of Ammonia Synthesis Reactors.pdf
+      \endverb
+    \endentry
+    \entry{nielsenAmmoniaCatalysisManufacture1995}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4f11652d75ee2e5512ea3ea7d7e37b6d}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{fullhash}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{fullhashraw}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{bibnamehash}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{authorbibnamehash}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{authornamehash}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{authorfullhash}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \strng{authorfullhashraw}{4f11652d75ee2e5512ea3ea7d7e37b6d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Ammonia is one of the 10 largest commodity chemicals produced. The editor, Anders Nielsen, is research director with one of the largest industrial catalyst producers. He has compiled a complete reference on all aspects of catalytical ammonia production in industry, from thermodynamics and kinetics to reactor and plant design. One chapter deals with safety aspects of ammonia handling and storage}
+      \field{annotation}{OCLC: 840300148}
+      \field{isbn}{978-3-642-79197-0}
+      \field{langid}{english}
+      \field{shorttitle}{Ammonia}
+      \field{title}{Ammonia: {{Catalysis}} and {{Manufacture}}}
+      \field{year}{1995}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Nielsen_1995_Ammonia.pdf
+      \endverb
+    \endentry
+    \entry{florez-orregoProcessSynthesisOptimization2018}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=017606b39660884b5def7be85924660a}{%
+           family={{Flórez-Orrego}},
+           familyi={F\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of São Paulo}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \strng{namehash}{017606b39660884b5def7be85924660a}
+      \strng{fullhash}{017606b39660884b5def7be85924660a}
+      \strng{fullhashraw}{017606b39660884b5def7be85924660a}
+      \strng{bibnamehash}{017606b39660884b5def7be85924660a}
+      \strng{authorbibnamehash}{017606b39660884b5def7be85924660a}
+      \strng{authornamehash}{017606b39660884b5def7be85924660a}
+      \strng{authorfullhash}{017606b39660884b5def7be85924660a}
+      \strng{authorfullhashraw}{017606b39660884b5def7be85924660a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Process Synthesis and Optimization of Syngas and Ammonia Production in Nitrogen Fertilizers Complexes: {{Exergy}}, Energy Integration and {{CO2}} Emissions Assessment}
+      \field{type}{phdthesis}
+      \field{year}{2018}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Flórez-Orrego_2018_Process synthesis and optimization of syngas and ammonia production in nitrogen.pdf
+      \endverb
+    \endentry
+    \entry{domingosExergyEnvironmentalAnalysis2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e2e06e9b8a9b57e73f2813670308d327}{%
+           family={Domingos},
+           familyi={D\bibinitperiod},
+           given={Meire\bibnamedelimb Ellen\bibnamedelimb Gorete\bibnamedelima Ribeiro},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=017606b39660884b5def7be85924660a}{%
+           family={{Flórez-Orrego}},
+           familyi={F\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=88a798d2dafe089942f1e0bb34b9d6ea}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Moisés\bibnamedelimb Teles\bibnamedelima Dos},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=132da73654d260181676ba144ebc9273}{%
+           family={Velásquez},
+           familyi={V\bibinitperiod},
+           given={Hector\bibnamedelima Ivan},
+           giveni={H\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=19753f79b8210b223f8ce8086193cb52}{%
+           family={Junior},
+           familyi={J\bibinitperiod},
+           given={Silvio\bibnamedelimb De\bibnamedelima Oliveira},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Inderscience Publishers}%
+      }
+      \strng{namehash}{9c93af607508ffc36c64ee2f21798bcd}
+      \strng{fullhash}{154119034e2615f8b2aa94924b613e40}
+      \strng{fullhashraw}{154119034e2615f8b2aa94924b613e40}
+      \strng{bibnamehash}{9c93af607508ffc36c64ee2f21798bcd}
+      \strng{authorbibnamehash}{9c93af607508ffc36c64ee2f21798bcd}
+      \strng{authornamehash}{9c93af607508ffc36c64ee2f21798bcd}
+      \strng{authorfullhash}{154119034e2615f8b2aa94924b613e40}
+      \strng{authorfullhashraw}{154119034e2615f8b2aa94924b613e40}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The black liquor is a byproduct of the kraft pulping process that contains more than half of the exergy content in the total woody biomass fed to the digester, representing a key supply of renewable energy to the pulping process. In this work, the conventional scenario of the black liquor use (i.e., concentration and combustion) is compared with the black liquor upgrading (via) gasification process for ammonia production in terms of economics, exergy efficiency and environmental impact. The combined energy integration and exergy analysis is used to identify the potential improvements that may remain hidden to the energy analysis alone, namely, the determination and mitigation of the process irreversibility. As a result, the exergy efficiencies of the conventional and the integrated cases average 40\% and 42\%, respectively, whereas the overall emission balance varies from 1.97 to -0.69 tCO2/tPulp, respectively. The negative CO2 emissions indicate the environmental benefits of the proposed integrated process compared to the conventional kraft pulp mill.}
+      \field{issn}{1742-8297}
+      \field{journaltitle}{International Journal of Exergy}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Exergy and Environmental Analysis of Black Liquor Upgrading Gasification in an Integrated Kraft Pulp and Ammonia Production Plant}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{35}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{35\bibrangedash 65}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1504/IJEX.2021.115083
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Domingos et al_2021_Exergy and environmental analysis of black liquor upgrading gasification in an.pdf
+      \endverb
+      \keyw{ammonia,black liquor,decarbonisation,energy integration,entrained flow gasifier,environmental impact,exergy,fertilisers,kraft pulp,renewability}
+    \endentry
+    \entry{florez-orregoComparativeExergyEconomic2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=017606b39660884b5def7be85924660a}{%
+           family={{Flórez-Orrego}},
+           familyi={F\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e178e64b50c42c070d8d7b920156890d}{%
+           family={Maréchal},
+           familyi={M\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a2d00408b2322d96949c4c20e5c9d8f5}{%
+           family={{de Oliveira Junior}},
+           familyi={d\bibinitperiod},
+           given={Silvio},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{36327bb8511930e7fabd775e6f481441}
+      \strng{fullhash}{553c5c0a6e3492260d28b2302baf9d1d}
+      \strng{fullhashraw}{553c5c0a6e3492260d28b2302baf9d1d}
+      \strng{bibnamehash}{553c5c0a6e3492260d28b2302baf9d1d}
+      \strng{authorbibnamehash}{553c5c0a6e3492260d28b2302baf9d1d}
+      \strng{authornamehash}{36327bb8511930e7fabd775e6f481441}
+      \strng{authorfullhash}{553c5c0a6e3492260d28b2302baf9d1d}
+      \strng{authorfullhashraw}{553c5c0a6e3492260d28b2302baf9d1d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of biomass gasification for partially or totally replacing methane in the integrated syngas and ammonia production plant is compared with the performance of the conventional route, typically based on steam methane reforming. However, by undertaking novel designs, additional or totally different demands are created. Consequently, the optimal integration approach between the new chemical plant and the alternative utility systems must be updated, so that the power and steam requirements remain satisfied. To this end, a systematic framework that allows selecting the most suitable utility systems whereas satisfying the minimum energy requirements (MER) with lower operating cost is adopted. The combined energy integration and exergy analyses proved to be relevant, especially regarding the integration of reactive components and the combined heat and power production (CHP) as well as the reduction of avoidable exergy losses. The exergy efficiencies of the natural gas and biomass-based ammonia production plants average 65.8\% and 41.3\%, respectively, and the overall emission balances vary from 0.5 to -2.3 tCO2/tNH3, respectively. Despite the lower efficiency, higher operating revenues are achieved by totally replacing the costly natural gas input and avoiding the electricity import, favoring the consumption of a fraction of the syngas produced as fuel. Finally, it must be noticed that by defining an extended industrial framework, the inefficiencies at the upstream feedstock supply chains can be also accounted for, which entails a further reduction of 10--15\% of the overall ammonia production efficiency. Accordingly, even by fully substituting the natural gas consumption with renewable energy resources, the sustainability of the overall system becomes rather an intricate function of the performance of the feedstock supply chains, the electricity mix enclosing the chemical system, the ammonia production plant and the main components thereof, as well as of the cost ratio of the resources consumed.}
+      \field{issn}{01968904}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{title}{Comparative Exergy and Economic Assessment of Fossil and Biomass-Based Routes for Ammonia Production}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{194}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{22\bibrangedash 36}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.enconman.2019.04.072
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Flórez-Orrego et al_2019_Comparative exergy and economic assessment of fossil and biomass-based routes.pdf
+      \endverb
+    \endentry
+    \entry{tunaTechnoeconomicAssessmentNonfossil2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c72f2bd4fa6cb4777f07077e779d783f}{%
+           family={Tun{å}},
+           familyi={T\bibinitperiod},
+           given={Per},
+           giveni={P\bibinitperiod}}}%
+        {{hash=788ceee1b52590a1f7009ec1ce52a947}{%
+           family={Hulteberg},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=053dc6ef536d00aab4e9f5d107c74776}{%
+           family={Ahlgren},
+           familyi={A\bibinitperiod},
+           given={Serina},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd6f13b266e751480b7dd3503d2f7b9a}
+      \strng{fullhash}{7d314d2665662085aae1828919cbc38a}
+      \strng{fullhashraw}{7d314d2665662085aae1828919cbc38a}
+      \strng{bibnamehash}{7d314d2665662085aae1828919cbc38a}
+      \strng{authorbibnamehash}{7d314d2665662085aae1828919cbc38a}
+      \strng{authornamehash}{fd6f13b266e751480b7dd3503d2f7b9a}
+      \strng{authorfullhash}{7d314d2665662085aae1828919cbc38a}
+      \strng{authorfullhashraw}{7d314d2665662085aae1828919cbc38a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The production of nitrogen fertilizers are almost exclusively based on fossil feedstocks such as natural gas and coal. Nitrogen fertilizers are a necessity to maintain the high agricultural production that the world's population currently demands. Ammonia produced from nonfossil-based feedstocks would enable renewable production of ammonia. Renewable feedstocks are one thing, but perhaps even more important in the future are the security of supply that decentralized production enables. In this study, the techno-economic evaluation of production of ammonia from various renewable feedstocks and for several plant sizes was investigated. The feedstocks included in this study are grid-based electricity produced from wind power, biogas, and woody biomass. The feedstocks differed in exergy, and to make a fair comparison, the electric equivalence ratios method was used. The results showed that the energy consumption for biogas and electricity is the same at 42 GJ/tonne ammonia. When using the electric equivalence comparison for the same cases, the results are 26 and 42 GJ/tonne, respectively. Biomass-based production has an energy consumption of 58 GJ/tonne and 31 GJ/tonne when using the electric equivalence comparison, which should be compared with the industrial average of 37 GJ (or 21 GJ electric equivalence) per tonne of ammonia. Monte Carlo simulations were used to vary the inputs to the process to evaluate the production cost. The ammonia production cost ranged from \$680 to 2300/tonne ammonia for the various cases studied. {©} 2013 American Institute of Chemical Engineers Environ Prog, 33: 1290--1297, 2014}
+      \field{issn}{1944-7450}
+      \field{journaltitle}{Environmental Progress \& Sustainable Energy}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Techno-Economic Assessment of Nonfossil Ammonia Production}
+      \field{urlday}{20}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{33}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{1290\bibrangedash 1297}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/ep.11886
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Amonia/Tunå et al_2014_Techno-economic assessment of nonfossil ammonia production.pdf;/home/diego/Software/Zotero/data/storage/X4FRYW7R/ep.html
+      \endverb
+      \keyw{ammonia production,exergy evaluation,nonfossil based,production cost}
+    \endentry
+    \entry{frejacquesBasesTheoriquesSynthese1948}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed7430d7b070c4dbbf7bc2aa141ac780}{%
+           family={Frejacques},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{fullhash}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{fullhashraw}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{bibnamehash}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{authorbibnamehash}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{authornamehash}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{authorfullhash}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \strng{authorfullhashraw}{ed7430d7b070c4dbbf7bc2aa141ac780}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Ind.}
+      \field{langid}{undefined}
+      \field{number}{1}
+      \field{title}{{Les bases theoriques de la synthese industrielle de l'uree}}
+      \field{volume}{60}
+      \field{year}{1948}
+      \field{pages}{22\bibrangedash 35}
+      \range{pages}{14}
+      \verb{file}
+      \verb /home/diego/Software/Zotero/data/storage/W6FWF629/display.html
+      \endverb
+    \endentry
+    \entry{kawasumiEquilibriumCO2NH3UreaH2OSystem1953}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=28cfc54c95c87beae4505f879b11cf69}{%
+           family={Kawasumi},
+           familyi={K\bibinitperiod},
+           given={Schôhachi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Chemical Society of Japan}%
+      }
+      \strng{namehash}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{fullhash}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{fullhashraw}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{bibnamehash}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{authorbibnamehash}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{authornamehash}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{authorfullhash}{28cfc54c95c87beae4505f879b11cf69}
+      \strng{authorfullhashraw}{28cfc54c95c87beae4505f879b11cf69}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{(1) The effect of water added to ammonium carbamate on liquid-vapor equilibrium of the CO2-NH3-Urea-H2O system was investigated at 160 {$^\circ$}C. and a loading density of ammonium carbamate 0.60 g./cc. and over the range of mole ratio from 0.20 to 1.00 of water added to ammonium carbamate. (2) The equilibrium pressure is approximately constant independent of the amount of water added within the range of the experimental conditions. Both the vapor- and the liquid-compositions become richer in carbon dioxide, and the equilibrium yield of urea decreases with an increase of the amount of water added. (3) The results of calculation of the compositions and densities of the liquid- and the vapor-phases in the equilibrium state when water ranging from 0.20 to 1.00 mole was added to one mole of ammonium carbamate have been shown.}
+      \field{issn}{0009-2673}
+      \field{journaltitle}{Bulletin of the Chemical Society of Japan}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Equilibrium of the {{CO2-NH3-Urea-H2O System}} under {{High Temperature}} and {{Pressure}}. {{III}}. {{Effect}} of {{Water Added}} on {{Liquid-Vapor Equilibrium}}}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{26}
+      \field{year}{1953}
+      \field{urldateera}{ce}
+      \field{pages}{218\bibrangedash 222}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1246/bcsj.26.218
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Kawasumi_1953_Equilibrium of the CO2-NH3-Urea-H2O System under High Temperature and Pressure.pdf
+      \endverb
+    \endentry
+    \entry{islaSimulationUreaSynthesis1993}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a919a9aa9a7b9ffe3ca1e96ba1919a2b}{%
+           family={Isla},
+           familyi={I\bibinitperiod},
+           given={Miguel\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=23639f381288f1f9f80006aa7b317a7c}{%
+           family={Irazoqui},
+           familyi={I\bibinitperiod},
+           given={Horacio\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f39f1ae98100ba780b26419247766f2a}{%
+           family={Genoud},
+           familyi={G\bibinitperiod},
+           given={Carlos\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e402f8b9cb924b5c847ea3a3acd38be}
+      \strng{fullhash}{9a6542b9962a9947f6607fde89b8154b}
+      \strng{fullhashraw}{9a6542b9962a9947f6607fde89b8154b}
+      \strng{bibnamehash}{9a6542b9962a9947f6607fde89b8154b}
+      \strng{authorbibnamehash}{9a6542b9962a9947f6607fde89b8154b}
+      \strng{authornamehash}{4e402f8b9cb924b5c847ea3a3acd38be}
+      \strng{authorfullhash}{9a6542b9962a9947f6607fde89b8154b}
+      \strng{authorfullhashraw}{9a6542b9962a9947f6607fde89b8154b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0888-5885, 1520-5045}
+      \field{journaltitle}{Industrial \& Engineering Chemistry Research}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Simulation of a Urea Synthesis Reactor. 1. {{Thermodynamic}} Framework}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{32}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{pages}{2662\bibrangedash 2670}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1021/ie00023a033
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Isla et al_1993_Simulation of a urea synthesis reactor.pdf
+      \endverb
+    \endentry
+    \entry{meessenUreaSynthesis2014}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6399579d4cc8163dae9d6c79b060ac59}{%
+           family={Meessen},
+           familyi={M\bibinitperiod},
+           given={Jozef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{fullhash}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{fullhashraw}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{bibnamehash}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{authorbibnamehash}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{authornamehash}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{authorfullhash}{6399579d4cc8163dae9d6c79b060ac59}
+      \strng{authorfullhashraw}{6399579d4cc8163dae9d6c79b060ac59}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The history of urea synthesis is followed by a description of the fundamental thermodynamics underlying urea production. The basic chemistry, side reactions and physical chemistry are summarized, after which the way these fundamentals logically result in a number of constraints to urea production processes is explained. Challenges in urea production process design are highlighted. Finally, using a number of recent urea processes as examples, it is shown how these challenges are addressed in the industrial urea production processes currently offered by the main urea process licensors.}
+      \field{issn}{0009286X}
+      \field{journaltitle}{Chemie Ingenieur Technik}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Urea Synthesis}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{86}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{2180\bibrangedash 2189}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1002/cite.201400064
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Meessen_2014_Urea synthesis.pdf
+      \endverb
+    \endentry
+    \entry{aspentechASPEN88Technical2011}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7df218727aff108fc08cce158d65624f}{%
+           family={AspenTech},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7df218727aff108fc08cce158d65624f}
+      \strng{fullhash}{7df218727aff108fc08cce158d65624f}
+      \strng{fullhashraw}{7df218727aff108fc08cce158d65624f}
+      \strng{bibnamehash}{7df218727aff108fc08cce158d65624f}
+      \strng{authorbibnamehash}{7df218727aff108fc08cce158d65624f}
+      \strng{authornamehash}{7df218727aff108fc08cce158d65624f}
+      \strng{authorfullhash}{7df218727aff108fc08cce158d65624f}
+      \strng{authorfullhashraw}{7df218727aff108fc08cce158d65624f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{ASPEN Plus}} 8.8 {{Technical Documentation}} -- {{Aspen Plus Urea Synthesis Loop Model}}.}
+      \field{year}{2011}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/AspenTech_2011_Aspen Plus Urea Synthesis Loop Model.pdf
+      \endverb
+    \endentry
+    \entry{zhangTechnoeconomicComparison1002021}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=fab228a8254016635a6bfb80a8e00ea4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hanfei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2f18eab19052bcc21dbee3eb67dbd79a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ligang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e07a11ff7c34a7df842e54f6bfbae96d}{%
+           family={{Van herle}},
+           familyi={V\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e178e64b50c42c070d8d7b920156890d}{%
+           family={Maréchal},
+           familyi={M\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3b4ca64d683b1aa2e1f4c14d5ab9aeb1}{%
+           family={Desideri},
+           familyi={D\bibinitperiod},
+           given={Umberto},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{c094bd29c7d63e4645935cec1a484579}
+      \strng{fullhash}{09927a30cec7f8f549b77ca66478bacd}
+      \strng{fullhashraw}{09927a30cec7f8f549b77ca66478bacd}
+      \strng{bibnamehash}{c094bd29c7d63e4645935cec1a484579}
+      \strng{authorbibnamehash}{c094bd29c7d63e4645935cec1a484579}
+      \strng{authornamehash}{c094bd29c7d63e4645935cec1a484579}
+      \strng{authorfullhash}{09927a30cec7f8f549b77ca66478bacd}
+      \strng{authorfullhashraw}{09927a30cec7f8f549b77ca66478bacd}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Urea is widely used in agriculture, industry, and food, while it is also a potential fuel. Large-scale urea production relies on fossil fuels, thus there is a strong need for green urea given the increasing penetration of renewable energy sources. A potential alternative is biomass-to-urea; however, it cannot fully convert the biomass carbon into urea. To achieve full carbon conversion, innovative integrated biomass- and power-to-urea processes are designed conceptually. The two green urea production processes are evaluated techno-economically and compared with state-of-the-art methane-to-urea. The results show that the methane-to-urea achieves a system efficiency of 58\% (LHV), while biomass-to-urea only has 39\% (LHV) with unconverted biomass carbon of up to 60\%. The integrated power- and biomass-to-urea has outstanding heat integration performance which fixes all biomass carbon into urea, with an efficiency enhanced up to 53\%. Due to the electricity demand, the levelized cost of the urea of integrated biomass- and power-to-urea is 15 -- 38 and 58 -- 87\% points higher than those of the biomass-to-urea and methane-to-urea for the scale of 10 -- 60 MWth urea production. The available annual hours and electricity price of renewable electricity have a significant impact on the levelized cost of the urea. When the available annual hours decrease from 7200 to 3600 with an electricity price of 73 \$/MWh, the levelized cost of urea increases on average by 13\% from 51 \$/GJ with the plant capacity being 10 -- 60 MWth urea. However, when electricity price is reduced from 73 \$/MWh to 35 \$/MWh with available annual hours of 3600, the levelized cost decreases on average by 15\% from 59 \$/GJ with the same plant capacity.}
+      \field{issn}{0306-2619}
+      \field{journaltitle}{Applied Energy}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Techno-Economic Comparison of 100\% Renewable Urea Production Processes}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{284}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{116401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.apenergy.2020.116401
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Zhang et al_2021_Techno-economic comparison of 100% renewable urea production processes.pdf
+      \endverb
+      \keyw{Biomass-to-urea,Methane-to-urea,Power-to-hydrogen,Power-to-urea,Renewable urea,Solid-oxide electrolyzer}
+    \endentry
+    \entry{alfianMultiobjectiveOptimizationGreen2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e53d44a0f91ef6a5ca6b650646002d59}{%
+           family={Alfian},
+           familyi={A\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dcd48bfceb4b7b3be3af3134522c4b68}{%
+           family={Purwanto},
+           familyi={P\bibinitperiod},
+           given={Widodo\bibnamedelima W.},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{fullhash}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{fullhashraw}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{bibnamehash}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{authorbibnamehash}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{authornamehash}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{authorfullhash}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \strng{authorfullhashraw}{e5f011c60d91af0c8ff2c2f4d467db16}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The availability of natural gas as feedstock for nitrogen fertilizer production continues to decline, while its price increases, encouraging the search for renewable feedstocks for the future green urea industry. Renewable feedstocks include waste biomass, hydrogen from solar PV-\-electrolysis, and the combination of these feedstocks with natural gas. The selection of a green production strategy is a critical step in the trade-\-off between economic and environmental considerations. The aim of this work was to propose a green urea production strategy using a multi-\-objective optimization (MOO) model to minimize production costs and environmental impacts by considering the future cost development of technologies and feedstock price for each technology in the time frame of 2020-\-2050. The results show that green urea production can reduce production costs and greenhouse gas emissions, compared to conventional urea production. Biomass gasification technology fulfills the minimum requirements for production cost and CO2 emissions from 2020 to 2035 and combined biomass gasification-\-PV electrolysis without battery technology is the optimum process from 2040 to 2050.}
+      \field{issn}{2050-0505, 2050-0505}
+      \field{journaltitle}{Energy Science \& Engineering}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Multi-objective Optimization of Green Urea Production}
+      \field{urlday}{15}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{292\bibrangedash 304}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/ese3.281
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Alfian_Purwanto_2019_Multi‐objective optimization of green urea production.pdf
+      \endverb
+    \endentry
+    \entry{gyanwaliTechnoeconomicAssessmentGreen2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=1f9bfdbbedc19b6b1f04d9f3eea4b567}{%
+           family={Gyanwali},
+           familyi={G\bibinitperiod},
+           given={Khem},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b1ce13df1b49ae83310038cd696b8ba4}{%
+           family={Karki},
+           familyi={K\bibinitperiod},
+           given={Saroj},
+           giveni={S\bibinitperiod}}}%
+        {{hash=acdb8c2ece22d0eeb4da1f573976c8af}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Padam},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e28cce294cd7b5a667e8c6579d8e4224}{%
+           family={Devkota},
+           familyi={D\bibinitperiod},
+           given={Sijan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7fdf570cee5632087453e4057a9d7d51}{%
+           family={Aryal},
+           familyi={A\bibinitperiod},
+           given={Prakash},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b00fe4fae219ad9c1dd0c94cee9b699}
+      \strng{fullhash}{a0e2adf0ec8573c8d833e4dc4cfc7145}
+      \strng{fullhashraw}{a0e2adf0ec8573c8d833e4dc4cfc7145}
+      \strng{bibnamehash}{5b00fe4fae219ad9c1dd0c94cee9b699}
+      \strng{authorbibnamehash}{5b00fe4fae219ad9c1dd0c94cee9b699}
+      \strng{authornamehash}{5b00fe4fae219ad9c1dd0c94cee9b699}
+      \strng{authorfullhash}{a0e2adf0ec8573c8d833e4dc4cfc7145}
+      \strng{authorfullhashraw}{a0e2adf0ec8573c8d833e4dc4cfc7145}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Depleting fossil fuels and global commitments to reducing emissions have emphasized the necessity of exploring alternative resources to produce chemical fertilizer, specifically urea. This study presents a novel approach to producing eco-friendly urea in Nepal, utilizing municipal solid wastes in combination with hydroelectricity which provides solutions to three major problems namely waste management, surplus hydroelectricity utilization, and reduction of urea imports. The results obtained from the process simulation models developed in the Aspen Plus software reveal that approximately 661 metric tonnes per day of environmentally friendly urea can be produced by harnessing 740 and 220 metric tonnes per day of organic waste and combustible waste respectively, alongside the integration of an additional power supply of 230~MW. Sensitivity analysis on organic waste composition exhibits a constrained effect on the urea yield, whereas alterations in the carbon content of combustible waste exert a comparatively significant influence. The Monte Carlo financial risk assessment substantiates the profitable economic feasibility of the proposed production system, exhibiting a minimal investment risk. The cost of electricity emerges as the predominant factor in determining the levelized cost of urea and hence lowering the electricity prices specifically for urea production is recommended, whereas the waste cost exerts a relatively marginal influence. Additionally, the aggregate carbon dioxide emissions originating from the proposed plant amount to approximately 32.74~kg per metric tonne of urea, signifying a 29 times reduction in emissions when compared with fossil fuel-based urea production.}
+      \field{issn}{0959-6526}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{month}{9}
+      \field{title}{Techno-Economic Assessment of Green Urea Production Utilizing Municipal Solid Waste and Hydropower in {{Nepal}}}
+      \field{urlday}{11}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{419}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{138320}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2023.138320
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Gyanwali et al_2023_Techno-economic assessment of green urea production utilizing municipal solid.pdf;/home/diego/Software/Zotero/data/storage/6ILF8E3X/S0959652623024782.html
+      \endverb
+      \keyw{Aspen plus,CAPEX,Electrolysis,Municipal solid waste,Process simulation,Risk assessment,Waste composition}
+    \endentry
+    \entry{dunnettSpatiallyExplicitWholesystem2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=24e4c2c854bc56fbc51f0bd20e444f87}{%
+           family={Dunnett},
+           familyi={D\bibinitperiod},
+           given={Alex\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e120267453b5b75fc9b1aadbc190a6b4}{%
+           family={Adjiman},
+           familyi={A\bibinitperiod},
+           given={Claire\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b385edca77dad9e7382feabe7c133ca6}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Nilay},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5ac23e1f4cea628157db9a3414c9ea1}
+      \strng{fullhash}{fde453156ef48a88b424915468c1ad29}
+      \strng{fullhashraw}{fde453156ef48a88b424915468c1ad29}
+      \strng{bibnamehash}{fde453156ef48a88b424915468c1ad29}
+      \strng{authorbibnamehash}{fde453156ef48a88b424915468c1ad29}
+      \strng{authornamehash}{c5ac23e1f4cea628157db9a3414c9ea1}
+      \strng{authorfullhash}{fde453156ef48a88b424915468c1ad29}
+      \strng{authorfullhashraw}{fde453156ef48a88b424915468c1ad29}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Lignocellulosic bioethanol technologies exhibit significant capacity for performance improvement across the supply chain through the development of high-yielding energy crops, integrated pretreatment, hydrolysis and fermentation technologies and the application of dedicated ethanol pipelines. The impact of such developments on cost-optimal plant location, scale and process composition within multiple plant infrastructures is poorly understood. A combined production and logistics model has been developed to investigate cost-optimal system configurations for a range of technological, system scale, biomass supply and ethanol demand distribution scenarios specific to European agricultural land and population densities.}
+      \field{issn}{1754-6834}
+      \field{journaltitle}{Biotechnology for Biofuels}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shorttitle}{A Spatially Explicit Whole-System Model of the Lignocellulosic Bioethanol Supply Chain}
+      \field{title}{A Spatially Explicit Whole-System Model of the Lignocellulosic Bioethanol Supply Chain: An Assessment of Decentralised Processing Potential}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{1}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1754-6834-1-13
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Optimization/Dunnett et al. - 2008 - A spatially explicit whole-system model of the lignocellulosic bioethanol supply chain an assessmen.pdf
+      \endverb
+      \keyw{Biodiesel,Biofuels,Biogas,Bioprocess Engineering,Corn Stover,High Heating Value,Industrial and Production Engineering,Pure Ethanol,Short Rotation Coppice,Solid Biofuels,Supply Chain}
+    \endentry
+    \entry{kimDesignBiomassProcessing2011}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=10848531da963d7d36a39741176d8b31}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jinkyung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b8317a111f69d8565374afce28fd4d30}{%
+           family={Realff},
+           familyi={R\bibinitperiod},
+           given={Matthew\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=476344bb30d750e92d349d76126fa921}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jay\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=12a1f57749020056b806da81623c67c8}{%
+           family={Whittaker},
+           familyi={W\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+        {{hash=805b79e6830222e1ecc4c9785a36e2ed}{%
+           family={Furtner},
+           familyi={F\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f5afbffdd41efe0f5514803c91730bb}
+      \strng{fullhash}{c3b97a384e769f9c3a7d9a8bdc2f4158}
+      \strng{fullhashraw}{c3b97a384e769f9c3a7d9a8bdc2f4158}
+      \strng{bibnamehash}{3f5afbffdd41efe0f5514803c91730bb}
+      \strng{authorbibnamehash}{3f5afbffdd41efe0f5514803c91730bb}
+      \strng{authornamehash}{3f5afbffdd41efe0f5514803c91730bb}
+      \strng{authorfullhash}{c3b97a384e769f9c3a7d9a8bdc2f4158}
+      \strng{authorfullhashraw}{c3b97a384e769f9c3a7d9a8bdc2f4158}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a general optimization model that enables the selection of fuel conversion technologies, capacities, biomass locations, and the logistics of transportation from the locations of forestry resources to the conversion sites and then to the final markets. A mixed integer linear programming (MILP) model has been formulated and implemented in a commercial software package (GAMS) using databases built in Excel. The MILP represents decisions regarding (1) the optimal number, locations, and sizes of various types of processing plants, (2) the amounts of biomass, intermediate products, and final products to be transported between the selected locations over a selected period, and maximizes the objective function of overall profit. The model has been tested based on an industry-representative data set that contains information on the existing wood resources, final product market locations and demands, and candidate locations and sizes for different types of processing plants, as well as the costs associated with the various processing units and transportation of materials, covering the Southeastern region of the United States. The model is applied to design both a distributed, and a more centralized, conversion system. The overall profits, values, cost, and supply network designs of both systems are analyzed using the optimization model. In particular, we investigate: 1) which parameters have major effect on the overall economics, and 2) the benefits of going to more distributed types of processing networks, in terms of the overall economics and the robustness to demand variations.}
+      \field{issn}{0961-9534}
+      \field{journaltitle}{Biomass and Bioenergy}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Design of Biomass Processing Network for Biofuel Production Using an {{MILP}} Model}
+      \field{urlday}{4}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{35}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{853\bibrangedash 871}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.biombioe.2010.11.008
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Optimization/Kim et al. - 2011 - Design of biomass processing network for biofuel production using an MILP model.pdf;/home/diego/Software/Zotero/data/storage/VIRD9A6F/S0961953410003983.html
+      \endverb
+      \keyw{Biofuel,Biomass,Optimization,Robustness,Supply chain network}
+    \endentry
+    \entry{theozzoMILPFrameworkOptimal2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ff20ffb4c4709b1a01289c4ccec45207}{%
+           family={Theozzo},
+           familyi={T\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=84b7cef3de1dc5f7c594d87e2c49a915}{%
+           family={{Teles dos Santos}},
+           familyi={T\bibinitperiod},
+           given={Moises},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{fullhash}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{fullhashraw}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{bibnamehash}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{authorbibnamehash}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{authornamehash}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{authorfullhash}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \strng{authorfullhashraw}{b4786c0f04a5b1112e0a46fdf06c5c4d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Forest systems represent an important source of biomass for biorefineries. However, very complex dynamics impose difficulties in its efficient design. The present work proposes an optimization framework for biorefineries design that considers these dynamics. Four interconnected decision layers were considered: biomass supply, conversion processes, storage, and markets. The model is formulated as a MILP for maximizing the operational Net Present Value. An illustrative case-study was presented for lignin extraction in eucalyptus Kraft Pulp mills in Brazil. Land availability, forest productivity, and interest rates were fundamental for the location and sizing of production facilities. Logistics networks prioritized the minimization of sales taxes over transportation distance. The precipitation technology has become financially attractive in a scenario with a 50\% lignin price increase. The optimal technology location was Sao Paulo due to lower opportunities costs and markets' vicinity. These outcomes highlight the importance of the whole supply chain evaluation in biorefinery design.}
+      \field{issn}{0098-1354}
+      \field{journaltitle}{Computers \& Chemical Engineering}
+      \field{month}{3}
+      \field{title}{A {{MILP}} Framework for Optimal Biorefinery Design That Accounts for Forest Biomass Dynamics}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{146}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{107201}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.compchemeng.2020.107201
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Optimization/Theozzo and Teles dos Santos - 2021 - A MILP framework for optimal biorefinery design that accounts for forest biomass dynamics.pdf;/home/diego/Software/Zotero/data/storage/7YWIY7RR/S0098135420312448.html
+      \endverb
+      \keyw{Forest biorefinery,Integrated biorefinery,MILP,Optimization,Pulp and paper}
+    \endentry
+    \entry{carvalhoMatrizesDistanciasTempo2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5848e1c674e54729a1591cb6feb8e1e5}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Lucas\bibnamedelima Resende},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=a5ce834cba7242b36eaa5d37cbf3a420}{%
+           family={Amaral},
+           familyi={A\bibinitperiod},
+           given={Pedro\bibnamedelimb Vasconcelos\bibnamedelima Maia},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={do},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=55a7a4556017cce9e30d45430bfd00da}{%
+           family={Mendes},
+           familyi={M\bibinitperiod},
+           given={Philipe\bibnamedelima Scherrer},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cedeplar, Universidade Federal de Minas Gerais}%
+      }
+      \strng{namehash}{b59e08ed50a80391f39fe3c0eba4508a}
+      \strng{fullhash}{a37ffeb7ec4e8e5251b0d01380239578}
+      \strng{fullhashraw}{a37ffeb7ec4e8e5251b0d01380239578}
+      \strng{bibnamehash}{a37ffeb7ec4e8e5251b0d01380239578}
+      \strng{authorbibnamehash}{a37ffeb7ec4e8e5251b0d01380239578}
+      \strng{authornamehash}{b59e08ed50a80391f39fe3c0eba4508a}
+      \strng{authorfullhash}{a37ffeb7ec4e8e5251b0d01380239578}
+      \strng{authorfullhashraw}{a37ffeb7ec4e8e5251b0d01380239578}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This working paper describes the methodological procedure for calculating distances and travel time between the 5,570 Brazilian municipalities using the APIs from Google Maps (Application Programming Interface) and, mainly, OpenStreet Maps. This is an update of the results of Carvalho et at. (2016). The data generated by this work provide relevant information that can be used by other academic works with the most diverse applications, such as, for example, applications in regional economics, dynamic allocation models, operational research, spatial econometrics or general equilibrium models. Therefore, the main objective of this work is to build a database that can be used in several applied studies.}
+      \field{journaltitle}{Textos para Discussão Cedeplar-UFMG}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{630}
+      \field{shorttitle}{Matrizes de Distâncias e Tempo de Deslocamento Rodoviário Entre Os Municípios Brasileiros}
+      \field{title}{Matrizes de Distâncias e Tempo de Deslocamento Rodoviário Entre Os Municípios Brasileiros : Uma Atualização Metodológica Para 2020}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Agrowaste/Carvalho et al_2021_Matrizes de distâncias e tempo de deslocamento rodoviário entre os municípios.pdf;/home/diego/Software/Zotero/data/storage/DQ6NELQE/td630.html
+      \endverb
+      \keyw{municipal districts,traveling distance matrix,traveling time matrix}
+    \endentry
+    \entry{IBGEPAMProducao}{misc}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/9117-producao-agricola-municipal-culturas-temporarias-e-permanentes.html}
+      \field{title}{{{IBGE}} - {{PAM}} - {{Produção Agrícola Municipal}}}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Software/Zotero/data/storage/YH7QA3ID/9117-producao-agricola-municipal-culturas-temporarias-e-permanentes.html
+      \endverb
+    \endentry
+    \entry{souzaTheoreticalTechnicalAssessment2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=b9e9003bf534dc0934fa2df7cdef03ee}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Lidiane},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1cc4abe7918795d8321678c0b27937d5}{%
+           family={Rajabi\bibnamedelima Hamedani},
+           familyi={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4199d393fafa2d63337fa861b40f5601}{%
+           family={Silva\bibnamedelima Lora},
+           familyi={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Electo\bibnamedelima Eduardo},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=90ea98e767ad220918f32e997781f257}{%
+           family={Escobar\bibnamedelima Palacio},
+           familyi={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Josè\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=efc600c1472536ba1e7c2ff43dce8bd9}{%
+           family={Comodi},
+           familyi={C\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2f8697b22b73f629d3f829c0e0fe148f}{%
+           family={Villarini},
+           familyi={V\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9e4e64ada275942beed0468ff6ca66cc}{%
+           family={Colantoni},
+           familyi={C\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{47d7176a30bf95a99469656478bd38b4}
+      \strng{fullhash}{ccaa00f044e5e005dac17fbf039cd886}
+      \strng{fullhashraw}{ccaa00f044e5e005dac17fbf039cd886}
+      \strng{bibnamehash}{47d7176a30bf95a99469656478bd38b4}
+      \strng{authorbibnamehash}{47d7176a30bf95a99469656478bd38b4}
+      \strng{authornamehash}{47d7176a30bf95a99469656478bd38b4}
+      \strng{authorfullhash}{ccaa00f044e5e005dac17fbf039cd886}
+      \strng{authorfullhashraw}{ccaa00f044e5e005dac17fbf039cd886}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Bioeconomy, as a key strategic innovation pillar, supports energy transition and involves biomass resource assessment and its application. Biomass has an enormous potential to fulfil the domestic energy demand in Brazil. Hence, this study aims to quantify the theoretical, technical and techno-economic potential of agricultural and forestry residues to generate electricity via thermochemical processes in Brazil for the 2018--2050 timeframe. The analysis was carried out via an integrated approach, according to statistical reports and literature data. Conversion technologies for the estimation of technical potential consist of organic rankine cycle, combustion with conventional rankine cycle and gasification with an internal combustion engine. The results showed that Brazil's theoretical potential is 7185.39 PJ and 16,708.12 PJ in 2018 and 2050. The technical potential in 2018 is 1795.16 PJ, generating 71,236.47 MWe, while the potential in 2050 is projected as 5771.49.4 PJ providing 229,027.31 MWe. The main restrictions are dispersed distribution of biomass over a large area, supply costs, and low efficiencies for energy conversion. Therefore, the techno-economic potential is around 19,704.01 MWe and 63,348.95 MWe for 2018 and 2050. The north region has the lowest electricity generation potential, while the southeast region takes a prominent position to generate electricity mainly from sugarcane residues. Levelized costs of electricity values varied from 10.532 to 15.507 US\$/MWh for 2018 and from 7.320 to 13.002 US\$/MWh for 2050, which highly influenced by the biomass price. The results of this study can support policy-making towards future planning on Brazilian bioenergy.}
+      \field{issn}{2352-4847}
+      \field{journaltitle}{Energy Reports}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Theoretical and Technical Assessment of Agroforestry Residue Potential for Electricity Generation in {{Brazil}} towards 2050}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{2574\bibrangedash 2587}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.egyr.2021.04.026
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Agrowaste/Souza et al_2021_Theoretical and technical assessment of agroforestry residue potential for.pdf;/home/diego/Software/Zotero/data/storage/34A56VZJ/S2352484721002420.html
+      \endverb
+      \keyw{Agricultural and forestry residues,Brazil,Technical potential,Theoretical potential}
+    \endentry
+    \entry{IFASTATFertilizerUse}{misc}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.ifastat.org/consumption/fertilizer-use-by-crop}
+      \field{title}{{{IFASTAT}} {|} {{Fertilizer Use By Crop}}}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Software/Zotero/data/storage/H44I8V6L/fertilizer-use-by-crop.html
+      \endverb
+    \endentry
+    \entry{jorapurSugarcaneLeafbagasseGasifiers1997}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a6ba654356e0ac2310820b6d58adc0a8}{%
+           family={Jorapur},
+           familyi={J\bibinitperiod},
+           given={Rajeev},
+           giveni={R\bibinitperiod}}}%
+        {{hash=eb28dbd9e173a5fee19cbed7537a8043}{%
+           family={Rajvanshi},
+           familyi={R\bibinitperiod},
+           given={Anil\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{463762ba2767ca2448a6818429b46aa7}
+      \strng{fullhash}{463762ba2767ca2448a6818429b46aa7}
+      \strng{fullhashraw}{463762ba2767ca2448a6818429b46aa7}
+      \strng{bibnamehash}{463762ba2767ca2448a6818429b46aa7}
+      \strng{authorbibnamehash}{463762ba2767ca2448a6818429b46aa7}
+      \strng{authornamehash}{463762ba2767ca2448a6818429b46aa7}
+      \strng{authorfullhash}{463762ba2767ca2448a6818429b46aa7}
+      \strng{authorfullhashraw}{463762ba2767ca2448a6818429b46aa7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper reports the commercial-scale (1080 MJ h-1) development of a gasification system using low-density biomass, for thermal applications. The gasifier can handle fuels such as sugarcane leaves and bagasse, bajra stalks, sweet sorghum stalks and bagasse etc. The system was tested for {$>$} 700 h under laboratory conditions at 288--1080 MJ h-1 output levels. The HHV of the gas was 3.56--4.82 MJ m-3 (s.t.p.). The system also produces char. {$\sim$} 24wt\% of the original fuel. It can be briquetted to form an excellent fuel for wood stoves or can be used as a soil conditioner. After successful laboratory trial, the system was also tested at a metallurgical company, where it was retrofitted to an oil-fired furnace for baking speciality ceramics. The furnace was operated exclusively on the gasification system and the product quality was on a par with, if not better than, that obtained during oil-fired operation. The economics of the system are also presented.}
+      \field{issn}{0961-9534}
+      \field{journaltitle}{Biomass and Bioenergy}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Sugarcane Leaf-Bagasse Gasifiers for Industrial Heating Applications}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{13}
+      \field{year}{1997}
+      \field{urldateera}{ce}
+      \field{pages}{141\bibrangedash 146}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/S0961-9534(97)00014-7
+      \endverb
+      \verb{file}
+      \verb /home/diego/Software/Zotero/data/storage/PSHECI9U/S0961953497000147.html
+      \endverb
+      \keyw{bagasse,Biomass,gasification,low-density biomass,sugarcane leaves,thermal applications}
+    \endentry
+    \entry{tahirCatalyticFastPyrolysis2021}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=de175aa1be083fc5869f73d33e452835}{%
+           family={Tahir},
+           familyi={T\bibinitperiod},
+           given={Mudassir\bibnamedelima Hussain},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e1cbb9cc2e24d89dab8bb12ff642ca9c}{%
+           family={Irfan},
+           familyi={I\bibinitperiod},
+           given={Rana\bibnamedelima Muhammad},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8bbb1837f321d1039970c82d2386c6ce}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Muhammad\bibnamedelima Bilal},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=f3a3f0f0689e73bb372bd5c6f05d7811}{%
+           family={Alhumade},
+           familyi={A\bibinitperiod},
+           given={Hesham},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9422799ef308ffbec144cc3489b4a251}{%
+           family={{Al-Turki}},
+           familyi={A\bibinitperiod},
+           given={Yusuf},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fefc74b5cdaca1b9231658fb6b762d8f}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xingxing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c90371c49ef2d4954760504a2b476a86}{%
+           family={Karim},
+           familyi={K\bibinitperiod},
+           given={Abdul},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a041ada5f42664313ddcbf8ae28cdcbf}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9c547fbbb545f5f4c64b705be04ee573}{%
+           family={Rathore},
+           familyi={R\bibinitperiod},
+           given={Hassaan\bibnamedelima Anwer},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society}%
+      }
+      \strng{namehash}{e23fbc8ce4d00000b61e6ff2691c8e11}
+      \strng{fullhash}{34b58dfa5dfb5b0bd776c987d8ec4ea8}
+      \strng{fullhashraw}{34b58dfa5dfb5b0bd776c987d8ec4ea8}
+      \strng{bibnamehash}{e23fbc8ce4d00000b61e6ff2691c8e11}
+      \strng{authorbibnamehash}{e23fbc8ce4d00000b61e6ff2691c8e11}
+      \strng{authornamehash}{e23fbc8ce4d00000b61e6ff2691c8e11}
+      \strng{authorfullhash}{34b58dfa5dfb5b0bd776c987d8ec4ea8}
+      \strng{authorfullhashraw}{34b58dfa5dfb5b0bd776c987d8ec4ea8}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this study, soybean straw (SS) as a promising source of glycolaldehyde-rich bio-oil production and extraction was investigated. Proximate and ultimate analysis of SS was performed to examine the feasibility and suitability of SS for thermochemical conversion design. The effect of the co-catalyst (CaCl2 + ash) on glycolaldehyde concentration (\%) was examined. Thermogravimetric-Fourier-transform infrared (TG-FTIR) analysis was applied to optimize the pyrolysis temperature and biomass-to-catalyst ratio for glycolaldehyde-rich bio-oil production. By TG-FTIR analysis, the highest glycolaldehyde concentration of 8.57\% was obtained at 500 {$^\circ$}C without the catalyst, while 12.76 and 13.56\% were obtained with the catalyst at 500 {$^\circ$}C for a 1:6 ratio of SS-to-CaCl2 and a 1:4 ratio of SS-to-ash, respectively. Meanwhile, the highest glycolaldehyde concentrations (\%) determined by gas chromatography--mass spectrometry (GC--MS) analysis for bio-oils produced at 500 {$^\circ$}C (without the catalyst), a 1:6 ratio of SS-to-CaCl2, and a 1:4 ratio of SS-to-ash were found to be 11.3, 17.1, and 16.8\%, respectively. These outcomes were fully consistent with the TG-FTIR results. Moreover, the effect of temperature on product distribution was investigated, and the highest bio-oil yield was achieved at 500 {$^\circ$}C as 56.1\%. This research work aims to develop an environment-friendly extraction technique involving aqueous-based imitation for glycolaldehyde extraction with 23.6\% yield. Meanwhile, proton nuclear magnetic resonance (1H NMR) analysis was used to confirm the purity of the extracted glycolaldehyde, which was found as 91\%.}
+      \field{journaltitle}{ACS Omega}
+      \field{month}{12}
+      \field{number}{49}
+      \field{title}{Catalytic {{Fast Pyrolysis}} of {{Soybean Straw Biomass}} for {{Glycolaldehyde-Rich Bio-oil Production}} and {{Subsequent Extraction}}}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{33694\bibrangedash 33700}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1021/acsomega.1c04717
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Agrowaste/Tahir et al_2021_Catalytic Fast Pyrolysis of Soybean Straw Biomass for Glycolaldehyde-Rich.pdf
+      \endverb
+    \endentry
+    \entry{evansDevelopmentBiomassGasification1988}{report}{}{}
+      \name{author}{4}{}{%
+        {{hash=66729225fe4f072f7ea074fc886acd05}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={R.J.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f86924e7953f869fe84db5edc71dfa77}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={R.A.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9b478417525618cfbdf30e362fe955bf}{%
+           family={Onischak},
+           familyi={O\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ec87b72fd7ebeb1901bf3c344442f9cb}{%
+           family={Babu},
+           familyi={B\bibinitperiod},
+           given={S.P.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb9bd25d182d87c7ca3e26427955b3c1}
+      \strng{fullhash}{53f0cd21d43ecd3345e4085e46f06bc6}
+      \strng{fullhashraw}{53f0cd21d43ecd3345e4085e46f06bc6}
+      \strng{bibnamehash}{bb9bd25d182d87c7ca3e26427955b3c1}
+      \strng{authorbibnamehash}{bb9bd25d182d87c7ca3e26427955b3c1}
+      \strng{authornamehash}{bb9bd25d182d87c7ca3e26427955b3c1}
+      \strng{authorfullhash}{53f0cd21d43ecd3345e4085e46f06bc6}
+      \strng{authorfullhashraw}{53f0cd21d43ecd3345e4085e46f06bc6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{PNL-6518, 5206147}
+      \field{title}{Development of Biomass Gasification to Produce Substitute Fuels}
+      \field{type}{techreport}
+      \field{urlday}{6}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{1988}
+      \field{urldateera}{ce}
+      \field{pages}{PNL\bibrangedash 6518\bibrangessep 5206147}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2172/5206147
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Agrowaste/Evans et al. - 1988 - Development of biomass gasification to produce substitute fuels.pdf
+      \endverb
+    \endentry
+    \entry{gaurAtlasThermalData1995}{report}{}{}
+      \name{author}{2}{}{%
+        {{hash=4459706c92b25c94f6b8a62ea772b0a8}{%
+           family={Gaur},
+           familyi={G\bibinitperiod},
+           given={Siddharta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=54a9774102dc5462291a8274d44366b8}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Renewable Energy Laboratory}%
+      }
+      \strng{namehash}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{fullhash}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{fullhashraw}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{bibnamehash}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{authorbibnamehash}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{authornamehash}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{authorfullhash}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \strng{authorfullhashraw}{7f2f736b9f37594ee1e0bffffc2c1711}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{Atlas of {{Thermal Data}} for {{Biomass}} and {{Other Fuels}}}
+      \field{type}{techreport}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{1995}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Agrowaste/1995_Atlas of Thermal Data for Biomass and Other Fuels.pdf;/home/diego/Software/Zotero/data/storage/YFNJFMCB/atlas-of-thermal-data-for-biomass-and-other-fuels.html
+      \endverb
+    \endentry
+    \entry{anggonoCharacteristicsBiomassBriquettes2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=fb5e5e12d0b9b972b6f98ced91dc8c57}{%
+           family={Anggono},
+           familyi={A\bibinitperiod},
+           given={Willyanto},
+           giveni={W\bibinitperiod}}}%
+        {{hash=23494d8356ba507c445a5920e40383a8}{%
+           family={Gotama},
+           familyi={G\bibinitperiod},
+           given={Gabriel\bibnamedelima Jeremy},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8231440133ba6f353f7877e06b23ad11}{%
+           family={Pronk},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=54e898fa8d53c055f66d16de23ac3090}{%
+           family={Hernando},
+           familyi={H\bibinitperiod},
+           given={Ivan\bibnamedelima Christian},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9afea5102b19fe73d7da0c8a4641e68f}{%
+           family={Sutrisno},
+           familyi={S\bibinitperiod},
+           given={Teng},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{7ef08561610cc79e8e74fdbb49cf8a15}
+      \strng{fullhash}{4ece526786b435f5bd5094a57b267d91}
+      \strng{fullhashraw}{4ece526786b435f5bd5094a57b267d91}
+      \strng{bibnamehash}{7ef08561610cc79e8e74fdbb49cf8a15}
+      \strng{authorbibnamehash}{7ef08561610cc79e8e74fdbb49cf8a15}
+      \strng{authornamehash}{7ef08561610cc79e8e74fdbb49cf8a15}
+      \strng{authorfullhash}{4ece526786b435f5bd5094a57b267d91}
+      \strng{authorfullhashraw}{4ece526786b435f5bd5094a57b267d91}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Coffee husk is a waste from coffee milling, which is usually used by farmers as a natural fertilizer. However, it is not uncommon that coffee husk is entirely discarded despite their potential as fuel briquette. Furthermore, coffee husk may replace tapioca as a non-edible binder alternative to tapioca. As such, this study aims to determine the potential of coffee husk waste as briquette material and binder. Manufacturing parameters that include the particle size, the biomass-to-binder ratio, and the press pressure, were varied, and the briquettes were analyzed based on the high heating value (HHV), and using proximate and ultimate analyses under ASTM standards. In addition, common combustion characteristics, such as flame temperature, ignition time, burning duration, and burning rate were determined. The highest HHV was found in coffee husk briquettes without adhesive at 3811 Kcal/Kg. The combustion characteristic test showed that briquettes with a particle size of 60 mesh and a press pressure of 2 MPa have the most desired combustion characteristics.}
+      \field{issn}{2117-4458}
+      \field{journaltitle}{BIO Web of Conferences}
+      \field{langid}{english}
+      \field{title}{Characteristics of Biomass Briquettes from Coffee Husk as Sustainable Fuel}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{62}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{03002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/bioconf/20236203002
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Agrowaste/Anggono et al_2023_Characteristics of biomass briquettes from coffee husk as sustainable fuel.pdf
+      \endverb
+    \endentry
+    \entry{martelliMultiobjectiveOptimizationSelexol2015}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=4084bc9be007895ae9cc07c4636429a4}{%
+           family={Martelli},
+           familyi={M\bibinitperiod},
+           given={Emanuele},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ceb488608da2b6148f756e984ef4cf9e}{%
+           family={Gatti},
+           familyi={G\bibinitperiod},
+           given={Manuele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e178e64b50c42c070d8d7b920156890d}{%
+           family={Maréchal},
+           familyi={M\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0fbcf4a01e99557383d2647df41fb83b}{%
+           family={Consonni},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d03812c566d5c4cff55af035cd893ccc}
+      \strng{fullhash}{7f5511989484e41ac4120eb0a578a32e}
+      \strng{fullhashraw}{7f5511989484e41ac4120eb0a578a32e}
+      \strng{bibnamehash}{d03812c566d5c4cff55af035cd893ccc}
+      \strng{authorbibnamehash}{d03812c566d5c4cff55af035cd893ccc}
+      \strng{authornamehash}{d03812c566d5c4cff55af035cd893ccc}
+      \strng{authorfullhash}{7f5511989484e41ac4120eb0a578a32e}
+      \strng{authorfullhashraw}{7f5511989484e41ac4120eb0a578a32e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper focuses on the multi-objective optimization of a Selexol{®} process for the selective removal of CO2 and H2S from coal gasification-derived syngas. A systematic analysis based on a thorough literature review of scheme options, detailed process simulation (including also a properly calibrated PC-SAFT Equation Of State) and design optimization is carried out. More in detail, the design optimization procedure enables the simultaneous optimization of process, utility design, and heat integration, and takes account all of the interactions with the rest of the plant. The multi-objective optimization is carried out with a two-stage approach combining the NSGA-II genetic algorithm with the efficient direct-search method PGS-COM. Results show that in the Selexol{®} process is crucial to optimize the pressures of the flash cascade releasing the CO2-rich stream to store, because the largest energy penalties are the compression power and the steam necessary for reboiling.}
+      \field{booktitle}{{{ECOS}} 2015 - {{THE 28TH INTERNATIONAL CONFERENCE ON EFFICIENCY}}, {{COST}}, {{OPTIMIZATION}}, {{SIMULATION AND ENVIRONMENTAL IMPACT OF ENERGY SYSTEMS}}}
+      \field{month}{7}
+      \field{title}{Multi-Objective {{Optimization}} of a {{Selexol}}{®} {{Process}} for the {{Selective Removal}} of {{CO2}} and {{H2S}} from {{Coal-derived Syngas}}}
+      \field{year}{2015}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/CCS/Martelli et al_2015_Multi-objective Optimization of a Selexol® Process for the Selective Removal of.pdf
+      \endverb
+    \endentry
+    \entry{mokhatabNaturalGasSweetening2012}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=3f8fbb60b870a4ab72cce11ed8dd24cc}{%
+           family={Mokhatab},
+           familyi={M\bibinitperiod},
+           given={Saeid},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b878b86e9b80876ef1741731549c832b}{%
+           family={Poe},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{fullhash}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{fullhashraw}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{bibnamehash}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{authorbibnamehash}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{authornamehash}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{authorfullhash}{438e22be3d7cea24081db1b81959f7fa}
+      \strng{authorfullhashraw}{438e22be3d7cea24081db1b81959f7fa}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of {{Natural Gas Transmission}} and {{Processing}}}
+      \field{isbn}{978-0-12-386914-2}
+      \field{langid}{english}
+      \field{title}{Natural {{Gas Sweetening}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{253\bibrangedash 290}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1016/B978-0-12-386914-2.00007-8
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/CCS/Mokhatab_Poe_2012_Natural Gas Sweetening.pdf
+      \endverb
+    \endentry
+    \entry{dymentAcidGasCleaning2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=bb97d2abe58e088467c97c53902ca81c}{%
+           family={Dyment},
+           familyi={D\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7f8ebec62ee2917cdaab0bf58d660788}{%
+           family={Watanasiri},
+           familyi={W\bibinitperiod},
+           given={Suphat},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{fullhash}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{fullhashraw}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{bibnamehash}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{authorbibnamehash}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{authornamehash}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{authorfullhash}{00ba13317713bd7de06dfd94f09b7df8}
+      \strng{authorfullhashraw}{00ba13317713bd7de06dfd94f09b7df8}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Acid {{Gas Cleaning}} Using {{DEPG Physical Solvents}}: {{Validation}} with {{Experimental}} and {{Plant Data}}}
+      \field{year}{2015}
+      \field{pages}{18}
+      \range{pages}{1}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/CCS/Dyment_Watanasiri_2015_Acid Gas Cleaning using DEPG Physical Solvents.pdf
+      \endverb
+    \endentry
+    \entry{sandlerChemicalBiochemicalEngineering2017}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b2fa8ab5b73d2a6d180eb387d15d3688}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Stanley\bibnamedelima I.},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{fullhash}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{fullhashraw}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{bibnamehash}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{authorbibnamehash}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{authornamehash}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{authorfullhash}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \strng{authorfullhashraw}{b2fa8ab5b73d2a6d180eb387d15d3688}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5th}
+      \field{isbn}{978-0-470-50479-6}
+      \field{langid}{english}
+      \field{title}{Chemical, Biochemical and Engineering Thermodynamics}
+      \field{year}{2017}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Geral/Sandler_2017_Chemical, biochemical and engineering thermodynamics.pdf
+      \endverb
+      \keyw{Biochemical engineering,Chemical engineering,Textbooks,Thermodynamics}
+    \endentry
+    \entry{stoeckerIndustrialRefrigerationHandbook2004}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=81cbc87b502713675f7420e93a570ee8}{%
+           family={Stoecker},
+           familyi={S\bibinitperiod},
+           given={Wilbert\bibnamedelima F},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{81cbc87b502713675f7420e93a570ee8}
+      \strng{fullhash}{81cbc87b502713675f7420e93a570ee8}
+      \strng{fullhashraw}{81cbc87b502713675f7420e93a570ee8}
+      \strng{bibnamehash}{81cbc87b502713675f7420e93a570ee8}
+      \strng{authorbibnamehash}{81cbc87b502713675f7420e93a570ee8}
+      \strng{authornamehash}{81cbc87b502713675f7420e93a570ee8}
+      \strng{authorfullhash}{81cbc87b502713675f7420e93a570ee8}
+      \strng{authorfullhashraw}{81cbc87b502713675f7420e93a570ee8}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Industrial {{Refrigeration Handbook}}}
+      \field{year}{2004}
+      \verb{file}
+      \verb /home/diego/Drive/Library/General/Process Technology/HVAC and Refrigeration/Stoecker_2004_Industrial Refrigeration Handbook.pdf
+      \endverb
+    \endentry
+    \entry{turtonAnalysisSynthesisDesign2018}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=34f213c657076dfdf4976c38e2a3ce3c}{%
+           family={Turton},
+           familyi={T\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e4d47ea1b2ca1eb71b9bb794a90ce4d1}{%
+           family={Shaeiwitz},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9ac38fa8b7858dcead823c14429eadcd}{%
+           family={Bhattacharyya},
+           familyi={B\bibinitperiod},
+           given={Debangsu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2ffb42e531878ccdc10fa711bfd94d52}{%
+           family={Whiting},
+           familyi={W\bibinitperiod},
+           given={Wallace\bibnamedelima B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston Columbus Indianapolis New York San Francisco Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{1dd513fea86ae34f62ed3efec6ca3457}
+      \strng{fullhash}{b175eda61d7be8886986a847a2482302}
+      \strng{fullhashraw}{b175eda61d7be8886986a847a2482302}
+      \strng{bibnamehash}{1dd513fea86ae34f62ed3efec6ca3457}
+      \strng{authorbibnamehash}{1dd513fea86ae34f62ed3efec6ca3457}
+      \strng{authornamehash}{1dd513fea86ae34f62ed3efec6ca3457}
+      \strng{authorfullhash}{b175eda61d7be8886986a847a2482302}
+      \strng{authorfullhashraw}{b175eda61d7be8886986a847a2482302}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Fifth edition}
+      \field{isbn}{978-0-13-417740-3}
+      \field{langid}{english}
+      \field{series}{Prentice {{Hall}} International Series in the Physical and Chemical Engineering Sciences}
+      \field{title}{Analysis, {{Synthesis}}, and {{Design}} of {{Chemical Processes}}}
+      \field{year}{2018}
+      \verb{file}
+      \verb /home/diego/Drive/Library/General/Chemical Engineering/Turton et al_2018_Analysis, Synthesis, and Design of Chemical Processes.pdf
+      \endverb
+    \endentry
+    \entry{antonettiWastetoChemicalsCircularEconomy2017}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=7745f67b40888b4cf281840cd51726e1}{%
+           family={Antonetti},
+           familyi={A\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4a274fbabfac86e903448bae051a1d9d}{%
+           family={Iaquaniello},
+           familyi={I\bibinitperiod},
+           given={Gaetano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=25f3c8947e1972c51672d47be291ff85}{%
+           family={Salladini},
+           familyi={S\bibinitperiod},
+           given={Annarita},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b2b84d0621ba48de6460d0888888a2e}{%
+           family={Spadaccini},
+           familyi={S\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=36b8aa698aad89bb580398e95d5275af}{%
+           family={Perathoner},
+           familyi={P\bibinitperiod},
+           given={Siglinda},
+           giveni={S\bibinitperiod}}}%
+        {{hash=09e1d1c95e4c8a629b47c4ea7e994437}{%
+           family={Centi},
+           familyi={C\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e53e1d2c1861a232d3a2ff297a935ec6}
+      \strng{fullhash}{916a34ab5f6ebff8977786d5047ee47f}
+      \strng{fullhashraw}{916a34ab5f6ebff8977786d5047ee47f}
+      \strng{bibnamehash}{e53e1d2c1861a232d3a2ff297a935ec6}
+      \strng{authorbibnamehash}{e53e1d2c1861a232d3a2ff297a935ec6}
+      \strng{authornamehash}{e53e1d2c1861a232d3a2ff297a935ec6}
+      \strng{authorfullhash}{916a34ab5f6ebff8977786d5047ee47f}
+      \strng{authorfullhashraw}{916a34ab5f6ebff8977786d5047ee47f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract The economics and environmental impact of a new technology for the production of urea from municipal solid waste, particularly the residue-derived fuel (RdF) fraction, is analyzed. Estimates indicate a cost of production of approximately {\texteuro}135 per ton of urea (internal rate of return more than 10\,\%) and savings of approximately 0.113\>tons of CH 4 and approximately 0.78\>tons of CO 2 per ton of urea produced. Thus, the results show that this waste-to-urea (WtU) technology is both economically valuable and environmentally advantageous (in terms of saving resources and limiting carbon footprint) for the production of chemicals from municipal solid waste in comparison with both the production of urea with conventional technology (starting from natural gas) and the use of RdF to produce electrical energy (waste-to-energy). A further benefit is the lower environmental impact of the solid residue produced from RdF conversion. The further benefit of this technology is the possibility to realize distributed fertilizer production.}
+      \field{issn}{1864-5631, 1864-564X}
+      \field{journaltitle}{ChemSusChem}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{5}
+      \field{shorttitle}{Waste-to-{{Chemicals}} for a {{Circular Economy}}}
+      \field{title}{Waste-to-{{Chemicals}} for a {{Circular Economy}}: {{The Case}} of {{Urea Production}} ({{Waste}}-to-{{Urea}})}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{10}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{912\bibrangedash 920}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1002/cssc.201601555
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Ureia/Antonetti et al_2017_Waste‐to‐Chemicals for a Circular Economy.pdf
+      \endverb
+      \keyw{CAPEX}
+    \endentry
+    \entry{cloeteCosteffectiveCleanAmmonia2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b600c1ed1b5f5f22b10513125dc67b0e}{%
+           family={Cloete},
+           familyi={C\bibinitperiod},
+           given={Schalk},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5357be1855e23b549eb6b3a7bb4516dd}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Mohammed\bibnamedelima Nazeer},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=c551e3d5d94cb6c13267c75074811eb3}{%
+           family={Nazir},
+           familyi={N\bibinitperiod},
+           given={Shareq\bibnamedelima Mohd},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=35e552acf71ded5abdd9364b57708fd5}{%
+           family={Amini},
+           familyi={A\bibinitperiod},
+           given={Shahriar},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a02b04355ac936a345a4554d715a986}
+      \strng{fullhash}{21060ce90c03fe4efb67070f43ea584d}
+      \strng{fullhashraw}{21060ce90c03fe4efb67070f43ea584d}
+      \strng{bibnamehash}{5a02b04355ac936a345a4554d715a986}
+      \strng{authorbibnamehash}{5a02b04355ac936a345a4554d715a986}
+      \strng{authornamehash}{5a02b04355ac936a345a4554d715a986}
+      \strng{authorfullhash}{21060ce90c03fe4efb67070f43ea584d}
+      \strng{authorfullhashraw}{21060ce90c03fe4efb67070f43ea584d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ammonia is a widely produced industrial chemical, primarily for use in the fertilizer industry. Recently, interest has also grown in ammonia as a carbon-free energy carrier because it is easier to store and transport than hydrogen. However, ammonia is primarily produced from natural gas with a considerable carbon footprint if the produced CO2 is not captured and stored. This work therefore presents a new ammonia production method based on membrane-assisted autothermal reforming (MA-ATR) for hydrogen production from natural gas with integrated CO2 capture. The MA-ATR reactor offers great process intensification benefits, leading to considerable efficiency gains as well as a simpler and cheaper plant. In the base case, MA-ATR achieves 10.7\% greater efficiency, 14.9\% lower NH3 production costs and 16.5\%-points greater CO2 avoidance than a conventional ammonia plant where captured CO2 is compressed for transport and storage. This economic advantage of MA-ATR increases with higher natural gas prices, lower electricity prices, lower membrane costs and higher CO2 prices. All elements of the proposed plant are mature technologies aside from the membranes and the oxygen carrier material. Further development and demonstration of these two elements is therefore recommended to realize the promising techno-economic performance reported in this study.}
+      \field{issn}{1385-8947}
+      \field{journaltitle}{Chemical Engineering Journal}
+      \field{month}{1}
+      \field{title}{Cost-Effective Clean Ammonia Production Using Membrane-Assisted Autothermal Reforming}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{404}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{126550}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cej.2020.126550
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Costing/Cloete et al_2021_Cost-effective clean ammonia production using membrane-assisted autothermal.pdf;/home/diego/Software/Zotero/data/storage/KGULGY7U/S1385894720326784.html
+      \endverb
+      \keyw{Ammonia,Autothermal reforming,CO capture,Membranes,Techno-economic assessment}
+    \endentry
+    \entry{imEconomicAssessmentOptimization2015}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=24e2edfe0d38eb2c882ed044b2b1e004}{%
+           family={Im},
+           familyi={I\bibinitperiod},
+           given={Dasom},
+           giveni={D\bibinitperiod}}}%
+        {{hash=414da7cc64781854b5522b3357eade3e}{%
+           family={Roh},
+           familyi={R\bibinitperiod},
+           given={Kosan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=91f59d28404416251bfdafcf52e2c2f5}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Junhan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=28f9fd20d4afb7f3b26dd96a0bb72564}{%
+           family={Eom},
+           familyi={E\bibinitperiod},
+           given={Yongseok},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=476344bb30d750e92d349d76126fa921}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jay\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8427aded85bfe84dd073c41f2f9642da}
+      \strng{fullhash}{2b46e50ae394e872bc49f96d12a6d1e9}
+      \strng{fullhashraw}{2b46e50ae394e872bc49f96d12a6d1e9}
+      \strng{bibnamehash}{8427aded85bfe84dd073c41f2f9642da}
+      \strng{authorbibnamehash}{8427aded85bfe84dd073c41f2f9642da}
+      \strng{authornamehash}{8427aded85bfe84dd073c41f2f9642da}
+      \strng{authorfullhash}{2b46e50ae394e872bc49f96d12a6d1e9}
+      \strng{authorfullhashraw}{2b46e50ae394e872bc49f96d12a6d1e9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Despite the rising concern with climate change, carbon capture is yet to be implemented widely in industry due to its high cost. In this study, three candidate compounds, dimethyl carbonate (DMC), diethyl carbonate (DEC), and triacetin (TAT), are considered as additives for the solvent, Dimethyl Ethers of Polyethylene Glycol (DEPG), to improve the economics of the Selexol process. To discuss their economic feasibility, the 1-stage Selexol process employing each solvent additive is developed, and their operating and equipment costs are compared with those of the reference process (without the additive). The process employing the TAT additive is shown to be competitive with the reference process in terms of both operating and equipment costs, but DMC and DEC showed a serious problem in terms of solvent loss. For reducing the operating cost and CO2 capture cost further, the lean solvent temperature of the Selexol process with the TAT solvent additive is optimized at various CO2 capture rates.}
+      \field{issn}{1750-5836}
+      \field{journaltitle}{International Journal of Greenhouse Gas Control}
+      \field{month}{11}
+      \field{title}{Economic Assessment and Optimization of the {{Selexol}} Process with Novel Additives}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{42}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{109\bibrangedash 116}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.ijggc.2015.08.001
+      \endverb
+      \verb{file}
+      \verb /home/diego/Software/Zotero/data/storage/EEGF52QJ/S1750583615300463.html
+      \endverb
+      \keyw{Economic evaluation,Optimization,Physical absorption,Selexol process,Solvent additive}
+    \endentry
+    \entry{swansonTechnoeconomicAnalysisBiomasstoliquids2010}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=2bb1464a4e7254f5909e33a61fa63222}{%
+           family={Swanson},
+           familyi={S\bibinitperiod},
+           given={Ryan\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ff4a5f8495b9338a15134c4ebd770bcf}{%
+           family={Platon},
+           familyi={P\bibinitperiod},
+           given={Alexandru},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1d2fde8e7cc78f8a1918d034edb2aebe}{%
+           family={Satrio},
+           familyi={S\bibinitperiod},
+           given={Justinus\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=03b77c64fa417e7746878826116c4aec}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0826a14d71a05f440b915d66917a7b8f}
+      \strng{fullhash}{21a79a04f42d44e0508281ba9ad8f1c0}
+      \strng{fullhashraw}{21a79a04f42d44e0508281ba9ad8f1c0}
+      \strng{bibnamehash}{0826a14d71a05f440b915d66917a7b8f}
+      \strng{authorbibnamehash}{0826a14d71a05f440b915d66917a7b8f}
+      \strng{authornamehash}{0826a14d71a05f440b915d66917a7b8f}
+      \strng{authorfullhash}{21a79a04f42d44e0508281ba9ad8f1c0}
+      \strng{authorfullhashraw}{21a79a04f42d44e0508281ba9ad8f1c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study compares capital and production costs of two biomass-to-liquid production plants based on gasification utilizing 2000 dry Mg per day of corn stover. The focus is to produce liquid transportation fuels with electricity as co-product using commercially available technology within the next 5--8years. The first biorefinery scenario is a low temperature (870{$^\circ$}C, 1598{$^\circ$}F), fluidized bed gasifier and the second scenario a high temperature (1300{$^\circ$}C, 2372{$^\circ$}F), entrained flow gasifier both followed by catalytic Fischer--Tropsch synthesis and hydroprocessing. The scenarios were modeled and investment costs estimated. A discounted cash flow rate of return analysis was performed to determine a fuel product value (PV). The analysis shows that despite higher investment costs for the high temperature gasification scenario, a lower PV results due to higher fuel yield. These nth plant scenarios are expected to produce fuels with a PV in the range of \$4--5 per gallon of gasoline equivalent (\$1.06--1.32 per liter) and require \$500--650 million capital investment. Main factors responsible for this relatively high PV are feedstock cost and return on capital investment. Biomass-to-liquid based on gasification has yet to be commercialized. Hence, a pioneer plant is expected to be more costly to build and operate than an nth plant. Pioneer plant analysis found PV to increase by 60--90\% and capital investment to more than double.}
+      \field{issn}{0016-2361}
+      \field{journaltitle}{Fuel}
+      \field{month}{11}
+      \field{series}{Techno-Economic {{Comparison}} of {{Biomass-to-Biofuels Pathways}}}
+      \field{title}{Techno-Economic Analysis of Biomass-to-Liquids Production Based on Gasification}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{89}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{S11\bibrangedash S19}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.fuel.2010.07.027
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Gaseificação/Swanson et al_2010_Techno-economic analysis of biomass-to-liquids production based on gasification.pdf;/home/diego/Software/Zotero/data/storage/NG9TEDKT/S0016236110003741.html
+      \endverb
+      \keyw{Biofuel,Biomass,Fischer-Tropsch,Gasification,Techno-economics}
+    \endentry
+    \entry{ANEELPortalReports}{report}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{{ANEEL}} {|} {{Portal Reports Abertos}}}
+      \field{type}{techreport}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Software/Zotero/data/storage/QYIY84YG/basestarifas.html
+      \endverb
+    \endentry
+    \entry{epeBENBalancoEnergetico2023}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}{%
+           family={{EPE}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{fullhash}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{fullhashraw}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{bibnamehash}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{authorbibnamehash}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{authornamehash}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{authorfullhash}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \strng{authorfullhashraw}{2cf2fc3c1ee8ed2d9c5691cabc1f8c6d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{BEN}} - Balanço Energético Nacional}
+      \field{type}{techreport}
+      \field{urlday}{14}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Environmental Analysis/EPE_2023_BEN - balanço energético nacional.pdf
+      \endverb
+    \endentry
+    \entry{jonkerEconomicPerformanceGHG2019}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=aa976039a8e1240a5c7a0e1ee0b13fe3}{%
+           family={Jonker},
+           familyi={J\bibinitperiod},
+           given={Jan\bibnamedelima G.G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=dcda1a7277a49397eda399bd2420648e}{%
+           family={Junginger},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=83647636606ec6c1eb0b04d2708458be}{%
+           family={Posada},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=53dfada9f9a22dbe1d09d3cb4b8db5bc}{%
+           family={Ioiart},
+           familyi={I\bibinitperiod},
+           given={Carla\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=3fb5cc4bb04214dc4b5fc78a99f857db}{%
+           family={Faaij},
+           familyi={F\bibinitperiod},
+           given={Andre\bibnamedelima P.C.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=56cf04f48eab9501c8656f9ba1d42e9f}{%
+           family={{van der Hilst}},
+           familyi={v\bibinitperiod},
+           given={Floor},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{37acaa8b3c68d04b020fa230a03bba13}
+      \strng{fullhash}{028ed30c8169895edd76397c1cf4f6eb}
+      \strng{fullhashraw}{028ed30c8169895edd76397c1cf4f6eb}
+      \strng{bibnamehash}{37acaa8b3c68d04b020fa230a03bba13}
+      \strng{authorbibnamehash}{37acaa8b3c68d04b020fa230a03bba13}
+      \strng{authornamehash}{37acaa8b3c68d04b020fa230a03bba13}
+      \strng{authorfullhash}{028ed30c8169895edd76397c1cf4f6eb}
+      \strng{authorfullhashraw}{028ed30c8169895edd76397c1cf4f6eb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Biomass feedstock can be used for the production of biofuels or biobased chemicals to reduce anthropogenic greenhouse gas (GHG) emissions. Earlier studies about the techno-economic performance of biofuel or biobased chemical production varied in biomass feedstock, conversion process, and other techno-economic assumptions. This made a fair comparison between different industrial processing pathways difficult. The aim of this study is to quantify uniformly the factory-gate production costs and the GHG emission intensity of biobased ethanol, ethylene, 1,3-propanediol (PDO), and succinic acid, and to compare them with each other and their respective fossil equivalent products. Brazilian sugarcane and eucalyptus are used as biomass feedstock in this study. A uniform approach is applied to determine the production costs and GHG emission intensity of biobased products, taking into account feedstock supply, biobased product yield, capital investment, energy, labor, maintenance, and processing inputs. Economic performance and net avoided GHG emissions of biobased chemicals depend on various uncertain factors, so this study pays particular attention to uncertainty by means of a Monte Carlo analysis. A sensitivity analysis is also performed. As there is uncertainty associated with the parameters used for biobased product yield, feedstock cost, fixed capital investment, industrial scale, and energy costs, the results are presented in ranges. The 60\% confidence interval ranges of the biobased product production costs are 0.64--1.10 US{\textbackslash} kg-1 ethanol, 1.18--2.05 US{\textbackslash} kg-1 ethylene, 1.37--2.40 US{\textbackslash} kg-1 1,3-PDO, and 1.91--2.57 US{\textbackslash} kg-1 succinic acid. The cost ranges of all biobased products partly or completely overlap with the ranges of the production costs of the fossil equivalent products. The results show that sugarcane-based 1,3-PDO and to a lesser extent succinic acid have the highest potential benefit. The ranges of GHG emission reduction are 1.29--2.16, 3.37--4.12, 2.54--5.91, and 0.47--5.22 CO2eq kg-1 biobased product for ethanol, ethylene, 1,3-PDO, and succinic acid respectively. Considering the potential GHG emission reduction and profit per hectare, the pathways using sugarcane score are generally better than eucalyptus feedstock due to the high yield of sugarcane in Brazil. Overall, it was not possible to choose a clear winner, (a) because the best performing biobased product strongly depends on the chosen metric, and (b) because of the large ranges found, especially for PDO and succinic acid, independent of the chosen metric. To quantify the performance better, more data are required regarding the biobased product yield, equipment costs, and energy consumption of biobased industrial pathways, but also about the production costs and GHG emission intensity of fossil-equivalent products. {©} 2019 The Authors. Biofuels, Bioproducts, and Biorefining published by Society of Chemical Industry and John Wiley \& Sons, Ltd.}
+      \field{issn}{1932-1031}
+      \field{journaltitle}{Biofuels, Bioproducts and Biorefining}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Economic Performance and {{GHG}} Emission Intensity of Sugarcane- and Eucalyptus-Derived Biofuels and Biobased Chemicals in {{Brazil}}}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{13}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{950\bibrangedash 977}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1002/bbb.1986
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Environmental Analysis/Jonker et al_2019_Economic performance and GHG emission intensity of sugarcane- and.pdf;/home/diego/Software/Zotero/data/storage/JB5YEX5J/bbb.html
+      \endverb
+      \keyw{biobased chemicals,biofuels,biorefinery,costs,eucalyptus,GHG emissions,petrochemical reference,sugarcane}
+    \endentry
+    \entry{figueiredoGreenhouseGasEmissions2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=892ba29791ccb502e15c013b2dcbcfb6}{%
+           family={Figueiredo},
+           familyi={F\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3e1f25ccc35635a73b02d99f46ee40ff}{%
+           family={Jayasundara},
+           familyi={J\bibinitperiod},
+           given={Susantha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f762bd2090b7778a96b892ecea01d060}{%
+           family={La\bibnamedelima Scala\bibnamedelima Jr.},
+           familyi={L\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Newton},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OAE Publishing Inc.}%
+      }
+      \strng{namehash}{8f404e54f69f03058f9db6fec1041db6}
+      \strng{fullhash}{fb5c9693610054a8a21582f4f4087d07}
+      \strng{fullhashraw}{fb5c9693610054a8a21582f4f4087d07}
+      \strng{bibnamehash}{fb5c9693610054a8a21582f4f4087d07}
+      \strng{authorbibnamehash}{fb5c9693610054a8a21582f4f4087d07}
+      \strng{authornamehash}{8f404e54f69f03058f9db6fec1041db6}
+      \strng{authorfullhash}{fb5c9693610054a8a21582f4f4087d07}
+      \strng{authorfullhashraw}{fb5c9693610054a8a21582f4f4087d07}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Carbon Footprints}
+      \field{title}{Greenhouse Gas Emissions and Offset Potential from Sugarcane Straw for Bioenergy Production in {{Brazil}}}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.20517/cf.2022.21
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Environmental Analysis/2023 - Greenhouse gas emissions and offset potential from sugarcane straw for bioenergy production in Brazi.pdf
+      \endverb
+    \endentry
+    \entry{searcyProcessingStrawCorn2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6e79a68113356f4f7b775290f6551fef}{%
+           family={Searcy},
+           familyi={S\bibinitperiod},
+           given={Erin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=47116fc04cc1a697b47ffa455bab25ba}{%
+           family={Flynn},
+           familyi={F\bibinitperiod},
+           given={Peter\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{fullhash}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{fullhashraw}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{bibnamehash}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{authorbibnamehash}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{authornamehash}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{authorfullhash}{7375dd2e46050c9adfc3c60cba6b9338}
+      \strng{authorfullhashraw}{7375dd2e46050c9adfc3c60cba6b9338}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1543-5075, 1543-5083}
+      \field{journaltitle}{International Journal of Green Energy}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shorttitle}{Processing of {{Straw}}/{{Corn Stover}}}
+      \field{title}{Processing of {{Straw}}/{{Corn Stover}}: {{Comparison}} of {{Life Cycle Emissions}}}
+      \field{urlday}{22}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{5}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{423\bibrangedash 437}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/15435070802498010
+      \endverb
+    \endentry
+    \entry{quispeLifeCycleAssessment2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=23dfe686ce3c4c341f5bcdded66459ec}{%
+           family={Quispe},
+           familyi={Q\bibinitperiod},
+           given={Isabel},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1b73bb6b40cda3f0b0c996064f6e21db}{%
+           family={Navia},
+           familyi={N\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=103ff7b84969ad7ad1fa3a66f16dcb20}{%
+           family={Kahhat},
+           familyi={K\bibinitperiod},
+           given={Ramzy},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{725dc6fa6bfc7784da493649e2784d9a}
+      \strng{fullhash}{a5e9c1d3215f3cccc6a062310a33c8c8}
+      \strng{fullhashraw}{a5e9c1d3215f3cccc6a062310a33c8c8}
+      \strng{bibnamehash}{a5e9c1d3215f3cccc6a062310a33c8c8}
+      \strng{authorbibnamehash}{a5e9c1d3215f3cccc6a062310a33c8c8}
+      \strng{authornamehash}{725dc6fa6bfc7784da493649e2784d9a}
+      \strng{authorfullhash}{a5e9c1d3215f3cccc6a062310a33c8c8}
+      \strng{authorfullhashraw}{a5e9c1d3215f3cccc6a062310a33c8c8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Energy consumption linked to non-renewable resources such as fossil fuels contributes to greenhouse gas emissions and increases resource depletion. In this context, the use of agricultural solid residues such as rice husk, coffee husk, wheat straw, sugar cane bagasse, among others, has been widely studied as an alternative energy source in order to decrease the use of fossil fuels. In Peru, up to 693,308 metric tons of rice husk is generated annually and at present, 85\% is burned in the open air or disposed in rivers, harming human health and contaminating our environment. On the other hand, official Peruvian energy policy is to incorporate the use of renewable energy sources, such as agricultural residues. Consequently, the aim of the study is to perform a technical and environmental assessment of the production of energy from rice husk as an alternative energy source to coal in Peru. Rice husk from Peru was characterized to identify its physical properties and chemical composition. In order to perform the environmental assessment, a Life Cycle Assessment (LCA) was employed. LCA is a standardized methodology to identify and quantify the environmental impacts from initial obtention of materials, through production, distribution and use to final disposal (ISO 14040, 2006 and ISO 14044, 2006). Four scenarios were evaluated, varying in paddy rice yield and dryer efficiency. The results show that the environmental impacts to obtain 1\,MJ from rice husk, including elements in the global warming, acidification and eutrophication categories, are less than that from 1\,MJ obtained from coal, 97\%, 88\% and 80\% less, respectively. However, the opposite was found in water depletion, with the use of coal to generate heat having a 98\% better impact over rice husk.}
+      \field{issn}{0959-6526}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{month}{2}
+      \field{title}{Life {{Cycle Assessment}} of Rice Husk as an Energy Source. {{A Peruvian}} Case Study}
+      \field{urlday}{22}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{209}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1235\bibrangedash 1244}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2018.10.312
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Environmental Analysis/Quispe et al. - 2019 - Life Cycle Assessment of rice husk as an energy source. A Peruvian case study.pdf;/home/diego/Software/Zotero/data/storage/QLELRBJW/S0959652618333456.html
+      \endverb
+      \keyw{Agricultural residues,Life Cycle Assessment,Paddy,Peru,Rice husk}
+    \endentry
+    \entry{deoliveirafernandesLCAbasedCarbonFootprint2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=83726662866eeddb801766a5c7498d8b}{%
+           family={{de Oliveira Fernandes}},
+           familyi={d\bibinitperiod},
+           given={Matheus\bibnamedelima Augusto},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ff2a317cec0e4cccada3e79b93c0d072}{%
+           family={Baêta},
+           familyi={B\bibinitperiod},
+           given={Bruno\bibnamedelimb Eduardo\bibnamedelima Lobo},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=e9af34917b99e63aa3ca5cf28b0c910f}{%
+           family={Adarme},
+           familyi={A\bibinitperiod},
+           given={Oscar\bibnamedelimb Fernando\bibnamedelima Herrera},
+           giveni={O\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ad1f7695c714f78e1dbf1adfac60d88b}{%
+           family={Fonseca},
+           familyi={F\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d021785fd759c1fce06e54bf670b8f07}
+      \strng{fullhash}{7812b8fbc9e4d5acad4aeef717a2f106}
+      \strng{fullhashraw}{7812b8fbc9e4d5acad4aeef717a2f106}
+      \strng{bibnamehash}{d021785fd759c1fce06e54bf670b8f07}
+      \strng{authorbibnamehash}{d021785fd759c1fce06e54bf670b8f07}
+      \strng{authornamehash}{d021785fd759c1fce06e54bf670b8f07}
+      \strng{authorfullhash}{7812b8fbc9e4d5acad4aeef717a2f106}
+      \strng{authorfullhashraw}{7812b8fbc9e4d5acad4aeef717a2f106}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{While studies have shown that anaerobic digestion (AD) with energy generation of agricultural residues have many benefits, it is still unclear the extent to which this technology can reduce greenhouse gas (GHG) emissions, particularly in the context of coffee husk wastes. To address this knowledge gap, this work explored three scenarios of coffee husks as an energy source: 0) business-as-usual (landfilling); 1) AD with energy generation; 2) same as the previous one, adding a hydrothermal hydrolysis pre-treatment step. The study adopted a Life Cycle Assessment (LCA) methodology to estimate the environmental impacts of this technology in terms of GHG emissions. The results indicate that the main benefit of using AD is to avoid the impacts of landfilling, as the carbon footprint for the landfilling scenario was more than 13 times higher than the others. The emissions from digestate management were the main source of the overall emissions, accounting for 34~\%. However, its use to replace chemical fertilizers affected the environmental performance positively. The inclusion of the pre-treatment was a key factor in making the bioenergy from coffee husks less carbon-intensive than natural gas and oil, although common renewable sources such as wind and hydropower tend to have lower GHG emissions. Sensitivity analyses indicate that this type of bioenergy can mitigate GHG emissions from energy generation in coffee-producing countries with fossil-based energy mixes. Overall, this work fills a knowledge gap by providing empirical evidence to the potential benefits of using coffee husks in the world's transition to a low-carbon economy.}
+      \field{issn}{1364-0321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{month}{1}
+      \field{title}{{{LCA-based}} Carbon Footprint Analysis of Anaerobic Digestion of Coffee Husk Waste}
+      \field{urlday}{22}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{207}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{114993}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rser.2024.114993
+      \endverb
+      \verb{file}
+      \verb /home/diego/Drive/Library/PhD/Environmental Analysis/de Oliveira Fernandes et al. - 2025 - LCA-based carbon footprint analysis of anaerobic digestion of coffee husk waste.pdf;/home/diego/Software/Zotero/data/storage/XFSWQLU9/S1364032124007196.html
+      \endverb
+      \keyw{Anaerobic digestion,Biogas,Carbon footprint,Coffee husks,Life cycle assessment,Renewable energy}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

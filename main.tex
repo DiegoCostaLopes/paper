@@ -268,7 +268,7 @@ of the main biomasses studied.
 		\hline
 		 & & \multicolumn{6}{c||}{Biomass} \\
 		\hline
-		Name & Unit & Sugarcane bagasse \cite{jorapurSugarcaneLeafbagasseGasifiers1997} & Sugarcane straw \cite{jorapurSugarcaneLeafbagasseGasifiers1997} & Soybean straw \cite{tahirCatalyticFastPyrolysis2021} & Corn \cite{evansDevelopmentBiomassGasification1988} & Rice \cite{gaurAtlasThermalData1995} & Coffee \cite{anggonoCharacteristicsBiomassBriquettes2023} \\
+		Name & Unit & Sugarcane bagasse \cite{jorapurSugarcaneLeafbagasseGasifiers1997} & Sugarcane straw \cite{jorapurSugarcaneLeafbagasseGasifiers1997} & Soybean straw \cite{tahirCatalyticFastPyrolysis2021} & Corn stover \cite{evansDevelopmentBiomassGasification1988} & Rice husk \cite{gaurAtlasThermalData1995} & Coffee husk \cite{anggonoCharacteristicsBiomassBriquettes2023} \\
 		\hline
 		Moisture & kg/kg \footnotemark[1] & 0.4000 & 0.2000 & 0.2000 & 0.2000 & 0.2000 & 0.2000 \\
 		Ash & kg/kg \footnotemark[1]& 0.0420 & 0.0770 & 0.0530 & 0.0735 & 0.1580 & 0.0587 \\
@@ -609,7 +609,7 @@ The model consists of 3 main sets:
 Based on these sets, the decision variables of the model are:
 
 \begin{itemize}
-	\item $BS_{bll'}$: Biomass sold from location $l$ to location $l'$ (tons/year)
+	\item $BS_{bll'}$: Biomass $b$ sold from location $l$ to location $l'$ (tons/year)
 	\item $BU_{brl}$: Biomass $b$ used through route $r$ at location $l$ (tons/year)
 	\item $UP_{rl}$: urea produced via route $r$ at location $l$ (tons/year)
 	\item $US_{ll'}$: urea sold from location $l$ to location $l'$ (tons/year)
@@ -784,15 +784,14 @@ São Paulo, Brazil.
 		Urea price & USD / t & 380 \\
 		Biomass price & USD / GJ & 4.5 \\
 		Transport costs & USD / km / t & 0.058 \\
-		Fixed costs & \% CAPEX & 4
+		Fixed costs & \% CAPEX & 4 \\
 	\hline	
 	\end{tabular}
 \end{table}
 
-
 The main economical assessments use a fixed power price of 100 USD / MWh. For the optimization model, the power prices
-were considered on a city-by-city basis, using the open dataset from ANEEL (Agência Nacional de Energia Elétrica).
-\cite{ANEELPortalReports}.
+were considered on a city-by-city basis, using the open dataset from ANEEL (Agência Nacional de Energia Elétrica). 
+\cite{ANEELPortalReports}
 
 \subsection{Performance and environmental indicators}
 
@@ -813,7 +812,210 @@ With $E_{el}$ being the power consumption of the process, and $\eta _{grid}$ bei
 considered in this study as 85\%, against 90\% reported for the brazilian market in 2022
 \cite{epeBENBalancoEnergetico2023}.
 
-Environmental impact is evaluated by equivalent greenhouse gas (GHG) emissions. \textcite{jonkerEconomicPerformanceGHG2019}
+Environmental impact is evaluated by equivalent greenhouse gas (GHG) emissions. Biomass emissions take into account
+capture and logistics of the residue. Power emissions are considered to be the same as the Brazilian average.
+\autoref{tab_emissions} summarizes the environmental assumptions. No data was found for soybean straw life cycle emissions.
+
+\begin{table}
+	\centering
+	\caption{Equivalent emissions}
+	\label{tab_emissions}
+	\begin{minipage}{\textwidth} \centering
+	\begin{tabular}{|c | c | c | c |}
+		\hline
+		Origin & Unit & Value & Source \\
+		\hline
+		Sugarcane bagasse & kg $CO2_{eq}$ / kg & 0.1860 & \cite{jonkerEconomicPerformanceGHG2019} \\
+		Sugarcane straw & kg $CO2_{eq}$ / kg  & 0.2062 & \cite{figueiredoGreenhouseGasEmissions2023} \\
+		Soybean straw & kg $CO2_{eq}$ / kg  & -\footnotemark[1] & - \footnotemark[1]\\
+		Corn stover & kg $CO2_{eq}$ / kg  & 0.0838 & \cite{searcyProcessingStrawCorn2008} \\
+		Rice husks & kg $CO2_{eq}$ / kg  & 0.0639 & \cite{quispeLifeCycleAssessment2019} \\
+		Coffee husks & kg $CO2_{eq}$ / kg  & 0.0112 & \cite{deoliveirafernandesLCAbasedCarbonFootprint2025} \\
+		Power & kg $CO2_{eq}$ / kWh & 0.0617 & \cite{epeBENBalancoEnergetico2023} \\
+	\hline	
+
+	\end{tabular}
+	\footnotetext[1]{Data not available}
+	\end{minipage}
+
+\end{table}
+
+\section{Results and discussion}
+
+\subsection{Process model}
+
+An initial assessment of the gasification syngas composition was made to determine the best gasifying conditions
+from a technical perspective. \autoref{img_syngascompO2} and \autoref{img_syngascompair} show the full syngas
+composition for sugarcane bagasse with pure oxygen and pure air as gasifying agents, as a function of equivalence ratio
+(ratio of $O_2$ used in the gasification versus $O_2$ necessary for complete combustion).
+
+Gasification with pure oxygen yields the better $H_2$ concentration, which is the critical component in ammonia 
+synthesis. The best gasifying temperature in this case is close to 900 K, however this temperature is too low to 
+guarantee tar cracking conditions and stable operation of an entrained flow gasifier 
+\cite{basuBiomassGasificationPyrolysis2010}. A fixed temperature of 1200°C will be used in this study. Steam addition
+to the gasifier was not considered as it is redundant with the steam injection for the water-gas shift reactors. $CO_2$
+addition to the gasification was not found to have any improvements in $H_2$ production.
+
+The full process model was applied to 12 different scenarios, corresponding to the combination of the six chosen 
+biomasses, and two operating conditions:
+
+\begin{itemize}
+	\item Route 1: Pure oxygen as the gasifying agent.
+	\item Route 2: Air and oxygen mixed gasification, with air injection controlling the $H_2/N_2$ ratio on the ammonia
+	synthesis, and $O_2$ injection controlling the gasification temperature.
+\end{itemize}
+
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_syngasbagacoo2.png}
+	\caption{Syngas composition for sugarcane bagasse gasification with pure oxygen}
+	\label{img_syngascompO2}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_syngasbagacoar.png}
+	\caption{Syngas composition for sugarcane bagasse gasification with air}
+	\label{img_syngascompair}
+\end{figure}
+
+\begin{sidewaystable}
+	\caption{Process model main results}
+	\small
+	\label{tab_mainresults}
+	\begin{tabular}{|| c | c | C{0.8cm} | C{0.8cm} | C{0.8cm} | C{0.8cm}| C{0.8cm} | C{0.8cm} |  C{0.8cm} | C{0.8cm}| C{0.8cm} | C{0.8cm} | C{0.8cm} |  C{0.8cm} ||}
+		\hline
+		Name & Unit & \multicolumn{2}{C{1.6cm} |}{Sugarcane bagasse} & \multicolumn{2}{C{1.8cm} |}{Sugarcane straw} & \multicolumn{2}{C{1.8cm} |}{Soybean straw} & \multicolumn{2}{C{1.8cm} |}{Corn stover} & \multicolumn{2}{C{1.8cm} |}{Rice husk} & \multicolumn{2}{C{1.8cm} |}{Coffee husk} \\
+		\hline
+		 & & $O_2$ & Air& $O_2$ & Air& $O_2$ & Air& $O_2$ & Air& $O_2$ & Air& $O_2$ & Air \\
+		 \hline
+		Power generation & kW & 7068 & 8739 & 9412 & 11432 & 10092 & 11047 & 7771 & 9678 & 8791 & 10573 & 9340 & 11293 \\
+		Power consumption & kW & 18777 & 18764 & 18672 & 18652 & 24205 & 22628 & 19397 & 19356 & 19399 & 19307 & 22306 & 22546 \\
+		Power imports & kW & 11709 & 10025 & 9260 & 7220 & 14113 & 11581 & 11626 & 9678 & 10608 & 8734 & 12966 & 11254 \\
+		\hline
+		Biomass consumption & kg/h & 62958 & 65768 & 52875 & 55284 & 49812 & 47744 & 43459 & 45262 & 53850 & 55799 & 48338 & 50284 \\
+		Biomass consumption & $t_{bio}$/$t_{urea}$ & 1.799 & 1.879 & 1.511 & 1.580 & 1.423 & 1.364 & 1.242 & 1.293 & 1.539 & 1.594 & 1.381 & 1.437 \\
+		\hline
+
+		Net power consumption & GJ/$t_{urea}$ & 1.21 & 1.03 & 0.95 & 0.74 & 1.45 & 1.29 & 1.19 & 0.99 & 1.09 & 0.90 & 1.32 & 1.15 \\ 
+		Feedstock consumption & GJ/$t_{urea}$ & 20.07 & 20.96 & 20.99 & 21.97 & 20.73 & 21.62 & 20.25 & 21.13 & 22.84 & 23.79 & 20.53 & 21.44 \\
+		Total energy consumption & GJ/$t_{urea}$ & 21.49 & 22.17 & 22.11 & 22.84 & 22.43 & 23.15 & 21.65 & 22.30 & 24.12 & 24.85 & 22.08 & 22.79 \\
+		\hline
+		Levelized cost of urea & USD/$t_{urea}$ & 333.17 & 332.82 & 328.64 & 327.60 & 340.81 & 337.28 & 330.50 & 329.21 & 340.97 & 340.23 & 336.39 & 335.95 \\
+		NPV @ 10\% & MMUSD & 119.80 & 120.70 & 131.38 & 134.03 & 100.25 & 109.29 & 126.63 & 129.93 & 99.84 & 101.75 & 111.55 & 112.70 \\
+		IRR & \% & 14.53\% & 14.56\% & 14.95\% & 15.05\% & 13.82\% & 14.12\% & 14.78\% & 14.90\% & 13.80\% & 13.87\% & 14.24\% & 14.28\% \\
+
+		Total emissions & kg $CO2_{eq}/t_{urea}$ & 354.70 & 366.65 & 327.83 & 338.43 & - & - & 124.55 & 125.43 & 116.97 & 117.22 & 39.35 & 36.99 \\
+
+		Emission reductions\footnotemark[1] & \% & 86.6\% & 86.1\% & 87.6\% & 87.2\% & - & - & 95.3\% & 95.2\% & 95.6\% & 95.6\% & 98.5\% & 98.6\% \\
+	\hline
+	\end{tabular}
+	\footnotetext[1]{Against 2640 kg CO2 eq / t urea reported for the conventional process}
+
+\end{sidewaystable}
+
+\autoref{tab_mainresults} summarizes the main results. Most of the energy consumption of the plant is in the form of
+biomass. The plant is self-sufficient in terms of thermal energy, with a substantial amount of steam being condensed 
+at all scenarios.
+There is need for power imports from the grid, although net power consumption accounts for about 6\% of the total,
+even with large power consumers such as the air separation units and the ammonia compressors. 
+
+The proposed plant achieves an energy consumption between 21.49 and 24.85 GJ/t urea, against 23.34 GJ/t urea for
+other published renewable urea plants \cite{zhangTechnoeconomicComparison1002021}. A direct comparison can also be 
+made with the traditional process. \autoref{tab_conventionalurea} summarizes the main KPIs for the traditional process.
+\textcite{chenPerformanceComparisonUrea2022} evaluated several key performance indicators for multiple types of
+traditional fossil fuel urea plants. A traditional fossil fuel urea plant using natural gas as feedstock and 
+carbon dioxide stripping achieves an energy consumption of 18.40 GJ/t. While there is room for improvement, 
+the plant is already competitive with the traditional process in terms of energy efficiency.
+
+\begin{table}
+	\centering
+	\caption{Main KPIs for the conventional urea process}
+	\label{tab_conventionalurea}
+	\begin{tabular}{|| c | c | c||}
+		\hline
+		Name & Unit & Value \\
+		\hline
+		Total energy consumption & GJ/$t_{urea}$ & 18.40 \\
+		Total emissions & kg $CO2_{eq}/t_{urea}$ & 2640 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+This energy efficiency loss is offset by the large environmental gains of renewable urea. Considering the worst scenario
+(processing sugarcane bagasse with air mixed gasification), The proposed plant achieves emissions of 
+366.65 kg $CO2_{eq} / t_{urea}$, against 2640 $CO2_{eq} / t_{urea}$ for the conventional process. These emissions already
+consider the full emissions for the life cycle analysis of the sugarcane bagasse 
+\cite{jonkerEconomicPerformanceGHG2019}. This accounts for a 86.6\% reduction in emissions, or 2285 $CO2_{eq} / t_{urea}$
+in emission savings.
+
+The levelized cost of urea was calculated between 327.6 and 340.8 USD / ton, which puts the product at a
+competitive cost against current market prices. Using a selling price of USD 380 / t urea, and with a USD 368 
+million CAPEX, the plant reaches a maximum NPV of USD 134 million, with an IRR of 15.05\%. These indicators do not take
+any kind of carbon tax into account.
+
+Mixed air and oxygen gasification has lower energy efficiencies compared to pure oxygen gasification. However, 
+the plant's overall financial performance is marginally improved, since there's a large increase in steam and power
+generation with higher air intake on the gasifier. To ensure the gasification autothermal operation, it's still
+impossible to completely eliminate the oxygen intake. In scenarios with higher power and lower biomass costs, 
+this alternative can become significantly better and vice-versa.
+
+Comparatively, sugarcane bagasse is the best biomass in terms of total energy efficiency, but sugarcane straw presents
+the best financial results, given the lower power import required. The power consumption is very sensitive to biomass
+composition and moisture, with the best results being presented for biomasses with low moisture and high oxygen content.
+Air separation compressors account for about 25\% of the total power consumption, and high oxygen content reduces
+the $O_2$ needed on the gasification step.
+
+The following sensitivity analysis considers the first scenario (sugarcane bagasse with pure oxygen gasification)
+as the basis of comparison. \autoref{img_IRRsens_carbon} shows the IRR sensitivity to an eventual carbon tax, 
+assuming that the emissions savings will enter the plant as a revenue stream.
+It is clear that the plant’s financial performance improves significantly in the event of future carbon taxing.
+
+Finally, \autoref{img_IRRsens_capex}, \autoref{img_IRRsens_urea}, \autoref{img_IRRsens_biomass} and
+\autoref{img_IRRsens_power} show the IRR sensitivity to the total capital cost, urea price,
+biomass price and power price, keeping all other values constant. The plant's profitability is very dependent on
+biomass and urea prices, however it is very resilient to power price fluctuations, with good rates of return
+even with 60\% higher power prices compared to today's.
+
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_IRRsensitivity_carbon.png}
+	\caption{IRR sensitivity to carbon tax}
+	\label{img_IRRsens_carbon}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_IRRsensitivity_capex.png}
+	\caption{IRR sensitivity to CAPEX}
+	\label{img_IRRsens_capex}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_IRRsensitivity_urea.png}
+	\caption{IRR sensitivity to urea price}
+	\label{img_IRRsens_urea}
+\end{figure}
+
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_IRRsensitivity_biomass.png}
+	\caption{IRR sensitivity to biomass price}
+	\label{img_IRRsens_biomass}
+
+\end{figure}
+
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/fig_IRRsensitivity_power.png}
+	\caption{IRR sensitivity to power price}
+	\label{img_IRRsens_power}
+\end{figure}
+
+\subsection{Supply-chain model}
+
+
+
+
+
 
 
 
