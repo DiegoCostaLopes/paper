@@ -24,6 +24,7 @@
 % add ports as possible sinks
 % add eucalyptus
 % add electrolysis
+% lower urea demand
 
 
 \begin{document}
@@ -1012,7 +1013,20 @@ even with 60\% higher power prices compared to today's.
 
 \subsection{Supply-chain model}
 
+The model was applied to several subsets of data, starting with the full dataset at the micro-region level, totaling
+558 locations.
 
+
+The commercial solver Gurobi was used to solve the MILP model, taking 19.11 mins on average on a Ryzen 7 CPU at the 
+largest simulation. The database used in the simulations, as well as the full results, are provided in the
+supplementary material. provides the summary of the results. The optimization model was initially applied to
+the whole country at the micro-region level (558 locations). In this scenario, it was found that the Assis microregion
+in the state of São Paulo is the optimal location for the
+installation of the renewable urea plant. Pure oxygen gas-
+ification was the route chosen, and the biomasses used
+are a 50/50 mix of soybean straw and sugarcane straw,
+leveraging the large sugarcane crops in the São Paulo
+state. The plant capacity was constrained to a maximum
 
 
 
