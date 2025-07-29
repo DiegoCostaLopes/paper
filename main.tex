@@ -28,7 +28,8 @@
 
 
 \begin{document}
-\title{Paper title}
+\title{Renewable urea production integrated with agricultural residue gasification; a process modeling and
+supply-chain hybrid approach}
 \author{
 	Diego Lopes\\
 	\and
@@ -694,9 +695,8 @@ Total urea sold to a location must be lower than the urea demand:
 CAPEX is calculated based on the capacity by piecewise linearization of the estimated CAPEX at reference capacities of
 20, 35, 50 and 80 tons urea / h.
 
-The objective function of the model is to maximize the NPV of the plant.
-
-
+The objective function of the model is to maximize the NPV of the plant. The maximum capacity was initially constrained
+to 80 t/h, corresponding roughly to 10\% of the national demand for 2022.
 
 
 \subsection{Economical evaluation}
@@ -1014,21 +1014,45 @@ even with 60\% higher power prices compared to today's.
 \subsection{Supply-chain model}
 
 The model was applied to several subsets of data, starting with the full dataset at the micro-region level, totaling
-558 locations.
-
-
-The commercial solver Gurobi was used to solve the MILP model, taking 19.11 mins on average on a Ryzen 7 CPU at the 
+558 locations. The commercial solver Gurobi was used to solve the MILP model, taking 19.11 mins on average on a Ryzen 7 CPU at the 
 largest simulation. The database used in the simulations, as well as the full results, are provided in the
-supplementary material. provides the summary of the results. The optimization model was initially applied to
-the whole country at the micro-region level (558 locations). In this scenario, it was found that the Assis microregion
-in the state of São Paulo is the optimal location for the
-installation of the renewable urea plant. Pure oxygen gas-
-ification was the route chosen, and the biomasses used
-are a 50/50 mix of soybean straw and sugarcane straw,
-leveraging the large sugarcane crops in the São Paulo
-state. The plant capacity was constrained to a maximum
+supplementary material. \autoref{tab_scenarios} provides a description of the scenarios simulated, while 
+\autoref{tab_optimizationresults} provides the summary of the results.
 
+The optimization model was initially applied to the whole country at the micro-region level (Scenario 1) In this
+scenario, it was found that the Jaboticabal microregion in the state of São Paulo is the optimal location for the installation of the renewable urea plant. Despite being one of the worst performing biomasses in terms of energy efficiency, sugarcane straw was the
+optimal biomass, processed via the air mixed gasification route. The optimal region can supply 100\% of the required biomass,
+while the close proximity to the large sugarcane crops in the state is beneficial to the urea distribution. 
+ \autoref{img_optimizationresults_1} shows the plant location and urea distribution networks.
 
+\begin{table}
+	\caption{Scenarios simulated in the supply-chain model}
+	\label{tab_scenarios}
+	\begin{tabular}{||c | c ||}
+		Scenario 1 & Whole country at micro-region level
+		Scenario 2 & Unconstrained capacity
+
+	\end{tabular}
+\end{table}
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/optimization_result_1.png}
+	\caption{Optimization model results - plant location (red), urea distribution (black) - Base case scenario}
+	\label{img_optimizationresults_1}
+\end{figure}
+
+The plant capacity was constrained to a maximum of 80 t/h at this first run. An additional scenario with unconstrained
+capacity and limited to the Southeast Region was modeled. In this scenario, the optimal region is the Ribeirão Preto one,
+with an optimal capacity calculated by the model of 244.9 t/h. Despite the feasibility of this configuration, the 
+
+\begin{sidewaystable}
+	\caption{Optimization model results}
+	\label{tab_optimizationresults}
+	\begin{tabular}{|| c | c | c | c ||}
+		
+	\end{tabular}
+
+\end{sidewaystable}
 
 
 
