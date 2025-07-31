@@ -3,19 +3,22 @@
 
 % Package list
 \usepackage{amsmath}
-\usepackage[url=false, 
+\usepackage[url=true, 
+			backend=biber, 	
+			style=ieee,
 			sorting=none, 
-			maxcitenames=2,
 			hyperref=true]{biblatex}	% remove url visit date and sort references by appearance
 \usepackage{hyperref}
+\usepackage{xurl}
 \usepackage{helvet}									% helvetica font
 \usepackage{rotating}
 \usepackage{array}
 \usepackage{multirow}
+\usepackage{xpatch}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 
 \renewcommand{\thefootnote}{\alph{footnote}}
-% Biblatex configuration
+% Biblatex configuratin
 \addbibresource{library.bib}
 \DeclareNameAlias{author}{family-given}
 
@@ -25,7 +28,6 @@
 % add eucalyptus
 % add electrolysis
 % lower urea demand
-
 
 \begin{document}
 \title{Renewable urea production integrated with agricultural residue gasification; a process modeling and
@@ -38,7 +40,16 @@ supply-chain hybrid approach}
 \maketitle
 
 \begin{abstract}
-	This is the papers abstract, version 2!
+Nitrogen fertilizers are important energy consumers on the chemical sector and are responsible for considerable GHG
+emissions. However, the conventional process is dependent on fossil fuels and the renewable fraction of urea on the
+market is negligible. The present work proposes a hybrid model for a renewable urea plant through gasification of
+agricultural residues, combining traditional process modeling techniques with an optimization framework. The process
+model was applied to 6 biomasses representative of the Brazilian market and 2 operational conditions. The process model
+results are fed into a MILP model to evaluate the optimal combination of location, biomass and technological route that
+maximizes the NPV of the renewable urea plant. Processing sugarcane straw with air mixed gasification in the state of
+São Paulo is proven to be the best combination with current biomass, urea and power prices. Urea demand and 
+distribution costs are shown to be a critical factor in the feasibility of the plant, which corroborates the importance
+of a hybrid approach in evaluating any biorefinery configuration. 
 \end{abstract}
 
 \section{Introduction}
@@ -181,7 +192,7 @@ Microsoft Excel.
 To evaluate the local feasibility of the urea plant, a detailed assessment of biomass supply, urea demand and spatial
 information is required.
 
-Brazilian geographical divison follows the 1990 "Divisão Regional Do Brasil" from IBGE (Instituto Brasileiro de
+Brazilian geographical division follows the 1990 "Divisão Regional Do Brasil" from IBGE (Instituto Brasileiro de
 Geografia e Estatística). The whole national territory is split into 5569 cities, with each city being assigned a 7 digit
 numerical code. Cities are combined into increasingly larger regions called 
 microregions, macroregions and eventually the federation states. A distance matrix between cities is provided by
@@ -196,12 +207,12 @@ the state of São Paulo.
 	\label{img_microregions}
 \end{figure}
 
-The open dataset PAM 2022 \cite{IBGEPAMProducao} provides a detailed assessment of Brazil's agricultural production.
+The open dataset PAM 2022 \cite{IBGEPAMProducao2022} provides a detailed assessment of Brazil's agricultural production.
 The dataset contains information on planted area, harvested area and yearly production for all crops of commercial
 interest at all cities in the country. Based on the total production, five cultures were selected as the most
 representative of the Brazilian scenario. Each culture generates different agricultural residues
  \cite{souzaTheoreticalTechnicalAssessment2021} and has a specific urea consumption per unit of crop produced 
- \cite{IFASTATFertilizerUse}, with the results presented in \autoref{tab_biomasssupply}. 
+ \cite{IFASTATFertilizerUse2024}, with the results presented in \autoref{tab_biomasssupply}. 
 
 \begin{table}
 	\centering
@@ -209,7 +220,7 @@ representative of the Brazilian scenario. Each culture generates different agric
 	\label{tab_biomasssupply}
 	\begin{tabular}{|c | c | c | c | c|}
 		\hline
-		Crop & Biomass & Biomass supply \cite{souzaTheoreticalTechnicalAssessment2021} & Nitrogen Demand \cite{IFASTATFertilizerUse} \\
+		Crop & Biomass & Biomass supply \cite{souzaTheoreticalTechnicalAssessment2021} & Nitrogen Demand \cite{IFASTATFertilizerUse2024} \\
 		 & & kg / kg crop & kg N / ha \\
 		 \hline
 		Sugarcane & Bagasse & 0.2200 & 76 \\ 
@@ -332,7 +343,7 @@ a rich oxygen mixture (5015).
 Both streams are further cooled in a second multi-stream heat exchanger and sent to the low-pressure column operating
 at 1.8 bar for further separation. The rich nitrogen fraction is fed at the top of the column while the rich oxygen 
 fraction is fed at an intermediate stage. The columns are thermally coupled in the sense that the reboiler duty of the
-low-pressure section is the condenser duty from the high-pressure section, and the liquified air expansion is the 
+low-pressure section is the condenser duty from the high-pressure section, and the liquefied air expansion is the 
 thermal drive for the separation.
 
 The system is designed to produce $N_2$ with 99.5\% mole fraction and $O_2$ with 99\% mole fraction. These purities
@@ -366,7 +377,7 @@ the water-gas shift reaction. This reaction can be described as:
 
 The water-gas shift reaction is exothermic and driven by equilibrium, which means that low temperatures favor the
 product formation. At the same time, the reaction kinetics is favorable in high temperature, which means that there's 
-a tradeoff between $CO$ conversion and reactor size \cite{florez-orregoProcessSynthesisOptimization2018}. Therefore, 
+a trade-off between $CO$ conversion and reactor size \cite{florez-orregoProcessSynthesisOptimization2018}. Therefore, 
 the chosen design uses two shift reactors operating with inlet conditions of 310°C and 210°C, and intermediate cooling.
 
 The hot syngas from the gasification section (1016) is cooled to 310°C in two utility heat exchangers
@@ -396,7 +407,7 @@ the Peng-Robinson equation of state, with Boston-Mathias modifications.
 \subsubsection{Carbon capture}
 
 A process flow diagram of the carbon capture and storage unit is presented in \autoref{img_aspenccs}.
-A physical absorption system using DEPG (dimethyl ethers of polyethylene  glycol) was chosen for this step, widely
+A physical absorption system using DEPG (dimethyl ethers of polyethylene glycol) was chosen for this step, widely
 used for $CO_2$ capture in gasification for syngas production. The proposed system is based on the optimized design
 of \textcite{martelliMultiobjectiveOptimizationSelexol2015} and modified for the biomass gasification specific needs. 
 
@@ -431,7 +442,7 @@ As this is an exothermic equilibrium-driven reaction, high temperatures are unfa
 In the customary process temperatures, conversion from syngas into ammonia is only 25-35\% per pass in the catalyst
 \cite{applAmmoniaPrinciplesIndustrial1999}. A pressure increase also dislocates the equilibrium to the product as it 
 has less gas moles \cite{sandlerChemicalBiochemicalEngineering2017} at the same time where it raises the power 
-consumption for the syngas compression and recirculation. There is a tradeoff between process yield, reactor size and 
+consumption for the syngas compression and recirculation. There is a trade-off between process yield, reactor size and 
 power consumption of the unit that must be taken into account.
 
 The ammonia synthesis kinetics implemented in this model is that proposed by 
@@ -766,7 +777,7 @@ Urea levelized cost has been calculated as follows:
 	LC = \cfrac{NPV_{costs}}{NPV_{output}} = \cfrac{\displaystyle\sum_{t=1}^n \cfrac{C_t + O_t}{(1+r)^t}}{\displaystyle\sum_{t=1}^n \cfrac{U_t}{(1+r)^t}}
 \end{equation}
 
-With $F_t$ being the net cash flow at yeat t, $C_t$ being the capital expenditures at year t, $O_t$ being the
+With $F_t$ being the net cash flow at year t, $C_t$ being the capital expenditures at year t, $O_t$ being the
 operational and fuel expenses at year t, $U_t$ being the total urea produced, and $r$ being the discount rate,
 by default at 10\%.
 
@@ -810,7 +821,7 @@ is defined as:
 \end{equation}
 
 With $E_{el}$ being the power consumption of the process, and $\eta _{grid}$ being the energy efficiency of the grid,
-considered in this study as 85\%, against 90\% reported for the brazilian market in 2022
+considered in this study as 85\%, against 90\% reported for the Brazilian market in 2022
 \cite{epeBENBalancoEnergetico2023}.
 
 Environmental impact is evaluated by equivalent greenhouse gas (GHG) emissions. Biomass emissions take into account
@@ -944,9 +955,9 @@ the plant is already competitive with the traditional process in terms of energy
 
 This energy efficiency loss is offset by the large environmental gains of renewable urea. Considering the worst scenario
 (processing sugarcane bagasse with air mixed gasification), The proposed plant achieves emissions of 
-366.65 kg $CO2_{eq} / t_{urea}$, against 2640 $CO2_{eq} / t_{urea}$ for the conventional process. These emissions already
+366.65 kg $kg CO2_{eq} / t_{urea}$, against 2640 $kg CO2_{eq} / t_{urea}$ for the conventional process. These emissions already
 consider the full emissions for the life cycle analysis of the sugarcane bagasse 
-\cite{jonkerEconomicPerformanceGHG2019}. This accounts for a 86.6\% reduction in emissions, or 2285 $CO2_{eq} / t_{urea}$
+\cite{jonkerEconomicPerformanceGHG2019}. This accounts for a 86.6\% reduction in emissions, or 2285 $kg CO2_{eq} / t_{urea}$
 in emission savings.
 
 The levelized cost of urea was calculated between 327.6 and 340.8 USD / ton, which puts the product at a
@@ -1026,43 +1037,130 @@ while the close proximity to the large sugarcane crops in the state is beneficia
  \autoref{img_optimizationresults_1} shows the plant location and urea distribution networks.
 
 \begin{table}
+	\centering
 	\caption{Scenarios simulated in the supply-chain model}
 	\label{tab_scenarios}
 	\begin{tabular}{||c | c ||}
-		Scenario 1 & Whole country at micro-region level
-		Scenario 2 & Unconstrained capacity
+		Scenario 1 & Whole country at micro-region level \\
+		Scenario 2 & Midwest region only \\
+		Scenario 3 & South region only \\
+		Scenario 4 & Northeast region only \\
+		Scenario 5 & North region only \\ 
+		Scenario 6 & lower urea demand (25\%) \\ 
+		Scenario 7 & Corn stover \\ 
+		Scenario 8 & Rice husks \\ 
+		Scenario 9 & Coffee husks \\ 
+		Scenario 10 & Unconstrained capacity \\ 
 
 	\end{tabular}
 \end{table}
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{img/optimization_result_1.png}
-	\caption{Optimization model results - plant location (red), urea distribution (black) - Base case scenario}
+	\caption{Optimization model results - Scenario 1. Plant location (red), urea distribution (blue)}
 	\label{img_optimizationresults_1}
 \end{figure}
 
-The plant capacity was constrained to a maximum of 80 t/h at this first run. An additional scenario with unconstrained
-capacity and limited to the Southeast Region was modeled. In this scenario, the optimal region is the Ribeirão Preto one,
-with an optimal capacity calculated by the model of 244.9 t/h. Despite the feasibility of this configuration, the 
+Scenarios 2, 3, 4 and 5 were generated constraining the plant location to the Midwest, South, Northeast and North
+geographical regions of the country, respectively. The Midwest and South regions show similar feasibility with very close
+NPV and LCOU compared to the main scenario, using the same biomass and processing route. The North and Northeast
+regions shows the highest LCOU and the smallest capacity of all scenarios. \autoref{img_optimizationresults_4} shows the optimal plant location and urea consumers for scenario 4. As the agricultural density and urea demand per micro-region are lower, the product needs to be distributed across larger distances, increasing logistical costs and affecting the performance of the plant.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/optimization_result_4.png}
+	\caption{Optimization result - Scenario 4 - Northeast region only. Plant location (red), urea distribution (blue)}
+	\label{img_optimizationresults_4}
+\end{figure}
 
 \begin{sidewaystable}
 	\caption{Optimization model results}
 	\label{tab_optimizationresults}
-	\begin{tabular}{|| c | c | c | c ||}
-		
+	\begin{tabular}{|| c | c | c | c  | c | c | c | c | c | c | c | c ||}
+		\hline
+		 & Unit & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+		 \hline
+		Plant capacity & t/h & 0.0 & 0.0 & 80.0 & 72.8 & 28.0 & 80.0 & 80.0 & 80.0 & 33.5 & 244.9 \\
+		Revenue & MMUSD & 260.98 & 260.98 & 260.98 & 237.61 & 91.21 & 260.98 & 260.98 & 260.98 & 109.22 & 798.88 \\
+		Biomass costs & MMUSD & 68.07 & 68.07 & 67.75 & 58.48 & 23.65 & 68.07 & 65.54 & 73.35 & 26.85 & 208.37 \\
+		Power costs & MMUSD & 14.8 & 14.18 & 14.1 & 19.02 & 5.66 & 14.1 & 18.3 & 16.14 & 10.74 & 45.31 \\
+		Transport costs – Biomass & MMUSD & 6.27 & 6.27 & 6.21 & 4.96 & 2.13 & 6.27 & 5.63 & 12.34 & 6.18 & 19.2 \\
+		Transport costs – Urea & MMUSD & 8.52 & 11.73 & 11.4 & 28.28 & 8.49 & 18.33 & 11.07 & 18.5 & 4.71 & 58.5 \\
+		Fixed costs & MMUSD & 30.89 & 30.89 & 30.89 & 28.32 & 12.18 & 30.89 & 30.89 & 30.89 & 14.19 & 90.12 \\
+		Total costs & MMUSD & 128.55 & 131.15 & 130.35 & 139.04 & 52.11 & 137.67 & 131.44 & 151.23 & 62.67 & 421.49 \\
+		FCF & MMUSD & 132.43 & 129.83 & 130.64 & 98.56 & 39.1 & 123.32 & 129.54 & 109.76 & 46.54 & 377.39 \\
+		NPV & MMUSD & 355.17 & 333.05 & 339.9 & 131.19 & 28.41 & 277.57 & 330.58 & 162.14 & 41.43 & 959.99 \\
+		LCOU & USD / t urea & 319.3 & 323 & 321.9 & 355.4 & 366.1 & 332.5 & 323.5 & 352.3 & 363.1 & 326.4 \\
+		CAPEX & MMUSD & 772.29 & 772.29 & 772.29 & 707.94 & 304.50 & 772.30 & 772.30 & 772.30 & 354.83 & 2252.90 \\
+		\hline
 	\end{tabular}
 
 \end{sidewaystable}
 
+Scenario 6 considers the urea demand to be 25\% of the originally estimated, to account for competition with other
+players and external markets. In this scenario, the optimal region shifts to the Presidente Prudente micro-region. While
+this region is geographically close to the scenario 1 optimal location, it is better positioned to distribute urea
+to a wider number of regions in the country's interior. The plant is still feasible at the maximum capacity of 80 t/h,
+however the NPV of the plant is reduced to 277.6 MMUSD, considering the higher urea distribution costs. \autoref{img_optimizationresults_6} illustrates the impact of the lower urea demand on the distribution network size.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/optimization_result_6.png}
+	\caption{Optimization result - Scenario 6 - Lower urea demand. Plant location (red), urea distribution (blue)}
+	\label{img_optimizationresults_6}
+\end{figure}
+
+Additional scenarios were simulated by constraining the feedstock to a single type of residue, other than sugarcane.
+Scenario 7 considers that corn stover is the only possible biomass. The plant's profitability is similar to the main scenario,
+but the plant location shifts to the Campo Mourão microregion on the Paraná state. 
+
+Scenario 8 considers that rice husk is the only processed biomass. \autoref{img_optimizationresults_8} shows the plant
+location, urea and biomass distribution networks. The profitability of the plant is affected by the 
+higher power costs of the rice-producing regions and the higher distribution costs of biomass transport at this location,
+as the rice husk supply is fragmented in various regions instead of concentrated in a small area.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/optimization_result_8.png}
+	\caption{Optimization result - Scenario 8 - Rice husks only. Plant location (red), urea distribution (blue), biomass distribution (green)}
+	\label{img_optimizationresults_8}
+\end{figure}
+
+Scenario 9 constrains the biomass to coffee husks. \autoref{img_optimizationresults_9} shows the plant
+location, urea and biomass distribution networks. Despite the high urea demand of the coffee production and the good
+energy efficiency of the plant processing this biomass, the low biomass generation per kg of coffee and the distributed
+nature of this crop's production negatively affects the economic performance of the plant and the optimal plant capacity
+, with the biomass having to travel large distances to reach the plant.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{img/optimization_result_9.png}
+	\caption{Optimization result - Scenario 9 - Rice husks only. Plant location (red), urea distribution (blue), biomass distribution (green)}
+	\label{img_optimizationresults_9}
+\end{figure}
 
 
+The plant capacity was constrained to a maximum of 80 t/h at the main scenarios. A last scenario with unconstrained
+capacity and limited to the Southeast Region was modeled. In this scenario, the optimal region is the Ribeirão Preto one,
+with an optimal capacity calculated by the model of 244.9 t/h. Despite the feasibility of this configuration, this capacity
+was deemed to large as it accounts for about 25\% of the national urea demand.
 
+\subsection{Conclusions}
 
+A process model for biomass gasification and renewable urea production plant was developed, and its key performance
+indicators presented for multiple scenarios of biomass types and operating conditions. It was found that the renewable
+urea plant has a lower energy efficiency than the regular fossil fuel route, however the lower prices of biomass compensate
+for this efficiency loss to the point where the renewable urea can commercialize with competitive prices, even without
+carbon taxation. Environmentally, the renewable urea plant can reduce emissions allocated to urea in about 86.6\%, or
+2285 kg $CO2_{eq}$ / ton of urea, already taking into account the life cycle emissions of the biomass. A sensitivity
+analysis for the internal rate of return was presented for all the main financial factors such as capital costs,
+biomass, urea and power prices. Future carbon taxation was also considered and can improve the financial results
+significantly.
 
+The process model results were used in a supply chain optimization model to evaluate the ideal location and plant
+configuration considering biomass supply and urea demand constraints. Despite not being the best biomass in terms
+of energy efficiency, processing sugarcane straw with air mixed gasification proved to be the ideal operational scenario
+for the plant. Multiple scenarios were simulated in different regions of the country and limiting the feedstock to distinct biomasses. Overall, the distribution of urea proved to be the critical factor in the feasibility of the plant. This highlights
+the need for a robust supply chain model coupled with a traditional process modeling approach.
 
-
+\clearpage
 
 \printbibliography{}
-
 
 \end{document}
